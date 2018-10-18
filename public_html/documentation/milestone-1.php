@@ -51,24 +51,24 @@
 		<div>
 			<p><strong>Attitudes & Behavior:</strong></p>
 				<p>Self-taught programmer from the age of 13, specializing in Javascript and C#, attended
-					attended MIT on a full scholarship, studied Computer Science. Partnered with his
+					attended MIT on a full scholarship, studied Computer Science. <br> Partnered with his
 					significant other to start their own Web Development and Design Firm. List of cientele
-					and size of projects are growing so more team members are currently being sought. </p>
+					and size of projects are growing so more team <br> members are currently being sought. </p>
 			<p><strong>Frustration & Needs:</strong></p>
 					<p>Paul is looking to hire a team of developers that are able to collaborate remotely
-					He is seeking talented individuals that are teachable and willing to learn constantly.
+					He is seeking talented individuals that are teachable and willing to learn constantly.<br>
 					His frustrations include working in a structured corporation, thus this entrepreneurship
-					and slow internet connection from partially residing in mountainous areas in the summertime
+					and slow internet connection from partially residing in mountainous areas <br> in the summertime.<br>
 					He requires employees with access to high-speed internet and is currently undergoing
 					cloud migration. He is looking to hire immediately.</p>
 			<p><strong>Goals:</strong></p>
 					<p>Paul's main goal is to acquire and form a reliable and competent team within two weeks.
-					He is only speaking to the web developers that are able to pass his competency test within
+					He is only speaking to the web developers that are able to pass his competency <br>test within
 					amount of time specified. He is also looking at potential employees creativity and ability
 						integrate new ideas into their work to enhance productivity and standards.</p>
 			<p><strong>User:</strong></p>
 					<p>As a user, Paul needs to quickly and efficiently determine a potential candidate's
-					profile after inspecting the elements on their websites to find a good fit for a person
+					profile after inspecting the elements on their websites to find a good fit for a person <br>
 					skilled in both front and back-end web developement, as well as Data Design.<p/>
 		</div>
 	</body>
