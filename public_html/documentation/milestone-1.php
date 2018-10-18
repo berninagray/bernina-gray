@@ -33,7 +33,11 @@
 			<strong>Attitudes & Behavior</strong>
 				<p>Self-taught programmer from the age of 13, specializing in Javascript and C#, attended <b/>
 					attended MIT on a full scholarship, studied Computer Science. Partnered with his <b/>
-					significant other to start their own Web Development and Design Firm.</p>
+					significant other to start their own Web Development and Design Firm. List of cientele</b>
+					and size of projects are growing so more team members are currently being sought. </p>
+			<strong>Frustration & Needs</strong>
+					<p>Paul is looking to hire a team of developers that are able to collaborate remotely<b/>
+					</p>
 </body>
 	
 </html>
