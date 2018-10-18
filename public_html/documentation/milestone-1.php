@@ -1,4 +1,4 @@
-<!D0CTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <html>
 	<head>
@@ -22,6 +22,7 @@
 				<p>The main goal of this site is to spur enough interest from potential employers and <b/>
 				provide access to my projects and share mny contact information.</p>
 		</div>
+		<div>
 		<h3>Persona</h3>
 			<p><strong>Name:</strong></p>
 				<p>Paul Wise</p>
@@ -34,6 +35,8 @@
 					<li>iphone XS for business - 512GB Storage, Apple A12 Bionic, 6-core processor, and <b/>
 					Super Retina OLED Display and 4K HD video.</li>
 				<ul>
+		</div>
+		<div>
 			<p><strong>Attitudes & Behavior:</strong></p>
 				<p>Self-taught programmer from the age of 13, specializing in Javascript and C#, attended <b/>
 					attended MIT on a full scholarship, studied Computer Science. Partnered with his <b/>
@@ -55,5 +58,6 @@
 					<p>As a user, Paul needs to quickly and efficiently determine a potential candidate's<b/>
 					profile after inspecting the elements on their websites to find a good fit for a person <b/>
 					skilled in both front and back-end web developement, as well as Data Design.<p/>
+		</div>
 	</body>
 </html>
