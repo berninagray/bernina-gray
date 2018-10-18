@@ -27,7 +27,12 @@
 			<h4>Technology:</h4>
 				<ul>
 					<li>Macbook Pro - 15" model with Touch Bar, 4.5 GHz Turbo Boost, 32 GB of DDR4 memory</li>
-					<li>iMac</li>
+					<li>iphone X - </li>
+				<ul>
+			<h4>Attitudes & Behavior</h4>
+				<p>Self-taught programmer from the age of 13, specializing in Javascript and C#, attended <b/>
+					attended MIT on a full scholarship, studied Computer Science. Partnered with his <b/>
+					significant other to start their own Web Development and Design Firm.</p>
 
 	</body>
 </html>
