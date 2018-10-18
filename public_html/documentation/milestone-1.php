@@ -20,7 +20,7 @@
 		</div>
 		<div>
 				<p>This site was designed to attract potential employers, investors, direct clientele
-				and business partners alike. Target audience includes corporations and companies that
+				and business partners alike. Target audience includes <br> corporations and companies that
 				that are seeking recently trained, competent individuals that are teachable and able to
 				a business' culture and technological needs.</p>
 		</div>
