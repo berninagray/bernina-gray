@@ -19,9 +19,9 @@
 			<p><strong>Audience:</strong></p>
 		</div>
 		<div>
-				<p>This site was designed to attract potential employers, investors, direct clientele<b/>
-				and business partners alike. Target audience includes corporations and companies that <b/>
-				that are seeking recently trained, competent individuals that are teachable and able to <b/>
+				<p>This site was designed to attract potential employers, investors, direct clientele<b>
+				and business partners alike. Target audience includes corporations and companies that <b>
+				that are seeking recently trained, competent individuals that are teachable and able to <b>
 				a business' culture and technological needs.</p>
 		</div>
 		<div>
