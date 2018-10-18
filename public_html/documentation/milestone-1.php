@@ -53,6 +53,5 @@
 					<p>As a user, Paul needs to quickly and efficiently determine a potential candidate's<b/>
 					profile after inspecting the elements on their websites to find a good fit for a person <b/>
 					skilled in both front and back-end web developement, as well as Data Design.<p/>
-</body>
-	
+	</body>
 </html>
