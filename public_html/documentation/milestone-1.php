@@ -3,13 +3,15 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>Bernina Gray Personal Website Project</title>
-		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div>
-
-		<h2>Bernina Gray</h2>
+rnina Gray</h2>
 		<h3>Web Developer</h3>
+		<div>
+			<p> Github Portfolio
+				<a href="https://github.com/berninagray" title="Bernina Gray Github Portfolio">github page</a>
+		</div>
 		<h3>Purpose, Audience & Goals</h3>
 			<p><strong>Purpose:</strong></p>
 		<div>
