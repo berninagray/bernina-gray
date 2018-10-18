@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!D0CTYPE html>
+<html lang="en">
 <html>
 	<head>
 		<meta charset="UTF-8" />
@@ -33,6 +34,6 @@
 				<p>Self-taught programmer from the age of 13, specializing in Javascript and C#, attended <b/>
 					attended MIT on a full scholarship, studied Computer Science. Partnered with his <b/>
 					significant other to start their own Web Development and Design Firm.</p>
-
-	</body>
+</body>
+	
 </html>
