@@ -11,20 +11,32 @@
 		<h3>Web Developer</h3>
 		<h3>Purpose, Audience & Goals</h3>
 			<p><strong>Purpose:</strong></p>
+		<div>
 				<p>To establish myself as an entry-level asset to a local company that is willing to
 				teach and mold me as an member of their team.</p>
+		</div>
+		<div>
 			<p><strong>Audience:</strong></p>
+		</div>
+		<div>
 				<p>This site was designed to attract potential employers, investors, direct clientele<b/>
 				and business partners alike. Target audience includes corporations and companies that <b/>
 				that are seeking recently trained, competent individuals that are teachable and able to <b/>
 				a business' culture and technological needs.</p>
+		</div>
+		<div>
 			<p><strong>Goal:</strong></p>
-				<p>The main goal of this site is to spur enough interest from potential employers and <b/>
+		</div>
+		<div>
+			<p>The main goal of this site is to spur enough interest from potential employers and <b/>
 				provide access to my projects and share mny contact information.</p>
+		</div>
 		</div>
 		<div>
 		<h3>Persona</h3>
+		<div>
 			<p><strong>Name:</strong></p>
+		</div>
 				<p>Paul Wise</p>
 			<p><strong>Profession:</strong></p>
 				<p>Co-CEO of Web Development & Data Design Firm</p>
