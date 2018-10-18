@@ -9,8 +9,11 @@
 rnina Gray</h2>
 		<h3>Web Developer</h3>
 		<div>
-			<p> Github Portfolio
-				<a href="https://github.com/berninagray" title="Bernina Gray Github Portfolio">github page</a>
+			<p>
+				<span>
+					<a href="https://github.com/berninagray" title="Github Student Portfolio">Github Student Portfolio</a>
+					<a href="https://www.linkedin.com/in/bernina-gray-066-071/" title="LinkedIn Profile">LinkedIn Profile</a>
+				</span></p>
 		</div>
 		<h3>Purpose, Audience & Goals</h3>
 			<p><strong>Purpose:</strong></p>
