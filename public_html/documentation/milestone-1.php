@@ -26,7 +26,8 @@
 				<p>Co-CEO of Web Development & Design Firm</p>
 			<h4>Technology:</h4>
 				<ul>
-					<li>Macbook Pro</li>
-				</ul>
+					<li>Macbook Pro - 15" model with Touch Bar, 4.5 GHz Turbo Boost, 32 GB of DDR4 memory</li>
+					<li>iMac</li>
+
 	</body>
 </html>
