@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 	<head>
-		<meta charset="UTF-8" />
+		<meta charset="UTF-8"/>
 		<title>Bernina Gray Personal Website Project</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div><
+		<div>
+
 		<h2>Bernina Gray</h2>
 		<h3>Web Developer</h3>
 		<h3>Purpose, Audience & Goals</h3>
@@ -31,24 +32,20 @@
 			<p>The main goal of this site is to spur enough interest from potential employers and
 				provide access to my projects and share mny contact information.</p>
 		</div>
-		</div>
 		<div>
 		<h3>Persona</h3>
-		<div>
 			<p><strong>Name:</strong></p>
-		</div>
 				<p>Paul Wise</p>
 			<p><strong>Profession:</strong></p>
-				<p>Co-CEO of Web Development & Data Design Firm</p>
+				<p>Co-CEO of Web Development and Data Design Firm</p>
 			<p><strong>Technology:</strong></p>
 				<ul>
 					<li>OS - MacOs & iOs</li>
 					<li>Macbook Pro - 15" model with Touch Bar, 4.5 GHz Turbo Boost, 32 GB of DDR4 memory</li>
 					<li>iphone XS for business - 512GB Storage, Apple A12 Bionic, 6-core processor, and
 					Super Retina OLED Display and 4K HD video.</li>
-				<ul>
+				</ul>
 		</div>
-		<div>
 			<p><strong>Attitudes & Behavior:</strong></p>
 				<p>Self-taught programmer from the age of 13, specializing in Javascript and C#, attended
 					attended MIT on a full scholarship, studied Computer Science. <br> Partnered with his
@@ -69,7 +66,6 @@
 			<p><strong>User:</strong></p>
 					<p>As a user, Paul needs to quickly and efficiently determine a potential candidate's
 					profile after inspecting the elements on their websites to find a good fit for a person <br>
-					skilled in both front and back-end web developement, as well as Data Design.<p/>
-		</div>
+					skilled in both front and back-end web development, as well as Data Design.</p>
 	</body>
 </html>
