@@ -25,11 +25,11 @@
 		<h2>Wireframes</h2>
 		<p>This site will feature one layout on both mobile and desktop screens. These wireframes were created using <br>
 		<a href="https://mockflow.com">Mockflow.</a></p>
-	<div>
-		<img src="wireframeI.png">Mobile Wireframe</>
+	<p><strong>Mobile Wireframe</strong></p>
+		<img src="wireframeI.png">
 	</div>
-	<div>
-		<img src="wireframeII.png">Desktop Wireframe</>
+		<p><strong>Desktop Wireframe</strong></p>
+		<img src="wireframeII.png">
 	</div>
 	</body>
 </html>
