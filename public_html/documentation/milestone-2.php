@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Milestone 2 PWP</title>
 	</head>
-	<>
+	<body>
 		<h2>Content Strategy</h2>
 		<p>My site will be one page with professional links and will be one page consisting of the following sections:</p>
 		<p><strong>Welcome:</strong></p>
@@ -29,7 +29,7 @@
 		<img src="wireframeI.png">Mobile Wireframe</>
 	</div>
 	<div>
-		<img src="milestone_desktop.png">Desktop Wireframe</>
+		<img src="wireframeII.png" width="1233" height="1025">Desktop Wireframe</>
 	</div>
 	</body>
 </html>
