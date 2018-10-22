@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Milestone 2 PWP</title>
 	</head>
-	<body>
+	<>
 		<h2>Content Strategy</h2>
 		<p>My site will be one page with professional links and will be one page consisting of the following sections:</p>
 		<p><strong>Welcome:</strong></p>
@@ -25,6 +25,7 @@
 		<h2>Wireframes</h2>
 		<p>This site will feature one layout on both mobile and desktop screens. These wireframes were created using <br>
 		<a href="https://mockflow.com">Mockflow.</a></p>
-		<a href="wireframeI.png">Mobile Wireframe</a>
+		<img src="wireframeI.png">Mobile Wireframe</>
+		<img src="milestone_desktop.png">Desktop Wireframe>
 	</body>
 </html>
