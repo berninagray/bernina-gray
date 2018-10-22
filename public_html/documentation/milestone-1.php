@@ -6,8 +6,8 @@
 	</head>
 	<body>
 		<div>
-rnina Gray</h2>
-		<h3>Web Developer</h3>
+		<h2>Bernina Gray</h2>
+		<h3>Web Development Internship</h3>
 		<div>
 			<p>
 				<span>
@@ -18,13 +18,11 @@ rnina Gray</h2>
 		<h3>Purpose, Audience & Goals</h3>
 			<p><strong>Purpose:</strong></p>
 		<div>
-				<p>To establish myself as an entry-level asset to a local company that is willing to
-				teach and mold me as an member of their team.</p>
+				<p>To establish myself as an entry-level asset/intern to a local company that is willing to
+				teach and mold me as an member of their team. Challenge me as a developer to acquire new skills for constant growth.</p>
 		</div>
 		<div>
 			<p><strong>Audience:</strong></p>
-		</div>
-		<div>
 				<p>This site was designed to attract potential employers, investors, direct clientele
 				and business partners alike. Target audience includes <br> corporations and companies that
 				that are seeking recently trained, competent individuals that are teachable and able to
@@ -34,40 +32,42 @@ rnina Gray</h2>
 			<p><strong>Goal:</strong></p>
 		</div>
 		<div>
-			<p>The main goal of this site is to spur enough interest from potential employers and
-				provide access to my projects and share mny contact information.</p>
+			<p>The main goal of this site is to spur enough interest from potential employers by
+				providing access to my projects and to share my contact information.</p>
 		</div>
 		<div>
 		<h3>Persona</h3>
 			<p><strong>Name:</strong></p>
 				<p>Paul Wise</p>
 			<p><strong>Profession:</strong></p>
-				<p>Co-CEO of Web Development and Data Design Firm</p>
+				<p>Co-CEO of Web Development and Visual dataDesign Firm</p>
 			<p><strong>Technology:</strong></p>
+			<p>OS - MacOs & iOs</p>
 				<ul>
-					<li>OS - MacOs & iOs</li>
+					<li>21.5" iMac, 2.3 GHz dual-core 7th-generation Intel Core i5 processor with 1 TB of storage, <br>
+					8BG 2133 MHz memory configurable to 16GB. Intel Iris Plus Graphics 640, 1920-by-1080 sRGB display.</li>
 					<li>Macbook Pro - 15" model with Touch Bar, 4.5 GHz Turbo Boost, 32 GB of DDR4 memory</li>
 					<li>iphone XS for business - 512GB Storage, Apple A12 Bionic, 6-core processor, and
 					Super Retina OLED Display and 4K HD video.</li>
 				</ul>
 		</div>
 			<p><strong>Attitudes & Behavior:</strong></p>
-				<p>Self-taught programmer from the age of 13, specializing in Javascript and C#, attended
+				<p>go-getter attitude, self-taught programmer from the age of 15, specializing in Javascript and C#, attended
 					attended MIT on a full scholarship, studied Computer Science. <br> Partnered with his
-					significant other to start their own Web Development and Design Firm. List of cientele
+					significant other to start their own Web Development and Visual dataDesign Firm. List of cientele
 					and size of projects are growing so more team <br> members are currently being sought. </p>
 			<p><strong>Frustration & Needs:</strong></p>
 					<p>Paul is looking to hire a team of developers that are able to collaborate remotely
 					He is seeking talented individuals that are teachable and willing to learn constantly.<br>
-					His frustrations include working in a structured corporation, thus this entrepreneurship
-					and slow internet connection from partially residing in mountainous areas <br> in the summertime.<br>
-					He requires employees with access to high-speed internet and is currently undergoing
-					cloud migration. He is looking to hire immediately.</p>
+					His frustrations include working in a structured corporation, hence the entrepreneurship
+					and lack of growth within a company.<br>
+					He requires employees with access to high-speed internet, their own reliable devices and equipment.
+					He is looking to hire immediately.</p>
 			<p><strong>Goals:</strong></p>
 					<p>Paul's main goal is to acquire and form a reliable and competent team within two weeks.
-					He is only speaking to the web developers that are able to pass his competency <br>test within
-					amount of time specified. He is also looking at potential employees creativity and ability
-						integrate new ideas into their work to enhance productivity and standards.</p>
+					He is only speaking to web developers that are able to pass his competency <br>test within
+					amount of time specified. He is also looking at potential employees' creativity and ability
+					to integrate new ideas into their work to enhance productivity and standards.</p>
 			<p><strong>User:</strong></p>
 					<p>As a user, Paul needs to quickly and efficiently determine a potential candidate's
 					profile after inspecting the elements on their websites to find a good fit for a person <br>
