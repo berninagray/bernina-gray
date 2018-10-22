@@ -29,7 +29,7 @@
 		<img src="wireframeI.png">Mobile Wireframe</>
 	</div>
 	<div>
-		<img src="wireframeII.png" width="1233" height="1025">Desktop Wireframe</>
+		<img src="wireframeII.png">Desktop Wireframe</>
 	</div>
 	</body>
 </html>
