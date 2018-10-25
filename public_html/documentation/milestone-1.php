@@ -54,7 +54,7 @@
 			<p><strong>Attitudes & Behavior:</strong></p>
 				<p>Go-getter attitude, self-taught programmer from the age of 15, specializing in Javascript and C#, attended
 					attended MIT on a full scholarship, studied Computer Science. <br> Partnered with his
-					significant other to start their own Web Development and Visual dataDesign Firm. List of cientele
+					significant other to start their own Web Development and Visual dataDesign Firm. List of clientele
 					and size of projects are growing so more team <br> members are currently being sought. </p>
 			<p><strong>Frustration & Needs:</strong></p>
 					<p>Paul is looking to hire a team of developers that are able to collaborate remotely
