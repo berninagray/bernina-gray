@@ -25,7 +25,7 @@
 			<p><strong>Audience:</strong></p>
 				<p>This site was designed to attract potential employers, investors, direct clientele
 				and business partners alike. Target audience includes <br> corporations and companies that
-				that are seeking recently trained, competent individuals that are teachable and able to
+				that are seeking recently trained, competent individuals that are teachable and able to adhere to
 				a business' culture and technological needs.</p>
 		</div>
 		<div>
@@ -52,7 +52,7 @@
 				</ul>
 		</div>
 			<p><strong>Attitudes & Behavior:</strong></p>
-				<p>go-getter attitude, self-taught programmer from the age of 15, specializing in Javascript and C#, attended
+				<p>Go-getter attitude, self-taught programmer from the age of 15, specializing in Javascript and C#, attended
 					attended MIT on a full scholarship, studied Computer Science. <br> Partnered with his
 					significant other to start their own Web Development and Visual dataDesign Firm. List of cientele
 					and size of projects are growing so more team <br> members are currently being sought. </p>
