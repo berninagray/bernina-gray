@@ -7,8 +7,7 @@
 	<body>
 
 	<div>
-		<p><strong>Desktop Wireframe</strong></p>
-		<img src="wireframeII.png" alt="Mobile Wireframe">
+
 	</div>
 	</body>
 </html>

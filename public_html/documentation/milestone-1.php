@@ -96,6 +96,8 @@
 			<div>
 				<p><strong>Mobile Wireframe</strong></p>
 				<img src="wireframeI.png" alt="Mobile Wireframe">
+				<p><strong>Desktop Wireframe</strong></p>
+				<img src="wireframeII.png" alt="Mobile Wireframe">
 		</div>
 	</body>
 </html>
