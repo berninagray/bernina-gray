@@ -1,0 +1,3155 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google" content="notranslate" />
+<link rel="shortcut icon" href="favicon.ico" />
+<title>MockFlow WireframePro - Editor</title>
+
+
+
+
+
+
+<!--  external css files -->
+<link href="css/external/bootstrap3/bootstrap-editor-min.css?v=2018_10_26_15_08_14" rel="stylesheet" type="text/css" />	
+<link href="css/external/bootstrap3/bootstrap-theme.css" rel="stylesheet" type="text/css" />	
+
+<link href="css/external/jquery-ui-1.11.4.custom.min.css" rel="stylesheet" type="text/css" />
+<link href="css/external/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+<link href="css/external/styles/kendo.custom.metro.css" rel="stylesheet" type="text/css" />
+<link href="css/external/jquery.jdMenu.css" rel="stylesheet" type="text/css">
+<link href="css/external/spectrum.modified.min.css" rel="stylesheet" type="text/css" />
+<link href="css/external/bootstrap-toggle-buttons.css" rel="stylesheet" type="text/css" />
+<link href="css/external/toggle-switch.css" rel="stylesheet" type="text/css" />
+<link href="css/external/summernote/mfedit.css" rel="stylesheet" type="text/css" />
+<link href="css/external/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+<link href="css/external/summernote/summernote.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+
+<link href="css/internal/icons/style.css" rel="stylesheet" type="text/css" />
+
+
+<!--  internal css files -->
+<link href="css/internal/editor-min.css?v=2018_10_26_15_08_14" rel="stylesheet" type="text/css">
+
+<!--  external js files --> 
+<!-- mfexternal-min.js -->
+ 
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/webfont.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/external/jquery-2.1.4.min.js"></script>-->
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/jquery-ui-1.11.4.custom.min.js"></script>
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/kendo.custom.min.js"></script> 
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/bootstrap3.min.js"></script> 
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/external/js/jquery.textchange.min.js"></script>
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/external/js/jquery.event.drag-2.2.min.js"></script>
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/external/js/arraycollection.min.js"></script> 
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/external/js/handlebars-1.0.0.beta.6.min.js"></script> 
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/spin.min.js"></script> 
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/multiline.min.js"></script> 
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/jquery.address-1.5.min.js"></script> 
+<script type="text/javascript" src="js/external/summernote.min.js"></script> 
+<!-- <script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/html2canvas.min.js"></script> --> 
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/external/js/socket.io-1.4.5.js"></script>
+
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/jdmenu/jquery.positionBy.min.js"></script>
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/jdmenu/jquery.bgiframe.min.js"></script>
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/jdmenu/jquery.jdMenu.min.js"></script>
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/spectrum.modified.min.js"></script>
+<script type="text/javascript" src="https://d20hhedk3h2l88.cloudfront.net/apps/wireframepro/external/js/jquery.toggle.buttons.min.js"></script> 
+<script type="text/javascript" src="js/external/notify.js"></script> 
+
+<!-- internal DWR files -->
+<script type='text/javascript' src='js/external/engine.js'></script>
+<script type='text/javascript' src='/dwr/util.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_AccountManager.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_LogManager.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_LogSharedManager.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_ProjectManager.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_Authentication.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_LicenseManager.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_RevisionManager.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_ImageManager.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_WireframeStoreManager.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_FeedbackManager.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_ExportManager.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_PackManager.js'></script>
+<script type='text/javascript' src='/dwr/interface/MF_FontManager.js'></script>
+<!-- end of DWR files -->
+
+<!-- internal js files -->
+<script type="text/javascript" src="js/internal/mf_wireframepro_editor-min.js?v=2018_10_26_15_08_14"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- internal common components js files -->
+
+
+
+
+ 
+
+
+
+
+
+<script type="text/javascript" src="js/internal/mf_wireframepro_commoncomponents-min.js?v=2018_10_26_15_08_14"></script>
+
+<!-- internal settings parts js files -->
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+<script type="text/javascript"> 
+
+function setMargins() 
+{
+}
+
+$(document).ready(function()
+{
+	$("#mainBody").show();
+	
+	mf_main = new MF_Main();
+	
+
+	
+	//set the usersession object
+	
+	
+	
+
+			mf_main.projectID = "Mee7cc87480cd6e3decd7c6840485436e1540169523171";
+ 	
+			//when you change this make sure the same code in MF_Main is updated
+			MF_UserSession.getUser().firstName = "Bernina";
+			MF_UserSession.getUser().lastName = "";
+			MF_UserSession.getUser().username = "bernina.gray@gmail.com";
+			MF_UserSession.getUser().password = "EBAjfuKcdWwLRn1g37TIYxMBJHF+VcAJeEyzjA2VFnE=";
+			MF_UserSession.getUser().company = "Ce3fd98618a67be280c2da25f447d00b4";
+			MF_UserSession.getUser().type = "admin";
+			MF_UserSession.getUser().pid = "P994efbf1d1c0df9fb595fa14e6dcffea";
+			MF_UserSession.getUser().tokenKey = "null";
+			MF_UserSession.getUser().projectsLeft = 0;
+			MF_UserSession.getUser().isBasic = true;
+			MF_UserSession.getUser().accountType = "Basic";
+			MF_UserSession.getUser().teamPremium = false;
+			MF_UserSession.getUser().teamEditor = false;
+			MF_UserSession.getUser().offlineMode = false;
+
+			MF_UserSession.getUser().plusEdition = "null";
+			
+			MF_UserSession.getUser().emailAlert = true;
+	
+			MF_UserSession.getUser().createDate  = new Date(2018,9,21);
+	
+			if(MF_UserSession.getUser().emailAlert  == "false")
+				MF_UserSession.getUser().emailAlert  = false;
+	
+			if(MF_UserSession.getUser().emailAlert  == "true")
+				MF_UserSession.getUser().emailAlert  = true;
+						
+			MF_UserSession.getUser().jwtToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6IkVCQWpmdUtjZFd3TFJuMWczN1RJWXhNQkpIRitWY0FKZUV5empBMlZGbkU9Iiwicm9sZSI6Ik93bmVyIiwiaXNzIjoiTW9ja0Zsb3ciLCJjb21wYW55IjoiQ2UzZmQ5ODYxOGE2N2JlMjgwYzJkYTI1ZjQ0N2QwMGI0IiwidXNlcm5hbWUiOiJiZXJuaW5hLmdyYXlAZ21haWwuY29tIn0.YiQuH_gb1gw3plPOSuJVUv0aNWZ7TL7cJj9UkWyTrL8";
+			
+         	try
+         	{
+					var arr  = "M819ec365a109749cd72930388851b8191541079589555".split("-");		             	
+         	
+	             	if(arr.length == 2)
+	             	{
+	             		mf_main.PERMISSION = $.trim(arr[1]);
+	             	}
+
+	             	
+	             	var str = "Owner";
+
+	             	if(str != null)
+		             	mf_main.PERMISSION = $.trim(str);
+	             	
+	             	var revstr = "null";
+
+	             	if(revstr == "on")
+	             	{
+		             	mf_main.REVISION = true;
+		             	mf_main.revisionID = "null";
+		             	mf_main.clientID = "null";
+		             	
+	             	}
+	             	
+	             	var commentmode = "null";
+
+	             	if(commentmode == "on")
+	             	{
+		             	mf_main.COMMENTMODE = true;
+		            
+		             	
+	             	}
+	             	
+	             	var rendstr = "null";
+
+	             	
+	             	if(rendstr == "on")
+	             	{
+		             	mf_main.RENDER = true;
+		             	mf_main.clientID = "null";
+		             	
+	             	}
+	             	
+	             
+	             	
+	             	var uri = window.location.toString();
+	             	if(uri.indexOf("&redirect=") != -1)
+	             	{
+	             		
+	             		
+		            	    var clean_uri = uri.replace("&redirect=yes","");
+		            	    
+		            	    window.history.replaceState({}, document.title, clean_uri);
+		            	    
+		            	
+	             	}
+	             	
+	             
+        	}
+        	catch (err)
+        	{
+        		
+        	}
+	
+
+    	
+    	
+    	mf_main.onLoadInterface();
+	
+  
+ });  
+	
+
+</script> 
+
+	  	  	  
+<script type="text/javascript">
+
+//create the main app instance
+var mf_main =  null;
+
+$(window).resize(function()
+{
+	if(mf_main)
+	{
+		
+		mf_main.interfaceResize();
+	}
+  		
+});
+   			
+$(window).resize();
+
+var ConfirmExit = 
+{
+
+   /**
+    * Flag indicating the user should be prompted each
+    * time they attempt to navigate away from or refresh
+    * the Admin HTML page.
+    */
+   prompt: false,
+   promptText: "Continue to lose any unsaved work. If not cancel and save your application from the top menu\n",     
+           
+   /**
+    * Sets the value of "prompt"
+    */
+   setPrompt: function (value) {
+      if (value) {
+         ConfirmExit.prompt = true;
+      } else if (!value) {
+         ConfirmExit.prompt = false;
+      }
+   },
+   /**
+    * Sets the value of "promptText"
+    */
+   setPromptText: function (value) {
+   
+      ConfirmExit.promptText = value;
+   }
+};
+
+window.onbeforeunload = function(e) {
+	
+	   if (ConfirmExit.prompt) {
+	      return ConfirmExit.promptText;
+	   }
+	  
+}
+
+function setTitle(title) 
+{                       
+    document.title = title;
+}
+
+</script>
+</head>
+<body id="mainBody" class="notranslate" translate="no"  style="display: none; overflow: hidden;">
+
+	
+<textarea id="mfclipboard" class="mfhidden" ></textarea>
+
+<div id="mfEditorView" style="width: 100%; height: 100%; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px;" >
+<div id="mfTextDummyEditable" style="position: absolute; top: -100px; left: 0px; width: 20px; height: 10px; " contenteditable="true">&nbsp;</div>
+<div id="mfTextDummy" style="position: absolute; top: -100px; left: 0px; width: 20px; height: 10px;">&nbsp;</div>
+<div id="mfrenderbar" data-width="600" data-height="800" data-x="0" data-y="0" style="visibility:hidden; position:absolute; top: 0px; left:0px;">&nbsp;</div>
+
+<i id="mfDummyIconImageLoader" class="ico-angle-down-circle" style="position: absolute; top: -100px; left: 0px; z-index: -10; font-size: 10px;"></i>
+
+	 
+	<div id='mfMainEditorUI' style="width: 100%; height: 100%; overflow: hidden;  background-color: #fff; position: absolute; top: 0px; left: 0px;" > 	 
+		
+		 <div id="mfPageManagerArea" style="float: left; width: 320px; height: 100%; border-right: 1px solid #ccc;" class="mfGradientBg mfNoSelect">
+	  		
+	  		<div id="mfEditorHeader" class="headerbar" style="display: none; width: 320px;  position: absolute; left: 0px; top: 0px; background-color: #2196F3;   height: 40px;">
+	 
+			 	<div id="mfEditorHeaderMenu" style=" float: left; width: 165px; height: 100%; font-weight: bold;" >
+	 	 
+			<ul class="jd_menu" style="padding-top: 8px; ">
+				<li style="color: #fff; font-size: 14px; font-weight: normal;">Project
+					<ul style="font-weight: normal;" class="jd_menu_list">
+						<li id="mfTopMenuWireframeSave" class="mfSaveBtnCls"><div style="float: left; width: 80px;">Save Page</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+S</div></li>		
+						<li><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li class="mfTopMenuSaveStore">Add Page to MockStore</li>
+						<li id="mfTopMenuViewLayers">View Component Layers</li>				
+						<li><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li id="mfTopMenuRevHis" >Revision History</li>
+						<li id="mfTopMenuNewRev" >Check-In Revision</li>						
+						<li id="mfTopMenuNewRevSep" ><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li class='mfTopMenuSharingCls' id="mfTopMenuSharing">Sharing</li>
+						<li class='mfTopMenuSharingCls' ><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li id="mfTopMenuGrid">Grid Settings</li>
+						<li><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li id="mfTopMenuDesktopApp">Desktop App</li>
+						<li><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li class="mfTopMenuExportPage"><div style="float: left; width: 80px;">Export Wireframe</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+E</div></li>
+						<li id="mfTopMenuToggleMode"><div style="float: left; width: 80px;">Toggle Edit/Review</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+I</div></li>						
+						<li  style="display: none;" id="mfTopMenuCreateComponent"><div style="float: left; width: 80px;">Create Component</div></li>		
+						<li id="mfTopMenuToggleModeSep"><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>				
+						<li id="mfTopMenuDocsLink">Documentation</li>
+						<li id="mfTopMenuFeedback">Feedback Form</li>
+												
+					</ul>
+				</li>
+				<li style="color: #fff; font-size: 14px; font-weight: normal;">Edit
+					<ul  style="font-weight: normal;"  class="jd_menu_list">
+						<li id="mfTopMenuUndo"><div style="float: left; width: 80px;">Undo</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+Z</div></li>
+						<li id="mfTopMenuRedo"><div style="float: left; width: 80px;">Redo</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+Y</div></li>
+						<li><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li id="mfTopMenuDuplicate"><div style="float: left; width: 80px;">Duplicate</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+D</div></li>
+						<li id="mfTopMenuCut"><div style="float: left; width: 80px;">Cut</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+X</div></li>
+						<li id="mfTopMenuCopy"><div style="float: left; width: 80px;">Copy</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+C</div></li>
+						<li id="mfTopMenuPaste"><div style="float: left; width: 80px;">Paste</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+V</div></li>
+						<li id="mfTopMenuDelete"><div style="float: left; width: 80px;">Delete</div><div style="text-align: right; float: right width: 30px; color: #888;">delete</div></li>
+						<li><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li id="mfTopMenuLock"><div style="float: left; width: 80px;">Lock</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+L</div></li>
+						<li id="mfTopMenuUnLock"><div style="float: left; width: 80px;">Un-Lock</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+Shift+L</div></li>
+						<li id="mfTopMenuUnLockAll">Un-Lock All</li>
+						<li><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li id="mfTopMenuGroup"><div style="float: left; width: 80px;">Group</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+G</div></li>
+						<li id="mfTopMenuUnGroup"><div style="float: left; width: 80px;">Un-Group</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+Shift+G</div></li>
+						<li><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li id="mfTopMenuResetRotation"><div style="float: left; width: 80px;">Reset Rotation</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+R</div></li>
+						<li><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li id="mfTopMenuSelectAll"><div style="float: left; width: 80px;">Select all</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+A</div></li>
+						<li id="mfTopMenuClearSel">Clear Selection</li>
+						<li><hr class="menubar_sep" style="margin-top: 2px;" width="100%" /></li>
+						<li id="mfTopMenuSendFwd"><div style="float: left; width: 80px;">Bring Forward</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+Up</div></li>
+						<li id="mfTopMenuSendBck"><div style="float: left; width: 80px;">Send Backward</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+Down</div></li>
+						<li id="mfTopMenuToTop"><div style="float: left; width: 80px;">Bring to Front</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+SHIFT+Up</div></li>
+						<li id="mfTopMenuToBottom"><div style="float: left; width: 80px;">Send to Back</div><div style="text-align: right; float: right width: 30px; color: #888;"><span class='mfShrtClss'>Ctrl</span>+SHIFT+Down</div></li>
+						
+						
+					</ul>
+				</li>	
+						
+			</ul>
+			
+		</div>
+		<div id="mfEditorHeaderBtns" style="padding-top: 6px; float: right; width: 129px;    text-align: right; height: 100%;" >		
+			
+			
+			&nbsp; &nbsp;
+			<div id="mfEditorPreviewBtn" class="mfImgLink" style=" height: 40px; float: right; position: absolute; top: 0px; right: 0px;">Review <i style="color: #fff; vertical-align: middle; font-size: 24px;" class="ico-angle-right"></i></div>
+			
+			<div data-toggle="tooltip" data-placement="bottom" title="Export current page"  class="mfImgLink mfPostBtnCls mfPostToSlackBtn" style=""><img class="mfPostSlackImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post To Slack</div>
+			
+			<div data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToTrelloBtn" style=""><img class="mfPostTrelloImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Attach to Card</div>
+			
+			<div data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToGDocBtn" style=""><img class="mfPostGDocImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post To GDoc</div>
+			
+			<div  data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToGDriveBtn" style=""><img class="mfPostGDriveImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post To GDrive</div>
+			
+			<div data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToJIRABtn" style=""><img class="mfPostJIRAImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Attach to Issue</div>
+			
+			<div data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToConfluenceBtn" style=""><img class="mfPostConfluenceImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post to Wiki</div>
+			
+			<div data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToOffice365Btn" style=""><img class="mfPostOffice365Img" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post to Doc</div>
+			
+			<div data-toggle="tooltip" data-placement="bottom" title="Export current page"  class="mfImgLink mfPostBtnCls mfPostToInternalAppBtn" style=""><img class="mfPostInternalAppImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post To Project</div>
+			
+		</div>
+		
+		
+			 	
+			</div>
+			
+			<div id="mfViewerHeader" class="headerbar" style="display: none; width: 320px;   position: absolute; left: 0px; top: 0px;  background-color: #2196F3; color: #fff; height: 40px;">
+	 
+			 	<div style="width: 100%; height: 40px;   overflow: hidden; display: block; ">
+	
+	  
+					
+					<div id="mfViewerTopBtns" style="padding-right: 0px;  text-align: right;  overflow: hidden;">
+						<div id="mfEditorBackBtn" class="mfImgLink" style="float: right; padding-top: 13px; height: 48px; position: relative; top: -6px;"><i style="color: #fff; vertical-align: middle; font-size: 24px;" class="ico-angle-left"></i> Edit </div>
+						
+						
+					</div> 
+					
+					<div  id="mfViewerTopTitle" class='mfiffyTip' style="display: none; width: 300px; padding-left: 20px; line-height: 40px; padding-right: 10px;  font-size: 14px; overflow: hidden;  white-space: nowrap; text-overflow:  ellipsis;">
+						
+							
+						<div data-toggle="tooltip" data-placement="bottom" title="Export current page"  class="mfImgLink mfPostBtnCls mfPostToSlackBtn" style=""><img class="mfPostSlackImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post To Slack</div>
+			
+						<div data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToTrelloBtn" style=""><img class="mfPostTrelloImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Attach to Card</div>
+						
+						<div data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToGDocBtn" style=""><img class="mfPostGDocImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post To GDoc</div>
+						
+						<div  data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToGDriveBtn" style=""><img class="mfPostGDriveImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post To GDrive</div>
+						
+						<div data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToJIRABtn" style=""><img class="mfPostJIRAImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Attach to Issue</div>
+						
+						<div data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToConfluenceBtn" style=""><img class="mfPostConfluenceImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post to Wiki</div>
+						
+						<div data-toggle="tooltip" data-placement="bottom" title="Export current page" class="mfImgLink mfPostBtnCls mfPostToOffice365Btn" style=""><img class="mfPostOffice365Img" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post to Doc</div>
+						
+						<div data-toggle="tooltip" data-placement="bottom" title="Export current page"  class="mfImgLink mfPostBtnCls mfPostToInternalAppBtn" style=""><img class="mfPostInternalAppImg" src="" width="25" height="25" alt="" style="margin-right:8px;"/> Post To Project</div>
+					</div>
+					
+					
+				</div>
+			 	
+			</div>
+			
+	  		<div id="mfNavBar" style="width: 70px; position: absolute; left: 0px; top: 40px; height: 100%; float: left; background-color: #EFF1F5;">
+		  		
+		  		
+	<div id="mfNavElementBtn" class="mfNavBarButton" style="color: #2286FB; ">
+
+		<span style="font-size: 24px;  padding-bottom: 10px; " class="ico-box2" ></span>
+		<br/>
+		<span style="font-size: 10px;">ELEMENTS</span>
+		 
+	</div>
+	 
+		  	
+	
+	<div id="mfNavPagesBtn" class="mfNavBarButton" style="color: #666;">
+
+		<span style="font-size: 24px;  padding-bottom: 10px; " class="ico-copy" ></span>
+		<br/>
+		<span style="font-size: 10px;">PAGES</span>
+		 
+	</div>	
+	
+	
+	<div id="mfNavImagesBtn" class="mfNavBarButton" style="color: #666;">
+
+		<span style="font-size: 24px;  padding-bottom: 10px;" class="ico-image" ></span>
+		<br/>
+		<span style="font-size: 10px;">IMAGES</span>
+		 
+	</div>	
+		  		
+		
+	<div id="mfNavWorkflowBtn" class="mfNavBarButton" style="color: #666;">
+
+		<span style="font-size: 24px;  padding-bottom: 10px; " class="ico-kanban_board" ></span>
+		<br/>
+		<span style="font-size: 10px;">FLOW</span>
+		 
+	</div>	
+	
+	<div id="mfNavStoreBtn" class="mfNavBarButton" style="color: #666;">
+
+		<span style="font-size: 24px;  padding-bottom: 10px; " class="ico-shopping_bag" ></span>
+		<br/>
+		<span style="font-size: 10px;">STORE</span>
+		 
+	</div>	
+	  		
+	  		
+	  <!-- viewr -->
+	  
+	  
+	  <div id="mfViewerNavPagesBtn" class="mfViewerNavBarButton" style="color :#666;">
+
+		<span style="font-size: 24px;  padding-bottom: 10px; " class="ico-copy" ></span>
+		<br/>
+		<span style="font-size: 10px;">PAGES</span>
+		 
+	</div>	
+	 <div class="mfViewerCommentNum" id="mfViewerCommentNumBtn" style='display: none;  position: absolute; top: 82px; left: 37px;'></div>
+	  <div id="mfViewerNavCommentBtn" class="mfViewerNavBarButton" style="color : #666;">
+		
+		<span style="font-size: 24px;  padding-bottom: 10px; " class="ico-speech_bubble" ></span>
+		<br/>
+		<span style="font-size: 10px;">COMMENT</span>
+		 
+	</div>
+	 
+		  	
+	
+	<div id="mfViewerNavSpecsBtn" class="mfViewerNavBarButton" style="color :#666;">
+
+		<span style="font-size: 24px;  padding-bottom: 10px; " class="ico-specifications" ></span>
+		<br/>
+		<span style="font-size: 10px;">SPECS</span>
+		 
+	</div>	
+	
+	
+	<div id="mfViewerNavWorkflowBtn" class="mfViewerNavBarButton" style="color :#666;">
+
+		<span style="font-size: 24px;  padding-bottom: 10px; " class="ico-kanban_board" ></span>
+		<br/>
+		<span style="font-size: 10px;">FLOW</span>
+		 
+	</div>	
+	
+	<div id="mfViewerNavExportBtn" class="mfViewerNavBarButton" style="color :#666;">
+
+		<span style="font-size: 24px;  padding-bottom: 10px; " class="ico-download" ></span>
+		<br/>
+		<span style="font-size: 10px;">EXPORT</span>
+		 
+	</div>	
+	
+	
+		
+	<div style='height: 10px;'></div>
+	
+	<div id="mfNavbarCommentIndBtn" class="">
+	<span data-toggle="tooltip" data-placement="right" title="" style="color: #2286FB;vertical-align: middle;position: absolute;left: 25px;cursor: pointer;bottom: 100px;font-size: 20px;" class="ico-speech_bubble mfTopMenuCommentsPage mfCommentIndCls" data-original-title="View comments &amp; export"></span>
+	<div data-toggle="tooltip" data-placement="right" data-original-title="View comments &amp; export" class="mfViewerCommentNum mfTopMenuCommentsPage mfCommentIndCls" style=" cursor: pointer; display: none; position: absolute; bottom: 109px; left: 36px; "></div>
+	</div>
+	
+	
+	<div id="mfNavbarZoomBtn" class="">
+	 <span class="btn trasnparent-btn" style="font-size: 20px;"><i id="mfNavbarZoomBtnIcon" class="ico-equal_zoom"></i></span>
+	</div>	
+	<div id="mfNavbarToggleBtn" data-toggle="tooltip" data-placement="right" title="Hide sidebar" class="">
+	 <span  class="btn trasnparent-btn"><i class="ico-back"></i></span>
+	</div>	
+</div>
+
+<div id="mfNavBarContent" style="position: absolute; width: 249px; top: 40px; left: 70px; overflow: hidden; height: 100%; background-color: #fff; color: #fff;" class="mfGradientBg">
+		  		
+		  		
+		  		<div id="mfContentComponents" class="mfNavBarContentHolderCls" style=" display: block; width: 100%; height: 100%">
+					
+					
+<div style="width: 100%; height: 100%;">
+
+  <div id="mfComponentListHeader" style="width: 100%;  height: 85px; padding: 10px; padding-top: 20px;"> 
+  
+  	<div style="float: left; width: 220px; height: 30px; border: 1px solid #ccc; background: transparent; border-radius: 15px;">
+  		<div style="float: left; width: 20px; padding-top: 6px; padding-left: 6px;">
+  			<i style="font-size: 17px; color: #ccc;" class="ico-search"></i>
+  		</div>
+  		
+  		<div style="float: left; width: 150px; padding-left: 7px; padding-top: 2px;">
+  		 <input class='mfsearch' placeholder="Ctrl+K to Search" spellcheck=false style="width: 180px; color: #666; height: 25px; font-size: 12px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; " id="mfComponentSearchBox" type="text" />
+  			<i id="mfComponentSearchBoxClose" class="ico-close" style="display: none; cursor : pointer; position: relative;top: -20px;left: 170px;color: #666;c;font-size:  14px;"></i>
+  		</div>
+
+  	</div>
+  	
+  	
+	
+	<br/>
+	<div id="mfCatInput" data-toggle="tooltip" data-placement="bottom" title="Switch Component Pack"  class="mfImgLink mfSwitchPackCls" style="float: left; width: 220px; white-space: nowrap; overflow: hidden; text-align: center; text-overflow:  ellipsis; cursor: pointer; height: 30px; padding-left: 10px; color: #2196F3; padding-top: 5px; ">
+  		
+  		<span id="mfCatInputTxt" style="display: none; font-size: 13px; border-bottom: 1px dotted #2196F3;">Featured</span>  <span   style="display: inline-block; margin-top: 0px; vertical-align: middle;" ><span style="font-size: 30px;  " class="ico-angle-down"></span></span>
+  		
+  	</div>
+  	
+ 
+    
+  </div> 
+
+  <div id="mfEditorComponents" class="mfCompListing">
+  		&nbsp;
+  		
+  		
+  		
+ </div>
+ <div id="mfEditorComponentsLoader" class="mfCompListing">
+ </div>
+  <div id="mfEditorComponentsEmpty" class="mfCompListing" style="display: none;">
+  		&nbsp;
+  		
+  		<div style='width: 100%; top: 45%; position: absolute; text-align: center;'>
+	  		<span style='color: #ccc; font-size: 34px;' class='fa fa-search' ></span>
+	  		
+	  		<p><br/>
+	  		No Results
+	  		</p>
+	  		<br/>
+	  		<div id="mfFindOtherPacks" class='mfSwitchPackCls' style='cursor: pointer; margin-left: 35px; border: 1px solid #ccc; border-radius: 0px; font-size: 14px; width: 180px; line-height: 35px; height: 35px;'>
+	  		Check in other Packs
+	  		</div>
+  		</div>
+  		
+ </div>
+ 
+ 
+	 <div id="mfAddDBComponentBtn" style='display: none;bottom:0px;width: 100%; height: 35px; color: #fff; border: none;' class="mfPackComponentBtnCls" >
+	  	  <div  data-toggle="tooltip" data-placement="top" title="Select component(s) and add to pack" style='width: 169px; height: 35px; float: left; cursor: pointer;  line-height: 35px; font-size: 14px; text-align: center;' class="mfAddDBComponentBtnCls" >Add Component to Pack</div>
+	 	  <div  data-toggle="tooltip" data-placement="top" title="Share pack" style='width: 40px; height: 35px; float: left; cursor: pointer; background: #CFD8DC; line-height: 38px; font-size: 17px; color: #666;  text-align: center;' class="mfSharePackDetailsIcon" data-toggle="modal" ><i class='fa-share-alt' ></i></div>
+	 	  <div  data-toggle="tooltip" data-placement="top" title="Edit pack" style='display:none;width: 40px; height: 35px; float: left; cursor: pointer; background: #CFD8DC; line-height: 38px; font-size: 17px; color: #666;  text-align: center;' class="mfEditPackDetailsIcon" data-toggle="modal" ><i class='ico-create_new' ></i></div>
+	 	  <div  data-toggle="tooltip" data-placement="top" title="Edit / Sort components"  style='width: 40px; height: 35px; float: left; cursor: pointer; background: #B0BEC5; line-height: 38px; font-size: 14px; color: #fff;  text-align: center;' class=" mfSortDBComponentBtnCls" ><i class='ico-menu_filled' ></i></div>
+	 </div> 
+	 
+	 <div style='display: none;bottom:0px;width: 100%; height: 35px; color: #fff; border: none;' class=mfPackOrganiseCls >
+	       <div id="mfOrganisePackBtn" style='width: 209px; height: 35px; float: left; cursor: pointer;  line-height: 35px; font-size: 14px; border-top: 1px solid #ebebeb; background: #F2F9FF; color: #000;  text-align: center;'><i class='ico-cardboard_box' style="vertical-align: middle;font-size: 20px;margin-right: 5px"></i>Organise Pack</div>
+	  	  <div id="mfSortMergeablePackBtn" data-toggle="tooltip" data-placement="top" title="Sort Packs"  style='width: 40px; height: 35px; float: left; cursor: pointer; background: #B0BEC5; line-height: 38px; font-size: 14px; color: #fff;  text-align: center;'><i class='ico-menu_filled' ></i></div>
+	 </div> 
+	 
+	
+	 
+ </div>
+									
+				</div>
+		  	
+				<div id="mfContentPages" class="mfNavBarContentHolderCls" style="display: none; width: 100%; height: 100%">
+					
+					<div id="mfPageActionBar" style="background-color: #9E9E9E; padding-left: 10px; padding-top: 6px; width: 100%; height:  40px; overflow: hidden;" >
+		  		
+		
+		
+			<span id="mfPageAddBtn" data-toggle="tooltip" data-placement="bottom" title="New Page" class="ico-plus2 mfImgLink mfEditorUICls"  style="position: relative; top: -4px; left: 0px; color: #fff; font-size: 24px; cursor:pointer;"></span> &nbsp;&nbsp;
+			<span id="mfPageAddFolderBtn" data-toggle="tooltip" data-placement="bottom" title="New Folder" class="ico-folder mfImgLink mfEditorUICls"  style="position: relative; top: -6px; left: 0px; color: #fff; font-size: 20px; cursor:pointer;"></span> &nbsp;&nbsp;
+			<span id="mfPageDupBtn" data-toggle="tooltip" data-placement="bottom" title="Duplicate Page" class="ico-copy mfImgLink mfEditorUICls"  style="position: relative; top: -6px; left: 2px; color: #fff; font-size: 20px; cursor:pointer;"></span> &nbsp;&nbsp;
+			<span id="mfPageEditBtn" data-toggle="tooltip" data-placement="bottom" title="Edit Name" class="ico-create_new mfImgLink mfEditorUICls"  style="position: relative; top: -6px; left: 4px;  color: #fff;  font-size: 20px; cursor:pointer;"></span>			
+			<span id="mfPageDelBtn" data-toggle="tooltip" data-placement="bottom" title="Delete Selected" class="ico-trash2 mfImgLink mfEditorUICls"  style="position: relative; top: -6px; left: 10px; color: #fff;  font-size: 20px; cursor:pointer;"></span>
+			
+			<span data-toggle="tooltip" data-placement="bottom" title="Visual Listing" class="ico-keypad mfPageGridBtnCls mfImgLink"  style="position: relative; top: 0px; right: -60px;  width: 28px; height: 26px; overflow: hidden; color: #f0f0f0;  font-size: 30px; cursor:pointer;"></span>
+			
+				
+		
+		
+</div>
+
+<div id="mfPageSearchBar" style="float: left; width: 249px; height: 35px; padding-top: 5px; border: none; border-bottom: 1px solid #ccc; background: transparent; ">
+	  	
+	  <input placeholder="Search Pages" spellcheck=false style="width: 150px; padding-left: 10px; color: #666; height: 25px; font-size: 12px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; " id="mfPageSearchBox" type="text" />
+	  	
+	  	<span id="mfOpenPageGrid2Btn" data-toggle="tooltip" data-placement="bottom" title="Visual Listing" class="ico-keypad mfPageGridBtnCls mfImgLink"  style="display: none;position: absolute;top: 5px;right: 45px;width: 28px;height: 26px;overflow: hidden;color: #aaa;font-size: 24px;cursor:pointer;"></span>
+	  	
+		<span id="mfToggleTreeBtn" data-toggle="tooltip" data-placement="bottom" title="Expand/Collapse SiteMap" class="fa-angle-double-down mfImgLink"  style="position: relative; top: -1px; left: 63px;  color: #ccc; font-size: 24px; cursor:pointer;"></span>
+	 
+ </div>
+  		
+<div id="mfPageList" class="mfGradientBg" >
+
+</div>
+ 
+<div id="mfPageSettingsBar" class="mfPageToolbarCls" style="width: 100%; height: 140px; margin-top: 10px; color: #666;  " >
+	
+	<div style='position:relative;' >
+		<div class="mfPageSettingsLostDataWrapper">
+				<div class="mfImgLink" style="font-size: 12px; cursor: pointer; color: #000; vertical-align: middle; float: left;" id="mfPageSettingsHistory"><span style="font-size: 16px;position: relative; top: 2px; left: 0px; margin-right: 3px;" class="ico-attention"></span> Lost data? Check revisions </div>
+ 				<span class="mfImgLink mfPageSettingsIconWrapper" data-toggle="tooltip" data-placement="top" title="Check-In Revision" style=" font-size: 14px; cursor: pointer; vertical-align: middle; float: right; " id="mfPageSettingsCheckIn"><i class="ico-plus"></i></span>
+			</div>
+		<div class="mfPageSettingsOptionsWrapper">
+			
+			<div class="mfSelectedPageWrapper">
+			<span style="font-weight: normal; color:#1f1f1f; display: inline-block;" id="mfPageSettingsName">Selected page</span>
+			<div style="display:inline-block;">
+				<span class="mfPageSettingsIconWrapper">
+					<span id="mfNavHideToggle" class='fa-eye mfImgLink' data-toggle="tooltip" data-placement="top" title="Toggle page visibility in viewer (like Master pages, Unfinished pages)" style='font-size: 15px; cursor :pointer; color: #000;' ></span>
+				</span>
+				<span class="mfPageSettingsIconWrapper">
+					<span id="mfPageGridBtn" class='mfImgLink' data-toggle="tooltip" data-placement="top" title="Common - Grid and background settings" style='float:left; width: 14px; height: 14px;  background-size: 5px 5px; background-image: linear-gradient(to right, #444 1px, transparent 1px), linear-gradient(to bottom, #444  1px, transparent 1px); cursor :pointer; ' ></span>
+				</span>
+				
+			</div>
+		</div>
+			<div class="mfPageSettingsMasterPageWrapper">
+				<div class="tmImgLink" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px; color: #000; font-weight: normal; margin-bottom: 3px;">
+			 		<span style="font-size: 16px;position: relative; top: 2px; left: 0px; margin-right: 3px;" class="ico-fav_document"></span>Master Page
+			 	</div>
+			 	<div id="mfSetMasterPageBtn" data-toggle="tooltip" data-placement="top" title="Apply another Page as Background" style="display:inline-block;" ><div id="mfSetMasterPageTxt" style="color: #2196F3; border-bottom: 1px dotted #2196F3;display:inline-block;cursor: pointer;">Select Page</div></div>
+			 	<span  data-toggle="tooltip" data-placement="top" title="Edit Master Page" class="ico-create_new mfEditMasterPageBtn mfMasterPageBtnSettings" style="color: #000; font-size: 12px; cursor:pointer; margin: 0 6px; position: relative; top: -4px;" ></span>
+	    		<span  data-toggle="tooltip" data-placement="top" title="Remove Master Page" class="ico-trash2 mfRemoveMasterPageBtn mfMasterPageBtnSettings" style="color: #000; font-size: 12px; cursor:pointer; position: relative; top: -4px;" ></span>
+			</div>
+		</div>
+		
+	 	
+	 	
+	 	
+	 	  
+	 	 
+	 	
+	 </div>
+ 	 
+ 	
+</div> 
+
+
+<div id="mfPageToggleSettings" class="mfPageToolbarCls" style="width: 100%; height: 82px; margin-top: 10px; box-shadow: 0 -8px 6px -6px #ccc; color: #666;  " >
+	
+	<div style="width: 100%; height: 100%; position: relative; color: #666; margin-left: 10px;"> 
+
+
+	  <div style="position: absolute; top: 10px; left: 10px; width: 200px;">
+	  	<strong>-</strong> Press SHIFT to highlight links<br/>
+	  	<strong>-</strong> To pan hold SpaceBar &amp; drag mouse 
+	  </div>
+	
+	 <div class="checkbox"  style="position: absolute; top: 60px; left: 10px;">
+	 	<label><input  type="checkbox"  id="mfToggleLinkHighlight"  value="" checked>Reveal Links</label>
+	  </div>
+	  
+	  
+	  <div class="checkbox" style="position: absolute; top: 75px; left: 110px;">
+	  <label><input  type="checkbox"  id="mfToggleAnnotations"  value="" checked>Toggle Annotation</label>
+	  </div>
+	  
+	</div>
+ 	 
+ 	
+</div> 
+									
+				</div>
+				
+				
+				
+				<div id="mfContentSettings" class="mfNavBarContentHolderCls" style="display: none; width: 100%; height: 100%">
+					
+					<div class="mfSettingsPanel" id="mfComponentSettings" style="padding-top: 0px; display: block; overflow-x: hidden; color: #8C95A4; background-color: transparent;  padding-left: 0px; width: 100%; height: 100%; padding-right: 0px; " >
+					
+</div> 
+
+ <div id="mfAddDBComponentBtn2" style='display: none;bottom:0px;width: 100%; height: 35px; color: #fff; border: none;' class=" mfPackComponentBtnCls" >
+	 
+	 	 <div data-toggle="tooltip" data-placement="top" title="Select component(s) and add to pack"   style='width: 169px; height: 35px; float: left; cursor: pointer;  line-height: 35px; font-size: 14px;   text-align: center;' class=" mfAddDBComponentBtnCls" >Add Component to Pack</div>
+	 	 <div  data-toggle="tooltip" data-placement="top" title="Share pack" style='width: 40px; height: 35px; float: left; cursor: pointer; background: #CFD8DC; line-height: 38px; font-size: 17px; color: #666;  text-align: center;'  class="mfSharePackDetailsIcon" data-toggle="modal" ><i class='fa-share-alt' ></i></div>
+	 	 <div  data-toggle="tooltip" data-placement="top" title="Edit pack" style='display:none;width: 40px; height: 35px; float: left; cursor: pointer; background: #CFD8DC; line-height: 38px; font-size: 17px; color: #666;  text-align: center;' class="mfEditPackDetailsIcon" data-toggle="modal" ><i class='ico-create_new' ></i></div>
+	     <div  data-toggle="tooltip" data-placement="top" title="Edit / Sort components"  style='width: 40px; height: 35px; float: left; cursor: pointer; background: #B0BEC5; line-height: 38px; font-size: 14px; color: #fff;  text-align: center;' class=" mfSortDBComponentBtnCls" ><i class='ico-menu_filled' ></i></div>
+</div>  
+
+
+ 
+									
+				</div>
+				
+				<div id="mfContentDraw" class="mfNavBarContentHolderCls" style="display: none; width: 100%; height: 100%">
+					
+					<div class="mfContentDrawWrapper">	 
+	 <h3>Draw freehand</h3>
+	 <div class="mfSettingsRowWrapper">
+	 	<div class="mfSettingsColWrapper">
+	 		<div id="mfDrawLineEraser">
+	 			<div class="mfDrawOptionIconWrapper">
+	 				<i class="fa fa-eraser mfDrawOptionIcon"></i>
+	 			</div>
+	 			<span class="mfDrawOptionLabel">Eraser</span>
+	 		</div>
+	 	</div>
+	 	<div class="mfSettingsColWrapper">
+	 		<div id="mfDrawLineOpacity">
+	 			<div class="mfDrawOptionIconWrapper">
+	 				<i class="fa fa-adjust mfDrawOptionIcon"></i>
+	 			</div>
+	 			<span class="mfDrawOptionLabel">Marker</span>
+	 		</div>
+	 	</div>
+	 	<div class="mfSettingsColWrapper">
+	 		<input type='text' id="mfDrawLineColor" />
+	 		<span class="mfDrawOptionLabel">Color</span>
+	 	</div>
+	 </div>
+	<div class="mfSettingsRowWrapper">
+		<label class="mfDrawOptionLabel">Thickness</label>
+		<input style='width: 40px;' id="mfDrawLineThickness" />
+	</div> 
+	<span class="mfDrawBarCloseCls" id="mfDrawBarClose"><i class="ico-close"></i></span>	
+	
+	<a style="position: absolute; left: 10px; top: 200px; width: 225px;" class="btn mfDrawBarCloseCls">Save drawing</a>
+</div>
+			 
+									
+				</div>
+				
+			
+				
+				<div id="mfContentImages" class="mfNavBarContentHolderCls" style="display: none; width: 100%; height: 100%">
+				
+					<div style="width: 100%; height: 100%; position: relative; top: 0px; left: 0px; color: #fff;">
+
+
+			<div id="mfImageListSelectScreen"  class="mfImgListScreenCls" style="display: block; width: 100%; height: 100%; text-align: center; overflow: hidden;">
+			
+				 <div id="mfImageListActionBar" style="background-color: #9E9E9E; padding-left: 5px; padding-top: 6px; width: 250px; height:  40px; overflow: hidden;" >
+		  		
+		  					
+						  	
+						  <span id="mfImageUploadSelectionBtn" style="font-size: 14px; color: #fff; cursor: pointer; position: absolute; top: 5px; left: 7px; " class="mfImgLink"><span style='font-size: 25px;' class="ico-upload" ></span> <span style="display: inline-block; position: relative; top: -2px;">Upload</span></span> 
+						  
+						   
+						   
+						  <input multiple="multiple"  class="input-file" style="height: 50px; position: absolute; top: 3px; left: 100px; width: 50px; opacity: 0; font-size: 12px;  height: 30px;" type="file" name="mfImageUploadFile" id="mfImageUploadFile"/>
+						  		
+						  		
+						  		
+  	
+					
+				</div>
+				
+				<div id="mfImageSearchBar" style="float: left; width: 249px; height: 35px; padding-top: 5px; border: none; border-bottom: 1px solid #ccc; background: transparent; ">
+	  	
+					  <input placeholder="Search Images" spellcheck=false style="width: 250px; padding-left: 10px; color: #666; height: 25px; font-size: 12px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; " id="mfImageSearchBox" type="text" />
+					  		
+					  		
+					<span style="position: absolute;right: 10px;top: 8px;padding:  2px;padding-left: 5px;padding-right: 5px; color: #fff; border-radius: 5px; border: 1px solid #fff; font-size: 13px; cursor :pointer;" class="mfImgLink" id="mfIconListBtn2">Icons</span>				 
+				</div>
+ 
+				 
+				
+				 
+				 <div id="mfImageListing" class="mfGradientBg" style="position: relative; left: 0px; top: 20px; color: #666;   padding-left: 10px; width: 250px; height: 150px; padding-right: 5px; padding-top: 0px; " >
+				 
+		  				
+						
+						
+				</div>
+				
+				<div id="mfImageListLoadScreen" class="mfImgListCls mfImgListScreenCls"  style="display: block; text-align: center; overflow: hidden; width: 100%; height: 360px; position: absolute; left: 0px; top: 80px;">	
+					<img alt="Loading" src="images/general/mf_loader.gif"  id="mfImageLoadSpinner" style="top: 120px; left:285px; position:absolute;" />	 
+		    	</div>
+				
+				
+			</div>
+			<div id="mfImageListUploadScreen" class="mfImgListScreenCls" style="display: none; width: 100%; height: 100%; text-align: center; overflow: hidden;">
+					<br/>						
+					<div style="position: absolute; left: 20px; top: 20px; color: #666;" id="mfUploadImageModalTitle" >Uploading: 2/2</div>						
+					   	
+					<div class="mfUploadProgress" id="mfImageUploadProgressBar" style="position: relative; display: none;   width: 200px;">
+					    <div id="mfUploadProgressBarID" class="mfUploadProgressBar" style="width: 200px;">
+					        &nbsp;
+					    </div>						    
+					</div>
+					
+			    	<img src="images/editor/animat-image.gif" style='width: 80px; height: 80px;' alt="" id="mfImageUploadSpinner"/>
+									 
+		    			
+		    </div>
+		  
+</div>
+					
+				</div>
+				
+				<div id="mfContentStore" class="mfNavBarContentHolderCls" style="display: none; width: 100%; height: 100%">
+					
+					
+				</div>
+				
+				<!-- viewer -->
+				<div id="mfViewerContentComments" class="mfNavBarContentHolderCls" style="display: block; width: 100%; height: 100%">
+					
+					<div id="mfPageSidebarCommentsBlock" class='mfYesSelect' style="display:block;	    overflow: hidden; height: calc(100% - 10px);  width: calc(100% - 10px); padding: 5px; "  > 
+			
+				<div id="mfPageSidebarHeader" style="display: block; text-align: left;	padding:5px; overflow: hidden; height: 40px;  width:100%;  "  > 
+				
+					<span style="font-weight: normal; font-size: 11px; color: #646E7F;">Click to view annotations  <span style="display: inline-block; width: 6px; height: 6px; border-radius: 6px; background: #ff0000;" ></span>  if present</span>
+						
+				</div>
+				
+				<div id="mfPageSidebarComments" style="width: 244px; position: relative; display: block;  height: 100px; padding-left: 10px; padding-right: 10px;"  > 
+				
+				</div>
+				
+				<div id="mfPageSidebarPost" style="position: relative;  display: block; overflow: hidden; height: 140px;  width:100%; "  > 
+				
+				   <div id="mfCommentReplyContainer" style="display:none; min-width:220px;">
+				   		
+									
+						<div id="mfPublicReplyBox" style="display: none; vertical-align: middle; font-weight: bold; padding-bottom: 5px;">
+							<input placeholder="Enter name to post reply"  style="color: #666;  width: 100%; height: 35px;" class="xlarge mfInputElement" id="mfPublicReplyNameInput" name="xlInput" type="text" />						 
+						</div>
+							<div class="mfPageReplyWrapper">
+					   		 <textarea class="input-xlarge mfInputElement" placeholder="Post Reply" style="color: #666; width: 97%; height: 50px;" id="mfCommentReplyPost" rows="4"></textarea>
+					   		
+					   		<button class="btn btn-comment" id="mfCommentReplyPostBtn" style="background: none; color: #007ee5; position: relative; z-index: 100; float: left; margin-top:-6px; font-size: 12px;">Reply</button>
+					   		
+					   		<input  class="input-file" style="position: relative; width: 0px; top: -20px; left: 0px; height: 0; opacity: 0; font-size: 12px; " type="file" name="mfReplyAttachUploadFile" id="mfReplyAttachUploadFile"/>
+							
+							<div id="mfReplyAttachFileName" style="float: left; position: relative; width: 100px; top: 2px; overflow: hidden; left: 5px; cursor: pointer; color: #999; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 11px;"></div>
+							
+				   		    
+				   		    
+					   		<div style="width: 20px;text-align:center;height:20px;position: absolute;top: 60px;left: 160px;float:left;vertical-align: middle;">
+								<span class="mftooltip" title="Attach a file"  >
+									<img class="mfImgLink"  id="mfReplyAttachBtn" style="cursor: pointer; width:20px;" src="images/editor/attachment.png" alt="Attach File" />
+									
+								</span>
+							</div>
+					   		
+					   		<div style="width: 20px;text-align:center;height:20px;position: absolute;top: 60px;left: 185px;float:left;vertical-align: middle; ">
+								<span class="mftooltip" title="Drag arrow to annotate design before posting comment (or) Click to reset"  >
+									<img class="mfImgLink"  id="mfReplyAnnotateBtn" style="cursor: pointer; width:20px;" src="images/editor/annotate-new.png" alt="Pull arrow and place it on the image to annotate before posting comment" />
+								</span>
+							</div>
+	
+							</div>
+				   </div>
+				   <div id="mfCommentEditContainer" style="display:none; width:95%">
+					   <div class="mfPageReplyWrapper"  id="mfEditCommentBox">
+					   		
+					   		<textarea class="input-xlarge mfInputElement" id="mfCommentEditPost" rows="4" style="color: #666; width: 97%; height: 50px;"></textarea>
+					   		
+					   		<button class="btn btn-comment" id="mfCommentEditPostBtn" style="background: none; color: #007ee5; position: relative; z-index: 100; float: left; margin-top:-6px; font-size: 12px;">Update</button>
+					   		
+					   		<div style=" width: 25px; text-align:center; height:20px; position: absolute; top: 60px; left: 175px; float:left; vertical-align: middle; ">
+								<span class="mftooltip" title="Drag Arrow to annotate design before Posting Comment (or) Click to Reset"  >
+									<img class="mfImgLink"  id="mfEditAnnotateBtn" style="cursor: pointer; width:20px;" src="images/editor/annotate-new.png" alt="Pull arrow and place it on the image to annotate before posting comment" />
+								</span>
+							</div>
+					   </div>
+					   <br/><br/>
+					</div>
+				   <div id="mfPageWriteComment" style="width: 100%; height: 100%; display: block;">
+							<div style="float: left; width: 100%;">
+							
+								<div style="padding-top: 10px; padding-left: 5px; ">
+									 
+									 <div id="mfPublicBox" style="display: none; vertical-align: middle;  font-weight: bold; height: 40px;">
+									 	<input placeholder="Enter name to post comment" style="color: #666;  width: 100%; height: 35px;" class="xlarge mfInputElement mfCommentsHideableElement" id="mfPublicCommentNameInput" name="xlInput" type="text"  />						 
+									 </div>
+								     <div class="mfPageCommentWrapper" style="">
+				  					 <textarea class="input-xlarge mfInputElement mfCommentsHideableElement" placeholder="Write a comment" style="color: #666; width: 97%; height: 50px;" id="mfCommentPost" rows="4"></textarea>
+				   		
+				   						<button class="btn btn-comment mfCommentsHideableElement" id="mfCommentPostBtn" style="background: none; color: #007ee5; position: relative; z-index: 100; float: left; margin-top:-6px; font-size: 12px;">Post</button>
+				   					
+							   		
+				  					
+				  						<input  class="input-file mfCommentsHideableElement" style="position: relative; width: 0px; top: -20px; left: 0px; height: 0; opacity: 0; font-size: 12px; " type="file" name="mfAttachUploadFile" id="mfAttachUploadFile"/>
+					  					 
+					  					<div id="mfAttachFileName" class="mfCommentsHideableElement" style="float: left; position: relative; width: 100px; top: 2px; overflow: hidden; left: 5px; cursor: pointer; color: #999; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 11px;"></div>
+					  				
+					  				
+			
+							   		<div class="mfCommentsHideableElement" style="width: 20px;text-align:center;height:20px;position: absolute;top: 60px;left: 170px;float:left;vertical-align: middle;">
+										<span class="mftooltip" title="Attach a file"  >
+											<img class="mfImgLink"  id="mfAttachBtn" style="cursor: pointer; width:20px;" src="images/editor/attachment.png" alt="Attach File" />
+											
+										</span>
+									</div>
+									
+									
+							   		<div style="width: 20px;text-align:center;height:20px;position: absolute;top: 60px;left: 195px;float:left;vertical-align: middle;">
+										<span class="mftooltip" title="Drag arrow to annotate design before posting comment (or) Click to reset"  >
+											<img class="mfImgLink"  id="mfCommentAnnotateBtn" style="cursor: pointer; width:20px;" src="images/editor/annotate-new.png" alt="Pull arrow and place it on the image to annotate before posting comment" />
+										</span>
+									</div>
+				  					
+				  						
+									</div>
+								</div>
+							</div>
+					</div>
+					
+				</div>
+	</div>
+	<div id="mfCommentListLoader"></div>
+				
+	
+									
+				</div>
+				
+		
+				
+				<div id="mfViewerContentExport" class="mfNavBarContentHolderCls" style="display: none; width: 100%; height: 100%">
+					
+					
+<div id="mfExportListing" style="width: 240px; height: 100%; position: relative; padding-bottom: 50px; color: #666; margin-left: 10px;"> 
+
+ <br/>
+ <div id="mfOpenExportImageBtn" class="mfImgLink" style="cursor: pointer; width: 220px; vertical-align: middle; height: 60px;">
+ 	<div style='float: left; width: 55px; height: 100%;' >
+ 		<img style="height: 50px;" src="images/editor/export/png.png" alt="" />
+ 	</div> 
+ 	<div style='float: right; width: 165px; padding-top: 7px;  height: 100%;' > 
+ 		<span style="font-size: 16px; color: #000; font-weight: normal;">Images</span><br/>
+ 		<span style="font-size: 12px; color: #666;">Export as High-Quality images</span>
+ 	</div> 
+ 
+ </div>
+ 
+ 
+ <br/><br/>
+ <div id="mfOpenExportPDFBtn" class="mfImgLink" style="cursor: pointer; width: 220px; vertical-align: middle; height: 60px;">
+ 	<div style='float: left; width: 55px; height: 100%;' >
+ 		<img style="height: 50px;" src="images/editor/export/pdf.png" alt="" />
+ 	</div> 
+ 	<div style='float: right; width: 165px; padding-top: 7px;  height: 100%;' > 
+ 		<span style="font-size: 16px; color: #000; font-weight: normal;">PDF Doc</span><br/>
+ 		<span style="font-size: 12px; color: #666;">Export multiple pages in 1 file</span>
+ 	</div> 
+ 
+ </div>
+ 
+ 
+ <br/><br/>
+ <div id="mfOpenExportPPTBtn" class="mfImgLink" style="cursor: pointer; width: 220px; vertical-align: middle; height: 60px;">
+ 	<div style='float: left; width: 55px; height: 100%;' >
+ 		<img style="height: 50px;" src="images/editor/export/ppt.png" alt="" />
+ 	</div> 
+ 	<div style='float: right; width: 165px; padding-top: 7px;  height: 100%;' > 
+ 		<span style="font-size: 16px; color: #000; font-weight: normal;">Powerpoint</span><br/>
+ 		<span style="font-size: 12px; color: #666;">Create PPT for presentations</span>
+ 	</div> 
+ 
+ </div>
+ 
+ <br/><br/>
+ <div id="mfOpenExportDocBtn" class="mfImgLink" style="cursor: pointer; width: 220px; vertical-align: middle; height: 60px;">
+ 	<div style='float: left; width: 55px; height: 100%;' >
+ 		<img style="height: 50px;" src="images/editor/export/doc.png" alt="" />
+ 	</div> 
+ 	<div style='float: right; width: 165px; padding-top: 7px;  height: 100%;' > 
+ 		<span style="font-size: 16px; color: #000; font-weight: normal;">Word Doc</span><br/>
+ 		<span style="font-size: 12px; color: #666;">Export as editable document</span>
+ 	</div> 
+ 
+ </div>
+ 
+  <br/><br/>
+ <div id="mfOpenExportHTMLBtn" class="mfImgLink" style="cursor: pointer; width: 220px; vertical-align: middle; height: 60px;">
+ 	<div style='float: left; width: 55px; height: 100%;' >
+ 		<img style="height: 50px;" src="images/editor/export/html.png" alt="" />
+ 	</div> 
+ 	<div style='float: right; width: 165px; padding-top: 7px;  height: 100%;' > 
+ 		<span style="font-size: 16px; color: #000; font-weight: normal;">HTML Project</span><br/>
+ 		<span style="font-size: 12px; color: #666;">Download entire proj as HTML</span>
+ 	</div> 
+ 
+ </div>
+  <br/><br/>
+ <div id="mfOpenExportWIREBtn" class="mfImgLink" style="cursor: pointer; width: 220px; vertical-align: middle; height: 60px;">
+ 	<div style='float: left; width: 55px; height: 100%;' >
+ 		<img style="height: 50px;" src="images/editor/export/wire.png" alt="" />
+ 	</div> 
+ 	<div style='float: right; width: 165px; padding-top: 7px;  height: 100%;' > 
+ 		<span style="font-size: 16px; color: #000; font-weight: normal;">Offline file</span><br/>
+ 		<span style="font-size: 12px; color: #666;">Download editable file format</span>
+ 	</div> 
+ 
+ </div>
+</div>
+									 
+				</div>
+				
+				<div id="mfViewerContentSpecs" class="mfNavBarContentHolderCls" style="display: none; width: 100%; height: 100%">
+					
+					<img alt="Loading" src="images/general/mf_loader.gif"   id="mfSpecLoader" style="top: 50%; left:45%; position:absolute;" />
+									 
+				</div>
+				
+				 <div style="position: relative; left: 0px; bottom: 0px; width: 249px; height: 40px; border-top: 1px solid #ebebeb; border-left: 1px solid #ebebeb;  background: linear-gradient(to bottom, #fff , #ECEFF1);" id="mfEditorCompToolbar" >
+ 
+					 	<ul class="mfCommonCompUL" style='position: relative; top: 0px; left: 3px; display: inline-block; color: #000; padding-left: 0px; margin-left: 0px; font-weight: bold; font-size: 18px; height: 40px; list-style: none;'>
+					  			<li data-toggle="tooltip" data-placement="top" title="Click to draw Rectangle" data-comp="MF_Rectangle2"><span style='color: #f44336; ' class='fa fa-square-o'></span></li>
+					  			<li data-toggle="tooltip" data-placement="top" title="Click to draw Circle" data-comp="MF_Circle"><span style='color: #4CAF50; ' class='fa fa-circle-o'></span></li>
+					  			<li data-toggle="tooltip" data-placement="top" title="Click to draw Line" data-comp="MF_Arrow2"><span style='color: #FFC107; ' class='fa fa-minus'></span></li>
+					  			<li data-toggle="tooltip" data-placement="top" title="Click to add Text" data-comp="MF_Text"><span style='color: #2196F3; ' class='fa fa-text-height'></span></li>
+					  			<li data-toggle="tooltip" data-placement="top" title="Click to draw Hotspot" data-comp="MF_Hotspot"><span style='color: #E91E63; ' class='fa fa-crosshairs'></span></li>
+					  			<li data-toggle="tooltip" data-placement="top" title="Click to add Icon" data-comp="MF_Icon"><span style='color: #FF9800; ' class='fa fa-smile-o'></span></li>  			
+					  			<li data-toggle="tooltip" data-placement="top" title="Click to draw Button" data-comp="MF_Button2"><span style='color: #536DFE; ' class='fa fa-dot-circle-o'></span></li>
+					  			<li style='background: #03A9F4; border-radius: 27px; height: 27px; padding-top: 5px; font-size: 16px;' data-toggle="tooltip" data-placement="top" title="Click to draw Freehand" data-comp="MF_Freehand"><span style='color: #fff;  ' class='fa fa-paint-brush'></span></li>
+					  			
+					  		</ul>
+ 				</div>
+				
+		  		
+  	</div>
+  	
+  	<div id="mfCommentListPlaceHolderContent" style="display: none;">
+		<div class="mfCommentPlaceHolderWrapper">
+	 		<div class="mfCommentPlaceholderImg mfPlaceholderAnimate"></div>
+	 		<div class="mfCommentPlaceholderMsg">
+	 			<div class="mfCommentPlaceholderName mfPlaceholderAnimate"></div>
+	 			<div class="mfCommentPlaceholderLine mfPlaceholderAnimate"></div>
+	 			<div class="mfCommentPlaceholderLine mfPlaceholderAnimate"></div>
+	 			<div class="mfCommentPlaceholderDate mfPlaceholderAnimate"></div>
+	 			<div class="mfCommentPlaceholderDot mfPlaceholderAnimate"></div>
+	 			<div class="mfCommentPlaceholderDate mfPlaceholderAnimate"></div>
+	 		</div>
+	 	</div>
+	</div>
+	
+	<div id="mfComponentPlaceHolderContent" style="display: none;">
+	 	<div class="mfComponentPlaceHolder">
+	  		<div class="mfComponentImagePlaceHolder mfPlaceholderAnimate"></div>
+	  		<div class="mfComponentTextPlaceHolder mfPlaceholderAnimate"></div>
+	  	</div>
+	 </div>
+	  		
+	  	</div>
+	  	
+	  <div title="Show sidebar" data-placement="right" data-toggle="tooltip" class="mfShowSidebar"><button style="padding-top: 2px; padding-left: 2px;" class="btn trasnparent-btn"><i class="ico-forward"></i></button></div>
+	  
+		<div id="mfPageArea" style="float: right;  overflow: hidden; width: 700px; height: 100%;" > 	  
+		
+		 
+		  	<div id="mfEditorHolder" unselectable="on" style="overflow: auto; background: #f0f0f0; width: 100%; height: 100%; user-select: none; -webkit-user-select: none; -moz-user-select: -moz-none; " >
+		  	
+		  		
+		  		<div style='overflow: hidden; position: relative; display: block; background: #fff; width: 100%; height: 100%; top: 0px; left: 0px; ' id="mfContainerPage" >
+		  		
+		  		
+		  				<div  id="mfPanningDiv" style="top: 0px; left: 0px; background-color: rgba(255,255,255,0);   display: none; width: 595px; height: 841px; position: absolute; z-index: 500; overflow: hidden; " ></div>
+
+
+						<div id="selectionBox" style="visibility: hidden; display: block; top: 0px; left: 0px; z-index: -2; width: 0px; height: 0px; position: absolute; background-color: #025ADA; opacity: 0.3; border-style:solid; border-width: 1px; border-color: #000; " ></div>
+						
+		  		</div>
+		  	
+		  		
+		    </div>
+	  		
+	  		<div id="mfPageLoader" style='z-index: 5000000; overflow: hidden; background: #fff;  position: absolute; display: block; width: 100%; height: 100%; top: 0px; left: 0px;' >
+	  			<img alt="Loading" src="images/general/mf_loader.gif" id="mfPageLoaderImg" class="mfCenterAlign"/>
+  			</div>
+	  		
+	  		
+	  		<div id="mfRTCEditorLock"  style="display: none; cursor: pointer;  overflow: hidden; position: absolute; color: #fff; top: 0px; left: 0px; background: rgba(0,0,0,0); z-index: 1000;">
+	  		
+	  				<div id="mfRTCEditorLockInfo" data-toggle="tooltip" data-placement="top" title="Another User is now editing this Page."  style=" cursor: pointer; white-space: nowrap; overflow: hidden; line-height: 50px; text-overflow:  ellipsis; width: 400px; height: 45px; position: absolute; color: #fff; top: 0px; left: 0px; background: rgba(0,0,0,0.9);">
+	  			
+		  				<div class="mfProfileIconLarge" id="mfRTCEditorImg"   style="position: absolute; top: 6px; width: 40px; left: 10px; height: 40px; width: 32px; height: 32px; vertical-align: middle; background-repeat: no-repeat; background-size: 100%;">
+	   						
+	   					</div>
+	   				
+		  				<span id="mfRTCEditorMsg"  style="position: absolute; top: -2px; left: 50px; width: 300px;  white-space: nowrap; overflow: hidden;  text-overflow:  ellipsis; ">Prabhuram is now editing this page</span> 
+		  				<span id="mfRTCEditorLockIcon" class="ico-lock" style="position: absolute; top: 11px; left: 360px; font-size: 18px;"></span>
+	  				
+	  				</div>
+	  		</div>
+	  	 
+	  		
+		</div>
+	  	
+	 
+	 
+	   
+  		
+  
+  	 
+ 
+	
+	
+	<div id="mfHorizontalTopGuide" style="display: none; top: 10px; position: absolute; width: 100px; border-top: 1px solid #ff0000; height: 2px;"></div>
+	<div id="mfHorizontalBottomGuide" style="display: none; top: 10px; position: absolute; width: 100px; border-top: 1px solid #ff0000; height: 2px;"></div>
+	<div id="mfVerticalLeftGuide" style="display: none; top: 10px; position: absolute; width: 2px; border-left: 1px solid #ff0000; height: 100px;"></div>
+	<div id="mfVerticalRightGuide" style="display: none; top: 10px; position: absolute; width: 2px; border-left: 1px solid #ff0000; height: 100px;"></div>
+	
+	
+	
+</div>
+</div>
+
+
+<div id="mfActionIndicator">
+	<span id="mfActionIndicatorMessage"></span>
+</div>
+<div id="mfStoreInterface" style='display: none; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; overflow: hidden; background: #fff; z-index: 10000000;'>
+	<div id ="mfStoreRightSide" style="position: relative; width: 100%; height: 100%; overflow: hidden; background: #fff;" >
+		
+		<div id="mfStoreTopHeader">
+			<div id="mfStoreLogoDiv">
+				<span class='fa-shopping-bag' style='font-size: 30px; color: #fff; margin-right: 8px;' ></span> <span style='color: #fff; font-size: 26px; font-weight: bold; position: relative; top: 1px;'>MockStore</span>
+			</div>
+			<div class="mfStoreTypeTabWrapper">
+				<input id="mfTypeAll" class="mfStoreTypeSelector" type="radio" checked><label for="mfTypeAll">All</label>
+				<input id="mfTypeUiPack" class="mfStoreTypeSelector" type="radio"><label for="mfTypeUiPack">UI Packs</label>
+				<input id="mfTypeTemplate" class="mfStoreTypeSelector" type="radio"><label for="mfTypeTemplate">Templates</label>
+			</div>
+			<div class="mfStoreSearchWrapper">
+				<span id="mfStoreClearSearchBtn" class="ico-trash2" data-toggle="tooltip" data-placement="bottom" title="Clear Search"  style="display:none; color: #8ac7ff; font-size: 20px;opacity: 0.8; position: relative; top: 5px; cursor: pointer;"></span>&nbsp; 
+	 			<span id="mfStoreSearchBoxIcon"class="ico-search" style="color: #8ac7ff; font-size: 20px; font-weight: bold; opacity: 0.5; position: relative; top: 3px;" ></span>&nbsp; 
+				<input placeholder="Type and Press Enter to Search" style="position: relative; border: none; box-shadow: none; width: 220px; height: 30px; outline: 0; vertical-align: top; font-size: 14px; font-weight: normal; color:#fff; background-color: transparent;" id="mfSearchStoreInput" type="text" name="search" class="searchBox">
+				
+				<div id="mfStoreFiltersBtn" class="dropdown">
+				  <button class="btn dropdown-toggle" type="button" id="mfStoreFiltersDropdown">
+				     <i class='fa-filter'></i> Filters
+				  </button>
+				  <div class="dropdown-menu pull-right mfStoreFiltersDropdownWrapper" role="menu" aria-labelledby="mfStoreFiltersDropdown">
+				  	<h5>Categories</h5>
+					<select style="width:100%;" id="mfCategoryType"> 						
+					</select>
+					
+					<h5>Explore</h5>
+					<input id="mfNewStoreItems" type="radio" class="mfStoreCheckBox" data-order="new" checked><label for="mfNewStoreItems">New</label>
+					<input id="mfPopularStoreItems" type="radio" class="mfStoreCheckBox" data-order="popular"><label for="mfPopularStoreItems">Popular</label>
+					<input id="mfRandomStoreItems" type="radio" class="mfStoreCheckBox" data-order="random"><label for="mfRandomStoreItems">Random</label>
+					<input id="mfMyStoreItems" type="radio" class="mfStoreCheckBox" data-order="user"><label for="mfMyStoreItems">Me</label>
+					<div id="mfOnlyUnApprovedTemplates" style="display: none;">
+					    <input class='checkboxBtn' id="mfOnlyUnApprovedTemplatesBtn" type="checkbox"> <label for="mfOnlyUnApprovedTemplatesBtn">Only UnApproved</label>
+					</div> 				
+				  </div>
+				</div>
+				<span id="mfStoreCloseBtn" class="ico-close mfImgLink" style="color: rgb(128, 193, 252); font-size: 24px; position: relative; top: 5px; right: 0; cursor: pointer; opacity: 1; font-weight: bold;"></span>
+				
+			</div>
+		</div>
+		
+		<!--  masonary layout http://w3bits.com/demo/css-masonry/ -->
+		
+		
+		<div id="mfStoreTemplates" style=" width: 100%; height: 100%; overflow: hidden;">
+		
+				<div class="mfStoreMain" id="mfStoreTemplateListingLoader" style="overflow: hidden; position: relative; display: block; width: 100%; height: 100%;">
+								 <img alt="Loading" src="images/general/mf_loader.gif"  class="mfCenterAlign" style='position: relative; display: block;'  id="mfStoreLoader"/>
+				</div>
+				<div class="mfStoreMain" id="mfStoreTemplateWrapper" style="overflow-x: hidden; overflow-y: auto; width: 100%; height: 100%;">
+					 <div class="mfStoreTemplateBackdrop">
+						 <div class="mfFeaturedCarouselWrapper mfNoSelect">
+							<div id="mfFeaturedImageCarousel">
+						
+						    </div>
+						    <div id="mfFeaturePrevBtn">
+						    	<i class="ico-angle-left"></i>
+						    </div>
+						    <div id="mfFeatureNextBtn">
+						    	<i class="ico-angle-right"></i>
+						    </div>
+						    
+						 </div>
+						<div id="mfStoreTemplateListing">
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="mfStoreMain" id="mfStoreTemplateViewer" style="background: #fff; overflow: hidden; position: relative; padding: 20px; display: none; width: 100%; height: 100%;">
+				
+					<div  id="mfStoreTemplateDetails"  style="background: #f0f0f0; overflow: hidden; border-bottom: 1px solid #ccc; height: 50px; ">
+						
+						<div id="mfStoreTemplateDetailsInput" style="width: 100%; height: 100%; overflow: hidden; text-align: center;">
+						
+							<div style="float: right; text-align: right; padding-top: 11px; width: 300px;  padding-right: 15px; height: 100%; ">
+								<span class="mfImgLink" style=" padding: 5px 20px; background: #3D7CF6; font-size: 14px; height: 30px; cursor: pointer;   box-shadow: 0 1px 2px rgba(0,0,0,0.07); border-radius:30px; color: #fff; margin-right: 10px; position: absolute; top:10px; right:90px;" id="mfImportTemplateBtn" >Import</span>
+									&nbsp;
+								<span data-toggle="tooltip" data-placement="bottom" title="Edit Template"  id="mfStoreEditTemplate" class="ico-create_new " style="color: #000; font-size: 20px; cursor:pointer; position: relative; top: 4px; margin-right: 10px;" ></span> 
+								&nbsp;								
+								<span data-toggle="tooltip" data-placement="bottom" title="Delete Template" id="mfStoreDeleteTemplate" class="ico-trash2 " style="color: #000;font-size: 21px; cursor:pointer; position: relative; top: 4px; margin-right: 10px;" ></span>
+								
+							</div>
+							
+							<div data-toggle="tooltip" data-placement="bottom" title="Go back"  id="mfStoreGoBack" style="float: left;  display: inline-block; overflow: hidden; line-height: 46px; white-space: nowrap; text-overflow:  ellipsis;  ">
+							&nbsp;
+								<span   class="ico-back " style="color: #2196F3;font-size: 14px; cursor:pointer; position: relative; top: 2px;" ></span>
+							
+								<span id="mfStoreTemplateDetailsTitle" style='cursor: pointer; font-size: 16px; color: #444; padding-left: 10px;  '></span>
+								<span id="mfStoreTemplateDetailsBy" style=' cursor: pointer;  font-size: 14px; color: #999; padding-left: 10px;  '></span>
+							</div>
+								
+							<div id="mfStoreImageViewerControls">
+								<button id="mfStoreImageViewerZoomOutButton" class="mfStoreImageViewerZoomButton">
+									<i class="ico-minus"></i>
+								</button>
+								<button id="mfStoreImageViewerFitButton" >FIT</button>
+								<button id="mfStoreImageViewerFullSizeButton">100%</button>
+								<button id="mfStoreImageViewerZoomInButton" class="mfStoreImageViewerZoomButton">
+									<i class="ico-plus"></i>
+								</button>
+							</div>
+							
+						</div>
+						
+						<div id="mfStoreTemplateDetailsEdit" style=" display: none; overflow: hidden; width: 100%; height: 100%; padding: 5px; ">
+							<input placeholder="Template Title" class="form-control" id="mfStoreTemplateTitleEdit" name="xlInput" type="text"  style="position: absolute; top: 10px; left: 10px; height: 30px; width: 260px;" />
+							
+							<span style="width: 150px; position: absolute; top: 12px; left: 290px;" id="mfStoreTemplateTypeEdit">
+											
+							</span>
+							
+							 <div id="mfToggleStoreTemplateApprovedDiv" style="position: absolute; height: 20px; font-size: 11px;  width: 85px; color: #666; left: 450px; top: 13px;overflow: hidden;" >
+								 <label class="checkbox" style="margin-left: 30px; margin-top: 4px;">
+								      <input id="mfToggleStoreTemplateApprovedBtn" style="margin-top: 2px;" type="checkbox"> Approved
+								   </label>							
+							 </div>
+							 
+							  <div id="mfStoreFeaturedInputDiv" style="display: inline-block;">
+							  
+								  <label class="checkbox" style="margin-top: 12px;left: 560px;">
+									      <input id="mfStoreIsFeaturedBtn" style="margin-top: 2px;" type="checkbox"> Featured
+								  </label>	
+								
+								 <input type="file" id="mfStoreFeaturedImgInput" style="margin-top: -28px;left: 630px;position: absolute;" accept="image/*"/>
+							 
+							 </div>
+							 
+							 <span style="margin-top: 2px;float: right;"  class="btn btn-link"  id="mfCloseEditedStoreTemplate" >Close</span>
+							 
+							 <span style="margin-top: 2px;float: right;"  class="btn btn-primary"  id="mfSubmitEditedStoreTemplate" >Edit Template</span> 
+							
+						</div>
+					
+						
+					</div>			
+				
+					<div  id="mfStoreTemplateViewerImageHolder"  style="overflow: hidden; ">	
+					    <span id="mfStoreUIPackDescription" style=" font-size: 13px; text-align: left;  display: block;  height: 25px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"></span>		
+						<div id="mfStoreTemplateViewerImageWrapper" style="height: 100%;position:relative; width: 100%; overflow: auto;">
+							<img id="mfStoreTemplateViewerImage" alt="" style="position: relative; display: block; left: 0; top: 50%; transform:translateY(-50%); -webkit-transform:translateY(-50%); margin-left:auto; margin-right:auto; z-index: 100;" src=""   />
+							<img alt="Loading" src="images/general/mf_loader.gif"  id="mfStoreImageLoader" style='display: block;' class="mfCenterAlign"/>
+						</div>
+					</div>
+					
+					
+					
+					
+				
+				</div>
+		
+		</div> 
+		<div id="mfStoreAddPageBtn" class="mfWireframeProBtn mfTopMenuSaveStore" style="cursor: pointer;border-radius: 40px;width: 50px;height: 50px;background: #298ae2;color: #fff;font-size: 20px;position: absolute;line-height: 36px;bottom: 30px;text-align: center;right: 25px;" title="" data-toggle="tooltip" data-placement="left" data-original-title="Submit Template" >
+							<i class="fa-paper-plane"></i>
+		</div>
+	</div> 
+
+</div>
+<div id="mfPageGridInterface" style='display: none; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; background: #f0f0f0; z-index: 200000;'>
+
+	
+	
+		<div id="mfPageGridHeader" style="height: 60px; padding: 10px; padding-left: 20px; border-bottom: 1px solid #e2e2e2;">
+		
+			 <div  id="mfPageGridTitleBlock" style="display: inline-block;position: absolute;top: 15px; left: 20px; font-size: 20px; width: 300px;  height: 40px;cursor:pointer;margin-top:5px; vertical-align: middle;  white-space: nowrap; overflow: hidden; text-overflow:  ellipsis;">
+			 
+			 
+			 </div>	
+				
+				
+			 <div  id="mfPageGridBtnBlock" style="display: inline-block;position: absolute;top: 5px;right: 15px; text-align: right; width: 50%; height: 40px;margin-top:10px; vertical-align: middle;">
+			 
+			 		<div id="mfPageMapTypeBtn" style="position: absolute; top: -5px; left: -130px; height: 30px; font-size: 12px;  width: 300px;" >
+						<div class="switch-toggle switch-ios" style="font-size: 14px; box-shadow: none;">
+							<input id="mfpagegridtype" name="mlnktype" type="radio" checked>
+							<label for="mfpagegridtype" onclick=""><i style='' class="fa fa-th-large" ></i> Grid</label>
+					
+							<input id="mfpagemaptype" name="mlnktype" type="radio">	
+							<label for="mfpagemaptype" onclick=""><i style='' class="fa fa-sitemap" ></i> Map</label>
+							
+							<input id="mfpageworkflowtype" name="mlnktype" type="radio">	
+							<label for="mfpageworkflowtype" onclick=""><i style='' class="fa fa-trello" ></i> Workflow</label>
+							
+								<a style='color: #fff;'></a>
+						</div>
+					</div>
+		  			
+		  				
+		  			<div id="mfPageGridSettings" class='mfPageViewSettingsCls' style="position: absolute; top: 0px; right: 60px; height: 40px;">
+			 			<span class="ico-search" style="color: #000;  position: relative; top: 5px; font-size: 20px; opacity: 0.5;" ></span>&nbsp; 
+       					<input placeholder="Search" style="border: none; box-shadow: none; width: 200px; height: 30px;   outline: 0;  font-size: 14px;  font-weight: normal; color:  #666;   background-color: transparent;" id="mfSearchPageGridInput" type="text" name="search" class="searchBox">
+       				</div>
+       				
+       				<div id="mfPageWorkflowSettings" class='mfPageViewSettingsCls' style="position: absolute; top: 0px; right: 50px; height: 40px;">
+			 		
+			 			<span class="ico-help" title="About WorkFlow - Organize wireframes into lists based on their design status. Lists can be also re-ordered and customized." data-toggle="tooltip" data-placement="bottom" data-animation="false" style="color: #2196F3;  position: relative; cursor:pointer; top: 5px; font-size: 20px; opacity: 1;" ></span>&nbsp; 
+			 		</div>
+       				
+       				<div id="mfPageSiteMapSettings" class='mfPageViewSettingsCls'  style="display: none; position: absolute; top: 0px; right: 60px; font-size: 14px; height: 40px;">
+       				
+							<a style="position: absolute; right: 150px; top: 5px; border-radius: 25px !important; display:block; color: #2196F3; background: transparent; padding-top: 2px; font-size: 12px; height: 25px;" class="btn btn-primary" id="mfSiteMapExportBtn">Export</a>       				
+			 				<div id="mfSitemapZoomPlus" style="position: absolute;top: 5px;right: 100px;cursor: pointer;text-align:center;user-select: none;-webkit-user-select: none;">
+								<i class="fa fa-search-plus" aria-hidden="true"></i>
+							</div>
+							<div id="mfSitemapZoomOriginal" style="position: absolute; top: 5px; right: 50px; cursor: pointer; user-select: none;  -webkit-user-select: none;">100%</div>
+							<div id="mfSitemapZoomMinus" style="position: absolute;top: 5px;right: 20px;cursor: pointer;text-align:center;user-select: none;-webkit-user-select: none;">
+								<i class="fa fa-search-minus" aria-hidden="true"></i>
+							</div>
+			 			
+			 		
+			 		</div>
+				
+					
+						<span id="mfPageGridCloseBtn" class="ico-close2 mfImgLink" style="position: absolute; top: 2px; right: 10px;  color: #000; font-size: 28px;cursor:pointer; " ></span>&nbsp; 
+			 </div>
+		
+			
+		</div>
+		
+		
+		<div id="mfPageGridListing"  class='mfPageViewTypeCls' style=" text-align: center; margin-top: 10px; margin-bottom: 10px;width: 100%; height: 100%; overflow-x: hidden; overflow-y: auto;  padding-left: 20px; padding-right: 20px;">
+		
+			
+					
+					
+		
+		</div>
+	
+	
+		<div id="mfPageSiteMapView" class='mfPageViewTypeCls' style="display: none; width: 100%; height: 100%; overflow-x: hidden; padding-top: 10px; overflow-y: hidden;  background: #f0f0f0;  padding-left: 20px; padding-right: 0px;">
+		
+				<img alt="Loading" src="images/general/mf_loader.gif"  style="top: 50%; left:50%; position:absolute;" />
+					
+		
+		</div>
+		
+		<div id="mfPageWorkflowView" class='mfPageViewTypeCls' style="display: none; width: 100%; height: 100%; overflow-x: hidden; padding-top: 10px; overflow-y: hidden;  background: #f0f0f0;  padding-left: 20px; padding-right: 0px;">
+		
+					<img alt="Loading" src="images/general/mf_loader.gif"  style="top: 50%; left:50%; position:absolute;"/>
+		
+		</div>
+	
+	
+ 
+
+</div>
+
+<div id="mfCompCategoryDialog" class="md-modal md-effect-1 md-content" style=" z-index: 10000000; display: none; position: absolute; top: 0px; left: 0px; background: #fff; width: 100%; height: 100%;">
+
+	<div id="mfCompPackListDiv" class="mfCompPackCls" >
+		
+		<div id="mfCompCategoryHeader" style="width: 100%; height: 80px; padding: 20px; ">
+		
+			<div style="float: left; width: 50%; padding-top: 5px;">
+			
+				<span class='ico-search' style='font-size: 16px;'></span>
+				 <input id="mfCategoryListSearchBox" placeholder="Search Packs" spellcheck=false style=" width: 200px; padding-left: 10px; color: #666; height: 25px; font-size: 16px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; "  type="text" />
+			 
+			</div>
+			
+			<div style="text-align: right; color: #444; float: left; width: 50%;">
+				<div id="mfAddPackDiv" style="display:inline-block;">
+				
+					<span style='font-size: 16px; color: #222;'>Missing a UI Pack here ? &nbsp; &nbsp; </span>
+					<button  type="button" class="btn btn-primary mfGetCustomPackBtn" style="margin-top: -8px; font-size: 14px; background:#2196F3 !important; color: #fff !important;"><i class= 'fa-download' style="margin-right: 3px;"></i>  Add UI packs from Store</button>
+					 &nbsp; &nbsp;
+					<button  type="button" class="btn btn-primary mfNewCustomPackBtn" style="margin-top: -8px; font-size: 14px; ">Create New Pack</button>
+					
+					
+				 </div>
+			   <button id="mfMergePackBtn" type="button" class="btn btn-primary" style="margin-top: -8px; display:none"><span class="ico-shuffle" style="font-size: 16px;vertical-align: sub;font-weight: bold;"></span> &nbsp; Merge Pack</button>
+				&nbsp; &nbsp;	
+					<span class='mfCategoryListingCloseBtn ico-close mfImgLink'  style="cursor: pointer; font-size: 20px; display: inline-block; height: 35px; padding-top: 2px;vertical-align: middle;"></span>
+				
+			</div>
+		</div>
+		
+		<div id="mfCompCategoryListing" style="width: 100%; "> 
+		
+		</div>
+		
+		<div id="mfCompCustomPackLoader" style='text-align: right; display: none; position: absolute; color: #888; right: 50%; top: 25px; height: 25px; width: 150px;'>
+						<img alt="Loading" src="images/general/apploader.gif"  style='width: 20px; margin-right: 5px;' />
+			 <span style="position:relative; top:1px;">Loading Custom Packs...</span>
+		</div>
+	
+	</div> 
+	
+	
+	<div id="mfMergeablePackListDiv" class="mfCompPackCls">
+	
+		<div id="mfMergeablePackHeader" style="width: 100%; height: 80px; padding: 20px; ">
+		
+			<div style="float: left; width: 50%; padding-top: 5px;">
+			
+				<span class='ico-search' style='font-size: 16px;'></span>
+				 <input id="mfMergeablePackSearchBox" placeholder="Search Packs" spellcheck=false style=" width: 200px; padding-left: 10px; color: #666; height: 25px; font-size: 16px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; "  type="text" />
+			 
+			</div>
+			
+			<div style="text-align: right; color: #444; float: left; width: 50%;">
+					<span class='mfCategoryListingCloseBtn ico-close mfImgLink'  style="cursor: pointer; font-size: 20px; display: inline-block; height: 35px; padding-top: 5px;vertical-align: middle;"></span>
+			</div>
+		</div>
+		
+		<div id="mfMergeablePackListing" style="width: 100%; "> 
+		
+		</div>
+		
+		<div id="mfMergeablePackLoader" style='text-align: right; display: none; position: absolute; color: #888; right: 200px; top: 30px; height: 25px; width: 150px;'>
+						<img alt="Loading" src="images/general/apploader.gif"  style='width: 20px; margin-right: 5px;' />
+			 <span style="position:relative; top:1px;">Loading Custom Packs...</span>
+		</div>
+	
+	</div>
+	
+	<div id="mfCompPackAddDiv" class="mfCompPackCls" style="width: 100%; display: none;">
+	
+		<div  style="width: 100%; height: 100px; padding: 20px; ">
+		
+			<div style="float: left; width: 50%;">
+			
+			&nbsp;
+			</div>
+			
+			<div style="text-align: right; color: #444; float: left; width: 50%;">
+				
+				<span   style="cursor: pointer;  display: inline-block; line-height: 25px; padding-left: 10px; padding-right: 10px; background-color:#2196F3; border-radius: 20px; color: #fff; height: 25px; "  class="mfGoCompListBtn" > <i class= 'fa-angle-left' ></i> Go Back</span>
+				&nbsp; &nbsp;	
+				<span class='mfCategoryListingCloseBtn ico-close mfImgLink'  style="cursor: pointer; font-size: 20px; display: inline-block; height: 35px; padding-top: 5px;vertical-align: middle;"></span>
+			</div>
+		</div>
+		
+		<div style="width: 100%; padding-left: 50px; color: #444; "> 
+		
+		<h2><i style='font-size: 26px;' class="ico-box" ></i> &nbsp;What is a Component Pack?</h2>
+		
+		<p style='width: 700px; color: #444;'>
+		Just like the default components packs available for iPhone, Android, Web..., You can create your own pack and add custom components to it.
+		Custom component packs are available across projects and also can be shared with other Team Members.
+		</p>
+		<br/><br/>
+		<p style='width: 700px; color: #444;'>
+		NOTE: Custom component categories are automatically shared for all Team Members with TeamPack or Enterprise licenses only. 
+		<br/><br/>
+		</p>
+						
+					<input id="mfPackNameInput" placeholder="Enter Pack Name" spellcheck=false style="padding-top: 10px; width: 500px; color: #666; height: 30px; font-size: 14px; outline: 0px;  border: none; background: transparent;  outline:none; border: none;   border-bottom: 1px solid #ccc; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; "  type="text" />
+					<br/><br/>
+				 <div  style=" height: 20px; font-size: 11px;  width: 250px; color: #000;  font-size: 12px;  margin-left: -7px;" >
+					 <label class="checkbox" style="margin-left: 30px; margin-top: 4px;">
+					      <input id="mfToggleCompPackIncludeCommon" style="margin-top: 2px;" type="checkbox"> Include "Common" components in this pack
+					   </label>							
+				 </div>
+			     <br>
+			     <div style="height: 20px;font-size: 11px;color: #000;font-size: 12px;margin-left: -7px;">
+					 <label class="checkbox" style="margin-left: 30px;margin-top: 4px;">
+					      <input id="mfToggleMergeUIPack" style="margin-top: 2px;" type="checkbox"> Merge multiple UI packs for easy searching <span style="font-size: 11px;left: 225px; top: 0px;display: block;color: #6d6060;">(This option does not allow adding custom components)</span>
+					   </label>							
+				 </div>
+			     	      		
+				<br/><br/>
+				<span style=""  class="btn btn-primary" id="mfPackSubmitbtn" >Create Pack</span>
+
+		</div>
+	</div>
+	
+	<div id="mfCompPackEditDiv" class="mfCompPackCls" style="width: 100%; display: none;">
+	
+		<div  style="width: 100%; height: 100px; padding: 20px; ">
+		
+			<div style="float: left; width: 50%;">
+			
+			&nbsp;
+			</div>
+			
+			<div style="text-align: right; color: #444; float: left; width: 50%;">
+				
+				<span   style="cursor: pointer;  display: inline-block; line-height: 25px; padding-left: 10px; padding-right: 10px; background-color:#2196F3; border-radius: 20px; color: #fff; height: 25px; " class="mfGoCompListBtn" > <i class= 'fa-angle-left' ></i> Go Back</span>
+				&nbsp; &nbsp;	
+				<span class='mfCategoryListingCloseBtn ico-close mfImgLink'  style="cursor: pointer; font-size: 20px; display: inline-block; height: 35px; padding-top: 5px;vertical-align: middle;"></span>
+			</div>
+		</div>
+		
+		<div style="width: 100%; padding-left: 50px; color: #444; "> 
+		
+		<h2>Edit Component Pack's Name</h2>
+		
+	
+		<br/><br/>
+						
+					<input id="mfPackEditNameInput" placeholder="Enter Pack Name" spellcheck=false style="padding-top: 10px; width: 500px; color: #444; height: 30px; font-size: 14px; outline: 0px;  border: none; background: transparent;  outline:none; border: none;   border-bottom: 1px solid #ccc; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; "  type="text" />
+				<br/><br/>
+				 <div  style=" height: 20px; font-size: 11px;  width: 250px; color: #000;  font-size: 12px;  margin-left: -7px;" >
+					 <label class="checkbox" style="margin-left: 30px; margin-top: 4px;">
+					      <input id="mfToggleCompPack2IncludeCommon" style="margin-top: 2px;" type="checkbox"> Include "Common" components in this pack
+					   </label>							
+				 </div>
+				 
+				<br/><br/>
+				<span style=""  class="btn btn-primary" id="mfPackEditSubmitbtn" >Update Pack</span>
+				&nbsp; &nbsp;
+				<span style="border-color: #f44336;  color: #f44336;"  class="btn btn-primary"  id="mfPackDeleteSubmitbtn" >Delete Pack</span>
+
+		</div>
+	</div>
+	
+	
+	<div id="mfCompPackLoadDiv" class="mfCompPackCls" style="width: 100%; display: none;">
+	
+		<div  style="width: 100%; height: 100px; padding: 20px; ">
+		
+			<div style="float: left; width: 50%;">
+			
+			&nbsp;
+			</div>
+			
+			<div style="text-align: right; color: #444; float: left; width: 50%;">
+				
+				&nbsp; &nbsp;	
+				<span class='mfCategoryListingCloseBtn ico-close mfImgLink'  style="cursor: pointer; font-size: 20px; display: inline-block; height: 35px; padding-top: 5px;vertical-align: middle;"></span>
+			</div>
+		</div>
+		
+		<div style="width: 100%; padding-left: 50px; color: #444; "> 
+		
+			<img alt="Loading" src="images/general/mf_loader.gif" style='position: absolute; display: block; top: 50%; left: 50%;' />
+		</div>
+	</div>
+	
+
+</div>
+
+
+
+
+<div id="mfVisibleTopBar" style='display:none; z-index: 100000; position: absolute; top: 0px; left: 0px;'>
+	<div id="mfGroupEditingNotifier"  data-toggle="tooltip" data-placement="left" title="Esc key to Close"  style="display: none; cursor: pointer; text-align: center; margin-bottom: 10px; line-height: 25px; font-size: 14px; background: #9C27B0; color: #fff; width: 100px; height: 30px;">
+		Close Group
+	</div>
+	
+	<div id="mfUnSavedBtn"  data-toggle="tooltip" data-placement="left" title="Save Changes Ctrl+S"   style="display: none; cursor: pointer; text-align: center; line-height: 30px; font-size: 14px; background: #f44336; color: #fff; width: 100px; height: 30px;">
+		Save Changes
+	</div>
+	
+</div>
+	<canvas id="mfAnnotateArrow" style="pointer-events:none; display: none; position: absolute; top: 0px; left: 0px; width: 200px; height: 200px; z-index:1982388882;" >
+	</canvas>
+	
+	<canvas id="mfAnnotateArrow2" style="pointer-events:none; display: none; position: absolute; top: 0px; left: 0px; width: 200px; height: 200px; z-index:1982388882;" >
+	</canvas>
+	
+	<ul class='mfcustom-menu'>
+	  <li data-action="duplicate">Duplicate</li>
+	  <li data-action="pasteinplace">Paste-In-Place</li>
+	  <li class='mfcontextsep'></li>
+	  <li data-action="undo">Undo</li>
+	  <li data-action="redo">Redo</li>
+	  <li class='mfcontextsep'></li>
+	  <li data-action="selectall">Select all</li>
+	  <li data-action="clearselection">Clear Selection</li>
+	  <li class='mfcontextsep'></li>
+	  <li data-action="lock">Lock</li>
+	  <li data-action="unlockall">Un-Lock all</li>
+	  <li class='mfcontextsep'></li>
+	  <li data-action="sendforward">Bring Forward</li>
+	  <li data-action="sendbackward">Send Backward</li>
+	  <li class='mfcontextsep'></li>
+	  <li data-action="sendfront">Bring to Front</li>
+	  <li data-action="sendback">Send to Back</li>	 
+	  <li class='mfcontextsep'></li>
+	  <li data-action="exportselected">Export selected</li>
+	  <li data-action="export">Export page</li>
+	</ul>
+
+	
+	<div id="tmDialogBackground" style="z-index: 200; display: none; background-color: rgba(0,0,0,0.6); position: absolute; top: 0px; left: 0px; overflow: hidden; height: 100%; width: 100%; "  > 
+
+</div>
+
+
+<div class="modal fade hide" id="mfReplyCommentModal" style="width: 500px; height: 300px;overflow: hidden; max-height: 500px;">
+		  <div class="modal-header">
+		    	
+				<h3 id="mfReplyCommentModalTitle" style="color: #fff;">Reply Comment: </h3>
+		  </div>
+		  <div class="modal-body" style="width: 100%;">
+			 
+		  		<div  style="display: block; width: 100%; overflow: hidden;">
+						 <input placeholder="Enter name to post comment" class="xlarge mfInputElement" id="mfPublicReplyCommentNameInput" name="xlInput" type="text" style="position: absolute; left: 20px; top: 60px;  display: none; width: 450px;" />
+						 <textarea class="input-xlarge mfInputElement" style="width: 450px; position: absolute; left: 20px; top: 60px; height: 150px;" id="mfReplyCommentModalInput" rows="3"></textarea>
+						<a class="btn btn-primary" style="position:absolute; top: 250px; left: 425px;" id="mfReplyCommentModalBtn" >Reply</a>
+						
+				</div>
+				
+		    			
+		  </div>
+		  
+</div>	
+
+
+<div id="mfRevisionModal" class="modal fade" role="dialog" style="width: 600px; height: 400px;overflow: hidden; max-height: 500px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <h4 class="modal-title">Revisions of this Page</h4>
+      </div>
+      <div class="modal-body">
+        <div id="mfRevisionLoadingScreen"  style="display: block; width: 100%; overflow: hidden;">
+						<img alt="Loading" src="images/general/mf_loader.gif"  id="mfRevisionLoader" style="top: 140px; left:285px; position:absolute;" />
+				</div>
+				
+				<div id="mfRevisionPreviewScreen"  style="display: none; width: 100%; overflow: hidden;">
+						 							 		
+					<div id="mfGenerateRevisionPreviewBtn" style="width: 230px; color: #000; font-size: 14px; top: 180px; left:185px; text-align: center; position:absolute; cursor: pointer; border: 1px solid #000; padding: 10px;" >Preview Wireframe</div>
+					<a id="mfRevisionGoBackBtn" style="color: #000; cursor: pointer; position: absolute; top: 230px; left: 280px; font-weight: bold; font-size: 14px;" >Go Back</a>					 
+						 							 		
+				</div>
+				
+				<div id="mfRevisionListScreen"  style="display: none; width: 100%; overflow: hidden;">
+						 
+						<a style="position: absolute; left: 15px; top: 5px;" class="btn btn-primary" id="mfNewRevisionBtn" >New Revision</a>
+						 
+						 <div style="position: absolute; right: 15px; top: 5px; font-size: 12px;" class="btn-group">
+						  <button id="mfRevisionSaveAsBtn" style="font-size: 12px;" class="btn "><i class="icon-share"></i> Save As</button>
+						  <button id="mfRevisionPreviewBtn" style="font-size: 12px;" class="btn "><i class="icon-eye-open"></i> Preview</button>
+						  <button id="mfRevisionDeleteBtn" style="font-size: 12px;" class="btn "><i class="icon-trash"></i> Delete</button>
+						   <button id="mfRevisionRestoreBtn" style="font-size: 12px;" class="btn "><i class="icon-share"></i> Restore</button>
+						</div>
+
+						<div id="mfRevisionListItems"  style="position: absolute; left: 15px; top: 70px; width: 570px; height: 230px; overflow: auto; ">
+						 
+						 
+						</div> 
+						
+						<div  style="background-color: #E0E0E0; position: absolute; left: 0px; top: 315px; width: 610px; height: 30px; overflow: auto; ">
+						 
+							 
+							 <div id="mfToggleAutoRevDiv" style="position: absolute; height: 20px; font-size: 11px;  width: 200px; color: #666; left: 10px; top: 2px;" >
+								 <label class="checkbox" style="margin-left: 30px; margin-top: 4px;">
+								      <input id="mfToggleAutoRevBtn" style="margin-top: 2px;" type="checkbox"> Hide Auto-Revisions
+								   </label>							
+							 </div>
+							
+							 <div style="position: absolute; height: 20px; font-size: 11px;  width: 200px;  color: #666; text-align: right; left: 380px; top: 5px;" >
+							 Double-Click to Edit Note
+							</div>
+						 
+						</div> 
+				</div>
+				
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+
+<div id="mfPackComponentListModal" class="modal fade" role="dialog" style="width: 600px; height: 600px;overflow: hidden; max-height: 600px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 15px 45px;">
+       
+        <h4 class="modal-title">Components of this Pack</h4>
+      </div>
+      <div class="modal-body" style=" padding: 0 45px;">
+      
+             <div id="mfSortPackComponentList">
+             To sort components in list, drag-n-drop to reorder  
+
+			 <div id="mfPackListItems"  style="text-align:center; position: absolute; left: 45px; top: 40px; width: 555px; height: 490px; overflow: auto; ">
+						 
+						 
+			 </div>  
+			 <input type="file" id="mfComponentImageUploadFile" value="Upload File" style="display:none">
+			 </div>
+			 <div id="mfEditPackComponent" style="display:none; padding-top:20px;">
+			 
+							 							 
+						     <input type="text" class="form-control" name="xlInput" style="width: 510px;height: 30px; padding-left:5px;" id="mfComponentNameInput" placeholder="Component Name" > &nbsp;	<br><br>  
+			 		   		<div id="mfComponentImageUploadTempView" class="mfcenter-block">
+		   						<img id="mfComponentImageUploadTempViewImg" src="" />
+		   					</div>
+		   					 <div style="display:inline-block; margin-left: 25px; text-align: left; padding-top: 8px;">
+		   						<span id="mfComponentImageEdit" style="cursor:pointer;display: block;position: relative;margin-bottom: 10px;"><i class="fa-upload" style="margin-right: 12px;"></i>Upload custom thumb (100w x 70h)</span>
+		   						<span id="mfComponentImageReset" style="cursor:pointer;"><i class="fa-repeat" style="margin-right:12px;"></i>Reset to original thumbnail</span>
+		   					 </div>
+		   					<br/>
+		   					
+		   					
+		   					<div class="mfCompImgUploadCancelBtn" style="border: 1px solid #888; text-align: center; font-size: 14px; border-radius: 5px; padding: 5px; position: absolute; width: 125px; left: 170px; top: 210px; font-weight: normal; cursor: pointer; color: #666;">Cancel</div>
+		   					<button id="mfUploadComponentDetailSave">Save</button>
+			 
+			 </div> 
+			  <div id="mfEditPackComponentLoadingScreen"  style="display: none; width: 100%; overflow: hidden;height: 450px;">
+						<img alt="Loading" src="images/general/mf_loader.gif" style="top: 45%; left: 45%; position:absolute; transform: translate3d(-45%,-45%,0) !important;"/>
+		       </div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+<div id="mfMergeablePackListModal" class="modal fade" role="dialog" style="width: 600px; height: 600px;overflow: hidden; max-height: 600px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 15px 45px;">
+       
+        <h4 class="modal-title">Sort Pack</h4>
+      </div>
+      <div class="modal-body" style=" padding: 0 45px;">
+      
+             To sort pack components in list, drag-n-drop pack to reorder  
+
+			 <div id="mfMergeablePackListItems"  style="text-align:center; position: absolute; left: 45px; top: 40px; width: 555px; height: 490px; overflow: auto; ">
+						 
+						 
+			 </div>  
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+<div class="modal fade hide" id="mfGenerateRevisionPreviewModal" style="width: 500px; height: 280px;overflow: hidden; ">
+		  <div class="modal-header">
+		    	
+				<h3 id="mfGenerateRevisionPreviewModalTitle">&nbsp;</h3>
+		  </div>
+		  <div class="modal-body" style="width: 100%;">
+			 
+		  		<div id="mfGenerateRevisionLoadingScreen"  style="display: block; width: 100%; overflow: hidden;">
+		  				<img alt="Loading" src="images/general/mf_loader.gif"  style="top: 135px; left:170px; position:absolute;"/>
+						<div id="mfGenerateRevisionImageModalLoader" style="color: #000; font-size: 16px; top: 145px; left:215px; position:absolute;" >Generating Wireframe...</div>
+																			 
+				</div>
+				
+				<div id="mfGenerateRevisionDownloadScreen"  style="display: none; width: 100%; overflow: hidden;">
+						 							 		
+					<a id="mfGenerateRevisionPreviewBtn" style="color: #000; cursor: pointer; position: absolute; top: 150px; left: 235px; font-weight: bold; font-size: 14px;" >Preview</a>					 
+				</div>
+				
+		    			
+		  </div>
+		  
+</div>	
+
+	
+
+<div id="mfAddRevisionModal" class="modal fade" role="dialog" style="width: 600px; height: 170px;overflow: hidden; max-height: 170px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="mfAddRevisionModalTitle">&nbsp;</h4>
+      </div>
+      <div class="modal-body">
+        <div  id="mfAddRevisionInputScreen" style="display: block; width: 100%; overflow: hidden;">
+					<input placeholder="Enter Note" class="form-control" id="mfRevisionNote" name="xlInput" type="text"  style=" height: 35px; width: 560px;" />
+					<br/>			
+				
+					<a style="position: absolute; left: 440px; top: 60px;" class="btn btn-primary" id="mfAddRevisionBtn" >Save Page Revision</a>		
+		 
+				</div>
+		    	
+		    	<div  id="mfAddRevisionLoadingScreen" style="display: block; width: 100%; overflow: hidden;">
+		    		<img alt="Loading" src="images/general/mf_loader.gif" style="top: 10px; left:275px; position:absolute;" />
+		    	</div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>	
+
+
+<div id="mfImageEditNameModal" class="modal fade" role="dialog" style="width: 600px; height: 170px;overflow: hidden; max-height: 170px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="mfImageEditNameModalTitle">&nbsp;</h4>
+      </div>
+      <div class="modal-body">
+        <div   style="display: block; width: 100%; overflow: hidden;">
+					<input placeholder="Enter Image Name" class="form-control" id="mfImageEditNameInput" name="xlInput" type="text"  style=" height: 35px; width: 560px;" />
+					<br/>			
+				
+					<a style="position: absolute; left: 490px; top: 60px;" class="btn btn-primary" id="mfImageEditNameBtn" >Edit name</a>		
+		 
+				</div>
+		    	
+		    
+      </div>
+      
+    </div>
+
+  </div>
+</div>	
+
+
+<div id="mfAddComponentModal" class="modal fade" role="dialog" style="width: 600px; height: 170px;overflow: hidden; max-height: 170px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="mfAddComponentModalTitle">&nbsp;</h4>
+      </div>
+      <div class="modal-body">
+        		<div  id="mfAddComponentInputScreen" class="mfAddComponentModelCls" style="display: block; width: 100%; overflow: hidden;">
+					<input placeholder="Enter Component Name" class="form-control" id="mfAddComponentName" name="xlInput" type="text"  style=" height: 35px; width: 560px;" />
+					<br/>			
+				
+					<a style="position: absolute; left: 452px; top: 60px;" class="btn btn-primary" id="mfAddNewComponentBtn" >Add Component</a>		
+		 
+				</div>
+		    	
+		    	<div  id="mfAddComponentLoadingScreen" class="mfAddComponentModelCls"  style="display: none; width: 100%; overflow: hidden;">
+		    			  		  
+		    		<img alt="Loading" src="images/general/mf_loader.gif"  style="top: 10px; left:275px; position:absolute;" />
+		    	</div>
+		    	
+		    	<div  id="mfAddComponentDownloadScreen" class="mfAddComponentModelCls"  style="display: none; width: 100%; overflow: hidden;">
+		    			  		  
+					<a target="_blank" style="position: absolute; left: 260px; top: 20px; cursor: pointer; " class="btn btn-primary" id="mfExportImgCompDownloadBtn">Download</a>
+		    	</div>
+		    	
+		    	
+      </div>
+      
+    </div>
+
+  </div>
+</div>	
+
+<div id="mfFeedbackForm" class="modal fade" role="dialog" style="width: 600px; height: 420px;overflow: hidden; max-height: 420px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="mfFeedbackFormTitle">Feedback Form</h4>
+      </div>
+      <div class="modal-body">
+        <div  id="mfFeedbackFormInputScreen" style="display: block; width: 100%; overflow: hidden;">
+					<input placeholder="Subject" class="form-control" id="mfFeedbackSubject" name="xlInput" type="text"  style=" height: 35px; width: 560px;" />
+					<br/>			
+					
+					<textarea class="form-control"  id="mfFeedbackMessage" placeholder="Message..." style="resize: none; color: #666; width: 560px; height: 200px;" ></textarea>
+				
+					<a style="position: absolute; left: 505px; top: 300px;" class="btn btn-primary" id="mfSubmitFeedback" >Submit</a>		
+		 
+				</div>
+		    	
+		    	
+      </div>
+      
+    </div>
+
+  </div>
+</div>	
+
+
+
+	
+
+<div id="mfPublicLinkModal" class="modal fade" role="dialog" style="width: 600px; height: 170px;overflow: hidden; max-height: 570px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h4 class="modal-title" id="mfPublicLinkModalTitle">Sharing</h4>
+      </div>
+      <div class="modal-body" style="padding: 0px 15px 15px;">
+        <div  id="mfPublicLinkModalScreen1" style="display: block; width: 100%; overflow: hidden;">
+
+        		<span style="font-size: 13px; width: 550px; color: #333; text-align: justify;display: inline-block;    margin-bottom: 20px;">
+						<br/>Wireframe can be shared from project listing dashboard. <a target="_blank" href="https://mockflow.com/app">Open dashboard</a><br/><br/>By following this <a target="_blank" href="https://support.mockflow.com/article/108-how-to-share-projects-in-mockflow">https://support.mockflow.com/article/108-how-to-share-projects-in-mockflow</a>
+						
+					</span>	
+
+		</div>
+		 
+		 
+      </div>
+      
+    </div>
+
+  </div>
+</div>	
+
+<div id="mfEditRevisionModal" class="modal fade" role="dialog" style="width: 600px; height: 170px;overflow: hidden; max-height: 170px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h4 class="modal-title" id="mfEditRevisionModalTitle">&nbsp;</h4>
+      </div>
+      <div class="modal-body">
+        <div  id="mfEditRevisionInputScreen" style="display: block; width: 100%; overflow: hidden;">
+					<input placeholder="Enter Note" class="form-control" id="mfRevisionEditNote" name="xlInput" type="text"  style=" height: 35px; width: 560px;" />
+					<br/>			
+				
+					<a style="position: absolute; left: 440px; top: 60px;" class="btn btn-primary" id="mfEditRevisionBtn" >Edit Revision Note</a>		
+		 
+				</div>
+		    	
+		    	<div  id="mfEditRevisionLoadingScreen" style="display: block; width: 100%; overflow: hidden;">
+		    			  		  
+		    		<img alt="Loading" src="images/general/mf_loader.gif"  style="top: 10px; left:275px; position:absolute;" />
+		    	
+		    	</div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>	
+
+
+<div id="mfAddDBComponentModal" class="modal fade" role="dialog" style="width: 600px; height: 170px;overflow: hidden; max-height: 170px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h4 class="modal-title" id="mfAddDBComponentModalTitle">&nbsp;</h4>
+      </div>
+      <div class="modal-body">
+        <div  id="mfDBComponentInputScreen" style="display: block; width: 100%; overflow: hidden;">
+					<input placeholder="Enter Component Name" class="form-control" id="mfAddDBComponentTitleInput" name="xlInput" type="text"  style=" height: 35px; width: 560px;" />
+					<br/>			
+				
+					<a style="position: absolute; left: 440px; top: 60px;" class="btn btn-primary" id="mfAddDBComponentBtb" >Save DBComponent</a>		
+		 
+				</div>
+		    	
+		    	<div  id="mfDBComponentLoadingScreen" style="display: block; width: 100%; overflow: hidden;">
+		    		<img alt="Loading" src="images/general/mf_loader.gif"  style="top: 10px; left:275px; position:absolute;" />
+		    	</div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+	
+<div class="modal fade"id="mfAddPageModal"  style="overflow: hidden; width: 430px; height: 180px;" role="dialog">
+  <div class="modal-dialog" style="width: 100%; height: 100%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="mfAddPageModalTitle">&nbsp;</h4>
+      </div>
+      <div class="modal-body" style="width: 100%; height: 100%;">
+        	<div class="divDialogElements" id="mfAddPageModalScreen1" style="display: block; width: 100%; overflow: hidden;">
+					<input class="form-control" id="mfAddPageTitle" name="xlInput" type="text"  style=" font-size: 14px; height: 25px; width: 400px;" />										
+				</div>
+		    	
+				<br/>			
+				
+				<a style="position: absolute; left: 325px; top: 60px; width: 90px;" class="mfImgLink mfWireframeProBtn" id="mfAddPageModalBtn" >Add Page</a>	
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+	
+
+	
+	
+	
+
+ 
+	 
+<div class="mfLayersSetting" id="mfViewLayers" style="opacity: 1; display: none; width: 500px; height: 150px;overflow: hidden; max-height: 500px; left: 100px; top: 100px;">
+		
+		    	<a  style="position: absolute; left: 470px; top: 10px; color: #444;" id="mfViewerLayersCloseBtn" class="close" >&times;</a>
+		    	<img style="position: absolute; left: 5px; top: 20px;" alt="" src="images/editor/layers.png" />
+		    	
+				<h3 style="position: absolute; left: 45px; top: 5px;" id="mfViewLayersTitle">Layers</h3>
+		 
+		  		<div id="mfLayerDragContainer" style="position: absolute; top: 60px; left: 10px; width: 450px;">
+				<input id="mfLayerDragSlider" style=" width: 450px;" class="balSlider" value="0" />
+				</div>
+				<span style="position: absolute; left: 10px; top: 105px;" >Drag slider to show / hide components in page</span>	
+				
+				<a style="position: absolute; left: 394px; top: 100px;" class="btn btn-primary" id="mfShowAllLayersBtn" >Show All</a>		
+		  
+	</div>
+	
+
+
+
+<div id="mfThemeContainer" class="mfPopUp" style="display:none;position:absolute;top:20px;left:10px;z-index:100;">
+		<div id="mfThemes">
+			<p style="padding:2px">Flat Themes</p>
+			<div id="mfFlatTheme" style="overflow: auto;margin-bottom: 10px;">
+				
+			</div>
+			<p>Gradient Themes</p>
+			<div id="mfGradientTheme" style="overflow:auto">
+					
+			</div>
+		</div>
+</div>	
+
+<div id="mfNavManagePage" style="display:none;position:absolute;top:20px;left:10px;z-index:100">
+	   <div id="mfNavPages">
+			<div>
+				<div id="mfNavPageSelect" style="width:155px"></div>
+					<span id="mfNavAddAllPages" style="cursor: pointer;background-color: transparent;border: 1px solid #000;; padding: 3px 5px; text-align: center; color: white; float: right;color: #000;">Add All</span>
+					<span style="float: right; width: 1px; border-left: 1px solid #ccc; height: 26px; margin-left: 5px;margin-right:5px"></span>
+				<span id="mfAddNavPage" style="cursor: pointer; background-color: rgb(52, 152, 219); padding: 4px 5px; text-align: center; color: white; float: right; width: 35px;">Link</span>
+			</div>
+			<div style="width: 100%;height: 85%;overflow-y: scroll;">
+				<div id="mfNavLinks" style="width: 95%"></div>
+			</div>
+			
+		</div>
+</div>	
+
+
+<div id="mfFontSelectionPopUp" class="mfPopUp">
+	<span class="before"></span>
+	
+		
+		<div id="mfFontSelectScreen"  style="display: block; width: 100%; overflow: hidden;">
+				
+				<div style="position: absolute; left: 20px; top: 65px; width: 100px; font-weight: bold;">Font:</div>
+				<div id="mfFontCurrent" style="color: #2196F3; position: absolute; left: 60px; top: 65px; width: 300px; font-weight: bold;"></div>
+				
+			
+			<div id="mfFontTypeChooser" style="position: absolute;height: 30px; color: #fff; font-size: 14px;width: 260px;top: 20px;left: 250px;" >
+						<div class="switch-toggle switch-ios" style="">
+							<input id="mffontbuiltinbtn" name="mlnkfont" type="radio" checked="checked">
+							<label for="mffontbuiltinbtn" onclick="">Built-In</label>
+					
+							<input id="mffontgooglebtn" name="mlnkfont" type="radio">	
+							<label for="mffontgooglebtn" onclick="">Google</label>
+							
+							<input id="mffontusedbtn" name="mlnkfont" type="radio">	
+							<label for="mffontusedbtn" onclick="">Used</label>
+							
+							<a style='color: #fff;'></a>
+						</div>
+					</div>
+					
+				<a data-toggle="tooltip" data-placement="bottom" title="Restore to Default WireframePro Font" style="position: absolute; top: 20px; left: 20px; border-radius: 20px !important;"  id="mfRestoreDefaultFontBtn" class="btn btn-primary"  >Restore Default</a>
+			
+				<div id="mfCustomFontLoading">
+					<img alt="Loading" src="images/general/mf_loader.gif"/>
+				</div>
+				
+				<div id="mfGoogleFontExplorer" onclick="javascript:window.open('https://www.google.com/fonts')" style="cursor: pointer; color: #03A9F4; font-weight: normal; position: absolute; top: 65px; left: 325px;">
+					Google Font Explorer
+				</div>
+				
+				
+				 <input placeholder="Type and Enter to Search" class="form-control" id="mfFontSearchBox" name="xlInput" type="text" style="position: absolute; font-size: 12px; left: 550px; top: 60px;  display: block; width: 170px;" />
+				
+		  		<div  id="mfFontListing" class="mfFontListingCls" style="display: block;  width: 737px; height: 360px; overflow: auto; position: absolute; left: 20px; top: 110px;">
+						
+						<div id="mfFontItemNewCustomBtn" class="mfCustomFontActionBtn">
+							<div class="mfCustomFontActionContainer mfCenterAlign">
+								<div class="mfCustomFontAddIconWrapper">
+									<i class="ico-plus"></i>
+								</div>
+								<div class="mfCustomFontAddContentWrapper">
+								<span class="mfCustomFontActionHeading"> Add Custom Font</span>
+								<span class="mfCustomFontActionSubHeading">Either ttf, otf, woff or svg</span>
+								</div>
+							</div>
+							<input type="file" id="mfCustomFontUpload">
+						</div>
+						<div id="mfFontItemNewCustomLoader" style="display:none;" class="mfCustomFontActionBtn">
+							<div class="mfCustomFontActionContainer mfCenterAlign">
+								<span class="mfCustomFontActionHeading">
+									<img alt="Loading" src="images/general/mf_loader.gif"><br/>
+									Uploading
+								</span>
+							</div>
+						</div>
+						
+				</div>
+				<div  id="mfGoogleFontListing" class="mfFontListingCls" style="display: none;  width: 730px; height: 360px; overflow: hidden; position: absolute; left: 20px; top: 110px;">
+						
+						<div class="mfFontList">
+							<img alt="Loading" src="images/general/mf_loader.gif"   style="position: absolute; left: 45%; top: 45%; display: none;" class="mfGoogleFontLoadingAjaxImgCls"/>
+						</div>
+						
+						
+				</div>
+				
+				<div  id="mfGoogleFontSearchListing" class="mfFontListingCls" style="display: none; width: 730px; height: 360px; overflow: hidden; position: absolute; left: 20px; top: 110px;">
+						
+						<div class="mfFontList">
+							<img alt="Loading" src="images/general/mf_loader.gif"  class="mfGoogleFontLoadingAjaxImgCls" />
+						</div>
+						
+						
+				</div>
+					
+				<div  id="mfUsedFontListing" class="mfFontListingCls" style="display: block;  width: 730px; height: 360px; overflow: auto; position: absolute; left: 20px; top: 110px;">
+						
+						
+						
+				</div>
+				
+			
+				
+			</div> 
+			
+	
+		<span class="after"></span>
+</div>
+
+
+<div id="mfIconSelectionPopUp" class="mfPopUp">
+	<span class="before"></span>
+		<div style="position: absolute; left: 20px; top: 25px; width: 100px; font-weight: normal; color: #333;">Category:</div>
+				<div class="mfModalSelectWrapper" style="position: absolute; left: 80px; top:20px; font-weight: bold;">
+				<select  id="mfFontAwesomeCategory" style="" >
+					<option value="all">All</option>
+					<option value="mfFontAwesomeWeb">Web Application Icons</option>
+					<option value="mfFontAwesomeTransportation">Transportation Icons</option>
+					<option value="mfFontAwesomeGender">Gender Icons</option>
+					<option value="mfFontAwesomeFileType">File Type Icons</option>
+					<option value="mfFontAwesomeFormControl">Form Control Icons</option>
+					<option value="mfFontAwesomeChart">Chart Icons</option>
+					<option value="mfFontAwesomeCurrency">Currency Icons</option>
+					<option value="mfFontAwesomeTextEditor">Text Editor Icons</option>
+					<option value="mfFontAwesomeDirectional">Directional Icons</option>
+					<option value="mfFontAwesomeBrand">Brand Icons</option>
+					<option value="mfFontAwesomeMedical">Medical Icons</option>
+					<option value="mfFontAwesomeVideoPlayers">Video Icons</option>
+				</select>
+				<span class="fa fa-sort-desc"></span>
+				</div> 
+			<div style="display: block; width: 100%; overflow: hidden; color: #fff; ">
+				 <input id="mfIconListSearchBox" placeholder="Search Icons" spellcheck=false style="position: absolute; left: 560px; top: 25px; width: 170px; padding-left: 10px; color: #666; height: 25px; font-size: 12px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; border-bottom: 1px solid #ccc;"  type="text" />
+				
+				
+		  		<div  id="mfIconListing" style="display: block; width: 715px; height: 360px; overflow: auto; position: absolute; left: 20px; top: 65px; padding-top: 10px; padding-left: 10px;">
+					
+					<div id="mfFontAwesomeWeb" class="mfIconCategory" >
+						<h4 class="page-header">Web Application Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeTransportation" class="mfIconCategory">
+						<h4 class="page-header">Transportation Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeGender" class="mfIconCategory">
+						<h4 class="page-header">Gender Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeFileType" class="mfIconCategory">
+						<h4 class="page-header">File Type Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeFormControl" class="mfIconCategory">
+						<h4 class="page-header">Form Control Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeChart" class="mfIconCategory">
+						<h4 class="page-header" >Chart Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeCurrency" class="mfIconCategory">
+						<h4 class="page-header" >Currency Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeTextEditor" class="mfIconCategory">
+						<h4 class="page-header">Text Editor Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeDirectional" class="mfIconCategory" >
+						<h4 class="page-header">Directional Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeBrand" class="mfIconCategory" >
+						<h4 class="page-header">Brand Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeMedical" class="mfIconCategory">
+						<h4 class="page-header" >Medical Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeVideoPlayers" class="mfIconCategory">
+						<h4 class="page-header" >Video Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+				</div>
+				
+			</div>
+		<span class="after"></span>
+</div>
+
+
+
+
+
+<div id="mfMasterPageSelectionPopup" class="mfPopUp" style="width:430px;height:500px;">
+<span class="before"></span>
+	<div style="display: block; width: 100%; overflow: hidden;">
+		  			
+						
+						
+						
+						<div style="float: left; width: 410px; height: 35px; padding-top: 5px; border: none; border-bottom: 1px solid #ccc; background: transparent; ">
+	  	
+							  <input id="mfMasterPageSearchBox" placeholder="Search Pages" spellcheck=false style="width: 410px; padding-left: 10px; color: #666; height: 25px; font-size: 12px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; "  type="text" />
+							  		
+						 </div>
+						  		
+						<div id="mfMasterPageList" style="position: absolute; top: 60px; left: 0px; width: 410px; height: 360px;" class="mfGradientBg" >
+						
+						</div> 
+					
+						
+			
+					<span class="ico-trash2 mfRemoveMasterPageBtn" style="position: absolute; top: 454px; left: 305px; color: #000; font-size: 16px; cursor:pointer;" ></span>
+					
+		  			<a style="position: absolute; top: 445px; left: 335px;"  id="mfSaveMasterPageBtn" class="btn btn-primary"  >Select</a>
+		  			
+				</div>
+	<span class="after"></span>
+</div>
+
+
+
+<div id="mfLinkSelectionPopUp" class="mfPopUp" style="width:430px;height:500px;">
+<span class="before"></span>
+	<div style="display: block; width: 100%; overflow: hidden;">
+		  					  
+		  			<div id="mfPageLinkTypeBtn" style="position: absolute; height: 30px; font-size: 11px;  width: 160px; top: 40px; left: 140px;" >
+						<div class="switch-toggle switch-ios" style="">
+							<input id="mfppage" name="mlnk" type="radio" checked="checked">
+							<label for="mfppage" onclick="">Page</label>
+					
+							<input id="mfpweb" name="mlnk" type="radio">	
+							<label for="mfpweb" onclick="">Web</label>
+							
+								<a style='color: #fff;'></a>
+						</div>
+					</div>
+		  			
+		  			
+		  			<div id="mfLinkPageArea" style=" position: absolute; height: 400px; font-size: 11px;  width: 100%; top: 70px; left: 10px;" >
+						
+						
+						<div style="position: absolute; left: 10px; top: 35px; font-size: 12px;"></div>
+						
+						<div style="float: left; width: 410px; height: 35px; padding-top: 5px; border: none; border-bottom: 1px solid #ccc; background: transparent; ">
+	  	
+							  <input id="mfPageLinkSearchBox" placeholder="Search Pages" spellcheck=false style="width: 410px; padding-left: 10px; color: #666; height: 25px; font-size: 12px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; "  type="text" />
+							  		
+						 </div>
+						  		
+						<div id="mfPageLinkList" style="position: absolute; top: 40px; left: 0px; width: 410px; height: 320px;" class="mfGradientBg" >
+						
+						</div>
+					
+						
+			
+					</div>
+					
+					<div id="mfLinkWebArea" style="display: none;  position: absolute; height: 400px; font-size: 11px;  width: 375px; top: 70px; left: 10px;" >
+						
+						<input placeholder="Enter URL eg: https://mockflow.com" class="form-control" id="mfPageURL" name="xlInput" type="text" style="position: absolute; left: 10px; top: 25px; font-size: 12px; width: 380px; height: 25px;" />						
+					
+						<div style="position: absolute; top: 70px; left: 30px; width: 200px;">
+					
+						  <label class="checkbox" style="color: #666; display:none;">
+						      <input id="mfOpenNewWndChk" type="checkbox"> Open New Window
+						    </label>
+						</div>
+					</div>
+					
+					
+					
+					<span class="ico-trash2" style="position: absolute; top: 454px; left: 295px; color: #000; font-size: 16px; cursor:pointer;" id="mfRemoveLinkBtn" ></span>
+					
+		  			<a style="position: absolute; top: 445px; left: 325px;"  id="mfSaveLinkBtn" class="btn btn-primary"  >Create Link</a>
+		  			
+				</div>
+	<span class="after"></span>
+</div>
+
+
+<div id="mfMultiLinkSelectionPopUp" class="mfPopUp" style="width:430px;height:500px;">
+<span class="before"></span>
+		<div id="mfMultiLinkPickerDiv" style="display: block; width: 100%; overflow: hidden;">
+		
+				 <div class="checkbox" style="position: absolute; top: 20px; left: 30px;">
+				    <input  type="checkbox" checked="checked"="false" id="mfEnableLinkingBtn" class="tgl tgl-ios" value="">
+				    <label class='tgl-btn' for='mfEnableLinkingBtn'></label><span>Enable Linking</span>
+				  </div>
+				  
+				  	<div id="mfMultiLinkList" style="overflow-x: hidden; overflow-y: auto; position: absolute; top: 80px; left: 20px; width: 400px; height: 410px;"  >
+						
+					</div>
+					
+					<div id="mfMultiLinkListOver" style="overflow-x: hidden; overflow-y: auto; position: absolute; top: 80px; left: 20px; width: 400px; height: 410px; background-color: rgba(255,255,255,0.8);"  >
+						
+					</div>
+				  
+		</div>
+	<div id="mfSelectMultiLinkDiv" style="display: none; width: 100%; overflow: hidden;">
+		  					  
+		  			<div id="mfPageLinkTypeBtn2" style="position: absolute; height: 30px; font-size: 11px;  width: 160px; top: 40px; left: 140px;" >
+						<div class="switch-toggle switch-ios" style="">
+							<input id="mfppage2" name="mlnk2" type="radio" checked="checked">
+							<label for="mfppage2" onclick="">Page</label>
+					
+							<input id="mfpweb2" name="mlnk2" type="radio">	
+							<label for="mfpweb2" onclick="">Web</label>
+							
+								<a style='color: #fff;'></a>
+						</div>
+					</div>
+		  			
+		  			
+		  			<div id="mfLinkPageArea2" style=" position: absolute; height: 400px; font-size: 11px;  width: 100%; top: 70px; left: 10px;" >
+						
+						
+						<div style="position: absolute; left: 10px; top: 35px; font-size: 12px;"></div>
+						
+						<div style="float: left; width: 410px; height: 35px; padding-top: 5px; border: none; border-bottom: 1px solid #ccc; background: transparent; ">
+	  	
+							  <input id="mfPageLinkSearchBox2" placeholder="Search Pages" spellcheck=false style="width: 410px; padding-left: 10px; color: #666; height: 25px; font-size: 12px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; "  type="text" />
+							  		
+						 </div>
+						  		
+						<div id="mfPageLinkList2" style="position: absolute; top: 40px; left: 0px; width: 410px; height: 320px;" class="mfGradientBg" >
+						
+						</div>
+					
+						
+			
+					</div>
+					
+					<div id="mfLinkWebArea2" style="display: none;  position: absolute; height: 400px; font-size: 11px;  width: 375px; top: 70px; left: 10px;" >
+						
+						<input placeholder="Enter URL eg: https://mockflow.com" class="form-control" id="mfPageURL2" name="xlInput" type="text" style="position: absolute; left: 10px; top: 25px; font-size: 12px; width: 380px; height: 25px;" />						
+					
+						<div style="position: absolute; top: 70px; left: 30px; width: 200px;">
+					
+						  <label class="checkbox" style="color: #666; display:none;">
+						      <input id="mfOpenNewWndChk2" type="checkbox"> Open New Window
+						    </label>
+						</div>
+					</div>
+					
+					
+					<span class="ico-back" style="position: absolute; top: 454px; left: 25px; color: #000; font-size: 16px; cursor:pointer;" id="mfMultiLinkReset" ></span>
+					
+					<span class="ico-trash2" style="position: absolute; top: 454px; left: 295px; color: #000; font-size: 16px; cursor:pointer;" id="mfRemoveLinkBtn2" ></span>
+							
+		  			<a style="position: absolute; top: 445px; left: 325px;"  id="mfPickLinkBtn" class="btn btn-primary"  >Pick Link</a>
+		  			
+				</div>
+	<span class="after"></span>
+</div>
+
+
+
+<div id="mfMultiIconSelectionPopUp" class="mfPopUp" style="width:430px;height:500px;">
+<span class="before"></span>
+		<div id="mfMultiIconPickerDiv" style="display: block; width: 100%; overflow: hidden;">
+		
+			
+				  
+				  	<div id="mfMultiIconList" style="overflow-x: hidden; overflow-y: auto; position: absolute; top: 40px; left: 20px; width: 400px; height: 410px;"  >
+						
+					</div>
+					
+					
+				   
+		</div>
+	<div id="mfSelectMultiIconDiv" style="display: none; width: 100%; overflow: hidden;">
+		  					  
+		  <!--  <input id="mfAssignIconListSearchBox" placeholder="Search Icons" spellcheck=false style="position: absolute; left: 20px; top: 25px; width: 340px; padding-left: 10px; color: #666; height: 25px; font-size: 12px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; border-bottom: 1px solid #ccc;"  type="text" />
+				
+			<span id="mfAssignIconGoBack" style="cursor: pointer; color: #2196F3; position: absolute; left: 380px; top: 25px; font-size: 20px; " class="ico-angle-left-circle"></span>	 -->
+			<div style="position: absolute; left: 20px; top: 25px; width: 100px; font-weight: normal; color: #333;">Category:</div>
+				<div class="mfModalSelectWrapper" style="position: absolute; left: 80px; top:20px; font-weight: bold;">
+				<select  id="mfFontAwesomeCategory1" style="" >
+					<option value="all">All</option>
+					<option value="mfFontAwesomeWeb1">Web Application Icons</option>
+					<option value="mfFontAwesomeTransportation1">Transportation Icons</option>
+					<option value="mfFontAwesomeGender1">Gender Icons</option>
+					<option value="mfFontAwesomeFileType1">File Type Icons</option>
+					<option value="mfFontAwesomeFormControl1">Form Control Icons</option>
+					<option value="mfFontAwesomeChart1">Chart Icons</option>
+					<option value="mfFontAwesomeCurrency1">Currency Icons</option>
+					<option value="mfFontAwesomeTextEditor1">Text Editor Icons</option>
+					<option value="mfFontAwesomeDirectional1">Directional Icons</option>
+					<option value="mfFontAwesomeBrand1">Brand Icons</option>
+					<option value="mfFontAwesomeMedical1">Medical Icons</option>
+					<option value="mfFontAwesomeVideoPlayers1">Video Icons</option>
+				</select>
+				<span class="fa fa-sort-desc"></span>
+				</div> 
+				 <input id="mfIconListSearchBox1" placeholder="Search Icons" spellcheck=false style="position: absolute; left: 560px; top: 25px; width: 170px; padding-left: 10px; color: #666; height: 25px; font-size: 12px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; border-bottom: 1px solid #ccc;"  type="text" />
+		  		<div  id="mfAssignIconListing" style="display: block; width: 715px; height: 360px; overflow: auto; position: absolute; left: 20px; top: 65px; padding-top: 10px; padding-left: 10px;">
+					
+					<div id="mfAssignIcons" class="mfAssignIconCategory" >
+						
+					<div id="mfFontAwesomeWeb1" class="mfIconCategory" >
+						<h4 class="page-header">Web Application Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeTransportation1" class="mfIconCategory">
+						<h4 class="page-header">Transportation Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeGender1" class="mfIconCategory">
+						<h4 class="page-header">Gender Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeFileType1" class="mfIconCategory">
+						<h4 class="page-header">File Type Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeFormControl1" class="mfIconCategory">
+						<h4 class="page-header">Form Control Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeChart1" class="mfIconCategory">
+						<h4 class="page-header" >Chart Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeCurrency1" class="mfIconCategory">
+						<h4 class="page-header" >Currency Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeTextEditor1" class="mfIconCategory">
+						<h4 class="page-header">Text Editor Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeDirectional1" class="mfIconCategory" >
+						<h4 class="page-header">Directional Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeBrand1" class="mfIconCategory" >
+						<h4 class="page-header">Brand Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeMedical1" class="mfIconCategory">
+						<h4 class="page-header" >Medical Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+					<div id="mfFontAwesomeVideoPlayers1" class="mfIconCategory">
+						<h4 class="page-header" >Video Icons</h4>
+						<div class="mfIconList"></div>
+					</div>
+						
+					</div>
+					
+					
+				
+		</div>		
+		  			
+	</div>
+	<span class="after"></span>
+</div>
+
+
+
+
+
+<div id="mfZoomPopup" class="mfPopUp2" style="border-radius: 20px; background: #444; color: #fff; text-align: center; font-size: 20px; width: 150px;height:40px;">
+
+	<div style="display: block; width: 100%; overflow: hidden; text-align: center;">
+		  					  
+		  <span id="mfZoomBarPlusBtn" data-toggle="tooltip" data-placement="top" title="Ctrl +" style="cursor: pointer; " class="mfZoomBarBtns mfImgLink ico-zoom_in" ></span> &nbsp; &nbsp;	
+		  <span id="mfZoomBar100Btn" data-toggle="tooltip" data-placement="top" title="Reset" style="cursor: pointer;" class="mfZoomBarBtns mfImgLink ico-refresh" ></span> &nbsp; &nbsp;	
+		  <span id="mfZoomBarMinusBtn" data-toggle="tooltip" data-placement="top" title="Ctrl -" style="cursor: pointer;" class="mfZoomBarBtns mfImgLink ico-zoom_out" ></span>		
+		  		
+	</div>
+	
+</div>
+		  
+
+
+<div id="mfAddToStoreModal" class="modal fade" role="dialog" style="width: 500px; overflow: hidden; ">
+  <div class="modal-dialog" style="width: 100%;">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      
+      <div class="modal-body" style="padding: 15px 15px 35px;">
+        <div id="mfAddToStoreLoadingScreen"  style="height: 400px;display: block; width: 100%; overflow: hidden;">
+						<img alt="Loading" src="images/general/mf_loader.gif"  style="position:absolute; top: 50%;left: 50%;transform: translate3d(-50%,-50%,0) !important;" />
+		</div>
+				
+			
+				
+				<div id="mfAddToStoreInputScreen"  style="display: none; width: 100%; overflow: hidden;">
+						 
+								
+								<div style="text-align: center; margin-bottom: 30px;">
+								
+									<span class='fa-shopping-bag' style='font-size: 70px; color: #2196F3;' ></span> <span style='color: #2196F3; font-size: 40px; font-weight: 400;'>MockStore</span>
+									
+									<br/><br/>
+									<span style='font-size: 14px;'>Share your creation with MockFlow User Community</span>
+								
+								</div> 
+									 
+									<div id="mfTemplateDetailsForm" style="text-align: center; padding: 0 15px;">
+										<input placeholder="Template Title" class="form-control" id="mfTemplateTitle" name="xlInput" type="text"  style="height: 30px; width: 440px; margin-bottom: 15px;" />
+
+										<select style="width: 440px; margin-bottom: 15px; text-align: left;" id="mfTemplateType">
+											 
+										</select>
+
+										<span style="margin-top:15px;"  class="btn btn-primary" id="mfSubmitTemplateBtn" >Submit Page</span>
+									</div>
+									
+				</div>
+				
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div id="mfGridSettingsModal" class="modal fade" role="dialog" style="width: 600px; height: 400px;overflow: hidden; max-height: 500px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <h4 class="modal-title">Grid Settings</h4>
+      </div>
+      <div class="modal-body" style="padding:0;">
+      		<div class="mfGridGeneralSettings">
+      			<div class="pull-left">
+      				<span class="mfGeneralSettingsTitle">Snap to grid :</span>
+      				<div class="mfGridToggleWrapper">
+      					<input  type="checkbox" id="mfSnapToGrid" class="tgl tgl-ios" value="">
+				    	<label class='tgl-btn' for='mfSnapToGrid'></label>
+      				</div>
+      				<input style="width: 70px; display:none;" id="mfSnapToGridSize" type="number" value="5" min="5" max="100" step="1">
+					<div class="mfGridGeneralOption">
+					<span  class="mfGeneralSettingsTitle">Page Background :</span>
+					<span class="mfGeneralSettingsLabel">Transparent</span>
+					<div class="mfGridToggleWrapper">
+      					<input  type="checkbox" id="mfPageBackgroundTransparent" class="tgl tgl-ios" value="">
+				    	<label class='tgl-btn' for='mfPageBackgroundTransparent'></label>
+      				</div>
+      				<div id="mfPageBackgroundColorWrapper">
+      					<input type="text" id="mfPageBackgroundColor">
+      				</div>
+					
+					</div>
+      			</div>
+      		</div>
+      				<div  style="text-align:center; overflow: hidden; width: 115px; height:296px; float:left; border-right: 1px solid #efeded;">
+						
+							<div id="mfGridChooser" style="color: #fff; font-size: 14px;width: 100%;" >
+								<div class="switch-toggle switch-ios" style="">
+									<input id="mfgridnone" name="mlnkg" type="radio" checked="checked">
+									<label for="mfgridnone" onclick="">None</label>
+							
+									<input id="mfgridmesh" name="mlnkg" type="radio">	
+									<label for="mfgridmesh" onclick="">Grid</label>
+									
+									<input id="mfgrid960" name="mlnkg" type="radio">	
+									<label for="mfgrid960" onclick="">960grid</label>
+									
+									<a style='color: #fff;'></a>
+								</div>
+							</div>
+
+					</div>
+					
+				<div class="mfGridSettingsWrapper">
+				<div id="mfGridSettingsNone" class="mfGridSettingsCls"  style=" width: 100%; height: 100%;">
+					<div class="mfCenterAlign" style="width: 100%; text-align: center; color: #ccc; font-size: 16px;">Disabled Grid - Plain White Background</div>
+				</div>
+				
+				<div id="mfGridSettingsMesh" class="mfGridSettingsCls"  style="display: none; width: 100%; overflow: hidden; height: 100%; float:left; position: relative;">
+					
+					<div class="mfGridSettingsPanel">
+						<div class="mfModalInlineElement">
+							<div class="mfModalInlineLabel">Show in Viewer</div>
+							<div class="mfModalInlineOption">
+								<div class="checkbox" >
+								    <input  type="checkbox" id="mfMeshShowInViewer" class="tgl tgl-ios" value="" checked="checked">
+								    <label class='tgl-btn' for='mfMeshShowInViewer'></label>
+								</div>
+							</div>
+						</div>
+						<div class="mfModalInlineElement">
+							<div class="mfModalInlineLabel">Display over Comps</div>
+							<div class="mfModalInlineOption">
+								<div class="checkbox" >
+								   <input  type="checkbox" id="mfMeshShowOver" class="tgl tgl-ios" value="" checked="checked">
+					   				<label class='tgl-btn' for='mfMeshShowOver'></label>
+								</div>
+							</div>
+						</div>
+						<div class="mfModalInlineElement">
+							<div class="mfModalInlineLabel">Grid Size:</div>
+							<div class="mfModalInlineOption">
+								<input style="width: 56px;" id="mfMeshSize" type="number" value="20" min="10" max="200" step="10">
+							</div>
+						</div>
+						<div class="mfModalInlineElement">
+							<div class="mfModalInlineLabel">Line Color:</div>
+							<div class="mfModalInlineOption">
+								<input style='' type='text' id='mfMeshLineColor'>
+							</div>
+						</div>
+						
+						
+					</div>
+					<div class="mfGridSettingsPreviewPanel">
+						<div style='width: 220px; height: 180px; margin-bottom:  40px;background-color: transparent; background-size: 20px 20px; background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px), linear-gradient(to bottom, #f0f0f0  1px, transparent 1px); '></div>
+						<div class="pull-right">
+							<a style="" class="btn btn-link" id="mfResetMeshGrid" >Reset</a>
+							<a style="" class="btn btn-primary" id="mfSaveMeshGrid" >Save</a>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div id="mfGridSettings960" class="mfGridSettingsCls"  style="display: none;  width: 100%; overflow: hidden; height: 100%; float:left; position: relative;">
+					<div class="mfGridSettingsPanel">
+						<div class="mfModalInlineElement">
+							<div class="mfModalInlineLabel">Show in Viewer</div>
+							<div class="mfModalInlineOption">
+								<div class="checkbox" >
+								   <input  type="checkbox" id="mf960ShowInViewer" class="tgl tgl-ios" value="" checked="checked">
+						    	   <label class='tgl-btn' for='mf960ShowInViewer'></label>
+								</div>
+							</div>
+						 </div>
+						 <div class="mfModalInlineElement">
+							<div class="mfModalInlineLabel">Display over Comps</div>
+							<div class="mfModalInlineOption">
+								<div class="checkbox" >
+								   <input  type="checkbox" id="mf960ShowOver" class="tgl tgl-ios" value="" checked="checked">
+								   <label class='tgl-btn' for='mf960ShowOver'></label>
+								</div>
+							</div>
+						 </div>
+						 <div class="mfModalInlineElement">
+							<div class="mfModalInlineLabel">Column Size:</div>
+							<div class="mfModalInlineOption">
+								<input style="width: 56px;" id="mf960ColumnSize" type="number" value="20" min="20" max="200" step="10">
+							</div>
+						 </div>
+						 <div class="mfModalInlineElement">
+							<div class="mfModalInlineLabel">Gutter Size:</div>
+							<div class="mfModalInlineOption">
+								<input style="width: 56px;" id="mf960GutterSize" type="number" value="20" min="20" max="200" step="10">
+							</div>
+						 </div>
+						 <div class="mfModalInlineElement">
+							<div class="mfModalInlineLabel">Column Color:</div>
+							<div class="mfModalInlineOption">
+								<input type='text' id='mf960ColumnColor'>
+							</div>
+						 </div>
+					</div>
+					<div class="mfGridSettingsPreviewPanel"> 
+						<div style='width: 220px; height: 180px; margin-bottom:  40px; background-color: transparent; background-size: 40px 40px; background-image: linear-gradient(90deg, transparent 10px, rgba(244,67,54,0.2) 10px); background-position-x: -10px;  '></div>
+						<div class="pull-right">
+							<a class="btn btn-link" id="mfReset960Grid" >Reset</a>
+							<a class="btn btn-primary" id="mfSave960Grid" >Save</a>
+						</div>
+					</div>
+				</div>
+				</div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+ <div id="mfSharePackDetailsModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="height: 750px;">
+
+    
+    <div class="modal-content" style="width: 100%;height: 100%;">
+    
+       <div id="mfSharePackInputScreen" class="mfCustomComponentTitleWrapper">
+	  
+	  	<div style="text-align: center; margin-bottom: 30px;">
+								
+				 <span class='fa-shopping-bag' style='font-size: 50px; color: #2196F3; margin-right:10px;' ></span> <span style='color: #2196F3; font-size: 35px; font-weight: 400;'>MockStore</span>
+									
+				 <br/><br/>
+				 <span style='font-size: 14px;'>Share your UI Pack with MockFlow user community</span>
+								
+		</div> 
+	   <div id="mfUiPackDetailsForm" style="padding: 0 15px;">
+										
+										<input type="text" class="form-control" name="xlInput"  style="height: 25px; width: 100%; margin-bottom: 20px; border: 1px solid #ccc; padding: 0 8px;" id="mfStorePackNameInput" placeholder="Pack Name">
+										 
+										<select style="width: 100%; margin-bottom: 15px; text-align: left;" id="mfSelectStoreTemplate"> 
+										
+										</select>
+										
+										<label class="mfStoreCustomComponentLabel">Upload a icon for component (100x100)</label>
+										
+										<div style="width: 80px;height: 80px; overflow: hidden;position: relative;border: 1px dashed #ccc;text-align: center; display:table-cell; vertical-align: middle;" class="mfCustomPackIconWrapper">  
+							      			<img id="mfCustomPackIconUploadImg" style="max-width: 100%;max-height: 100%;cursor: pointer;" src="images/editor/category/custom.png"/>  
+							      			<div class="mfIconEditOptionsWrapper">
+							      				<div style="text-align: center;  display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate3d(-50%,-50%,0);">
+							      				<span id="mfCustomPackIconEdit" style="color: #fff;background:#2196F3;display: block;padding: 2px 10px;margin-bottom: 6px; cursor: pointer;">Edit</span>
+							      				<span id="mfpackIconDelete" class="mfpackImgDelete" style="color: #fff; cursor: pointer;">Delete</span>
+							      				</div>
+							      			</div>
+							      			
+							      		</div>  
+							      		
+							      		 <div  style="position: absolute; height: 20px; font-size: 11px;  width: 250px; color: #000;  font-size: 12px; left: 230px; top: 270px;" >
+											 <label class="checkbox" style="margin-left: 30px; margin-top: 4px;">
+											      <input id="mfToggleIncludeCommon" style="margin-top: 2px;" type="checkbox"> Include "Common" components in this pack
+											   </label>							
+										 </div>
+							      		
+							      		
+							      		
+							      		<input type="file" id="mfCustomPackIconUpload"> 
+							      		<br>
+							      		<div style="display:inline-block; width:100%;">
+							      			<div style="width:45%; margin-right:5%;float:left;">
+								      		<label class="mfStoreCustomComponentLabel">Upload a thumbnail image (200x200)</label>
+								      		<div style="width: 200px;height: 200px; overflow: hidden;position: relative;border: 1px dashed #ccc; text-align: center; display:table-cell; vertical-align: middle;" class="mfCustomPackThumbnailWrapper">  
+								      			<img id="mfCustomPackThumbnailUploadImg"  style="max-width: 100%;max-height: 100%;cursor: pointer;margin: 0 auto;" src="images/store/uiPackThumbnail.png"/>
+								      			
+								      			<div class="mfIconEditOptionsWrapper"  >
+								      				<div style="text-align: center;  display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate3d(-50%,-50%,0);">
+								      				<span id="mfCustomPackThumbnailEdit" style="color: #fff;background:#2196F3;display: block;padding: 2px 5px;width: 44px;cursor: pointer;  margin-bottom: 6px;">Edit</span>
+								      				<span id="mfpackThumbnailDelete" class="mfpackImgDelete" style="color: #fff;cursor: pointer;">Delete</span>
+								      				</div>
+								      			</div>
+								      		</div>  
+											
+								      		<input type="file" id="mfCustomPackThumbnailUpload">
+								      		</div>
+								      		 
+								      		<div style="width:50%;float:left;"> 
+								      		<label class="mfStoreCustomComponentLabel">Upload a preview image</label>
+								      		<div style="width: 260px;height: 200px; overflow: hidden;position: relative;border: 1px dashed #ccc; text-align: center; display:table-cell; vertical-align: middle;" class="mfCustomPackThumbnailWrapper">  
+								      			<img id="mfCustomPackPreviewUploadImg"  style="max-width: 100%;max-height: 100%;cursor: pointer;margin: 0 auto;" src="images/store/uiPackPreview.png"/>
+								      			
+								      			<div class="mfIconEditOptionsWrapper"  >
+								      				<div style="text-align: center;  display: inline-block; position: absolute; top: 50%; left: 50%; transform: translate3d(-50%,-50%,0);">
+								      				<span id="mfCustomPackPreviewEdit" style="color: #fff;background:#2196F3;display: block;padding: 2px 5px;width: 44px;cursor: pointer;  margin-bottom: 6px;">Edit</span> 
+								      				</div>
+								      			</div>
+								      		</div>  
+											
+								      		<input type="file" id="mfCustomPackPreviewUpload">
+							      			</div>
+							      	 	</div>
+							      	    <textarea id="mfPackDescriptionInput" style="padding: 5px 8px;width:100%;height: 70px;border: 1px solid #E2E2E2; margin-top: 18px;" placeholder="Description"></textarea> <br>
+							      	    
+							      		<div class="text-center">
+							      		<span style="margin-top:15px;"  class="btn btn-primary" id="mfStoreShareUiPackBtn" >Share UI Pack</span>
+							      		<span style="margin-top:15px; display:none;"  class="btn btn-primary" id="mfStoreEditUiPackBtn"  >Edit UI Pack</span>
+							      		<span  class="btn btn-danger" id="mfStoreDeleteUiPackBtn" style="display: none;margin-top:15px;margin-left: 20px;" >Remove from Store</span>
+							      		</div>
+									</div>
+      	</div> 
+      	
+      	<div  id="mfSharePackLoadingScreen" style="display:none;"> 
+      	     <div class="mfCenterBlock">
+		    	<img alt="Loading" src="images/general/mf_loader.gif" />
+		     </div>
+		</div>
+      	
+    </div>
+	
+	
+	
+  </div>
+</div>  
+
+
+<div id="mfFavColorsListModal" class="modal fade" role="dialog" style="width: 550px; height: 550px;overflow: hidden; max-height: 600px;">
+  <div class="modal-dialog" style="width: 100%;">
+
+    <div class="modal-content">
+      <div class="modal-header" style="padding: 15px 25px 5px;">
+       
+        <h4 class="modal-title">Favourite Colors</h4>
+        
+        <h5> To sort colors in list, drag-n-drop to reorder </h5>
+      </div>
+      <div class="modal-body" style="padding: 0">
+      
+             <div id="mfSortFavColorsList" style="padding: 0 25px 25px;width: 100%;height: 470px;overflow: auto;box-sizing: border-box;">
+
+				 <div id="mfFavColorsListItems" style="position:relative">
+							 
+							 
+				 </div>  
+				 
+				 <div id="mfFavColorsListItemsEmpty" class="mfCenterAlign">No favourite colors</div>
+				 
+			 </div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+<div id="mfImageEditorInterface" style='display: none; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; background: #f0f0f0; z-index: 200000;'>
+
+	
+		<img alt="Loading" src="images/general/mf_loader.gif" class='mfCenterAlign'>
+
+</div>
+
+
+<script id="mfComponentCategoryItemTemplate" type="text/x-handlebars-template">
+
+<div id="mfComponentCategoryItem_{{ id  }}"  data-store="{{isMockStore}}" data-name="{{name}}" class="mfComponentCategoryItemCls" style="position: relative;opacity: 1; color: #fff; margin-top: 8px;  padding-top: 5px; float: left;  cursor: pointer; width: 150px; overflow: hidden; height: 107px; text-align: center;">
+
+
+	{{#if custompack}}
+
+		{{#if showMoreIcon}}
+		<span data-toggle="tooltip" data-placement="bottom" data-category="{{id}}" title="Edit"  id="mfPackEditBtn_{{ id  }}"  class="mfPackEditBtnCls ico-more"  style="display:none;position: absolute;top: 10px;right: 10px; font-weight: bold; color: #4FC3F7; cursor: pointer; font-size: 14px;" ></span>
+			{{else}}
+
+			{{#if noAllowDelete}}
+
+			{{else}}
+				<span data-toggle="tooltip" data-placement="bottom" data-category="{{id}}" title="Delete"  id="mfPackDelBtn_{{ id  }}"  class="mfPackDelBtnCls ico-close"  style="display:none;position: absolute;top: 10px;right: 10px; font-weight: bold; color: #4FC3F7; cursor: pointer; font-size: 14px;" ></span>
+			{{/if}}
+		{{/if}}
+
+
+	 	{{#if isMergeablePack}}
+			<span style="min-height: 64px;display: inline-block;"><img class="lazyCatThumb" style="position: relative; left: 0px; width: 64px; height: auto;"  src="images/editor/category/mergeablePackIcon.png"/></span>
+		{{else}}
+			<span style="min-height: 64px;display: inline-block;"><img class="lazyCatThumb" onerror="this.src='images/editor/category/custom.png'" style="position: relative; left: 0px; width: 64px; height: auto;"  src="{{icon}}?v1>" /></span>
+		{{/if}} 
+	
+	{{else}}
+	<span style="min-height: 64px;display: inline-block;"><img class="lazyCatThumb" onerror="this.style.display='none'" style="width: 64px; height: auto;" src="{{icon}}?v1" /></span>
+
+	{{/if}}
+
+	<br/>
+	<span id="mfComponentCategoryItemTitle_{{ id  }}" style="color: #666; font-size: 13px; white-space: nowrap; overflow: hidden; text-align: center; text-overflow:  ellipsis; width: 120px; display: inline-block;">{{name}}</span>
+
+	{{#if isMergeablePack}}
+
+	{{else}}
+	    <div class="mfMergeablePackSelection" style="display:none">
+		<input id="mfMergeItem_{{ id  }}"" type="checkbox" class="mfMergeablePackCheckBox" style="position: absolute;right: 8px; top: 5px; height: 15px; width: 15px;">
+		
+		<label for="mfMergeItem_{{ id  }}" style="cursor: pointer;position: absolute;top: 0;left: 0;z-index: 100;height: 107px;width: 150px;background-color: rgba(0, 0, 0, 0);position: absolute;"></label>
+		</div>
+	{{/if}}
+
+
+</div>
+
+
+
+
+</script>
+	
+
+<div id="mfExportImageDialog" class="modal fade" role="dialog" style="width: 600px; height: 500px;overflow: hidden; max-height: 500px;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="mfExportImageDialogTitle">&nbsp;</h4>
+      </div>
+      <div class="modal-body">
+        		<div  id="mfExportImageAddScreen" class="mfExportImageScreenCls" style="display: block; width: 100%; overflow: hidden; font-weight: normal;">
+					
+					<div id="mfExportImageLeft" style="width: 250px; position: absolute; background: #f0f0f0; top: 0px; left: 10px; height: 350px;">
+					
+						<div style="float: left; width: 249px; height: 35px; padding-top: 5px; border: none; border-bottom: 1px solid #ccc; background: transparent; ">
+	  	
+							  <input id="mfExportImagePageSearchBox" placeholder="Search Pages" spellcheck=false style="width: 250px; padding-left: 10px; color: #666; height: 25px; font-size: 12px; outline: 0px;  border: none; background: transparent;  outline:none; border: none; box-shadow: none; outline: 0px; font-weight: normal;  background-color: transparent; "  type="text" />
+							  		
+						 </div>
+						  		
+						<div id="mfExportImagePageList" style="position: absolute; top: 40px; left: 0px; width: 100%; height: 310px;" class="mfGradientBg" >
+						
+						</div>
+						
+					</div>
+					
+					<div class="mfImgLink" style="cursor: pointer; position: absolute; left: 275px; top: 140px; width: 50px; height: 50px; border: 1px solid #000; font-size: 14px; text-align:center; line-height: 50px; border-radius: 50px;"  id="mfAddPageExportImage" >
+						<span id="mfAddExportTxt" style="">Add</span> <br/> 
+						<img alt="Loading" src="images/general/mf_loader.gif"  id="mfAddExportLoader" style='display: none;  position: relative; left: -1px; top: -1px;' />
+					</div>	
+					
+					<span id="mfAddExportAll"  style="cursor: pointer; position: absolute; left: 282px; top: 205px; color: #2196F3; font-size: 12px;" >Add All</span>
+					
+					<div id="mfExportImageRight" style="width: 250px; position: absolute; background: #f0f0f0; top: 0px; left: 340px; height: 350px;">
+					
+						<div style="float: left; text-align: left; width: 249px; height: 35px; padding-top: 5px; border: none; border-bottom: 1px solid #ccc; background: transparent; ">
+	  										
+	  							<span style="display: inline-block; padding-left: 10px; padding-top: 5px; font-size: 14px; color: #666;">Added Pages</span>
+							  		
+						 </div>
+						  		
+						<div id="mfExportedImageList" style="padding: 10px; position: absolute; top: 40px; left: 0px; width: 100%; height: 310px;" class="mfGradientBg" >
+						
+						</div>
+					
+					</div>		
+					
+					 <div class="checkbox" id="mfIncludeCommentsChk"  style="position: absolute; top: 385px; left: 30px; width: 150px;">
+									    <input  type="checkbox" id="mfIncludeComments" class="tgl tgl-ios" value="">
+									    <label class='tgl-btn' for='mfIncludeComments'></label><span>Comments</span>
+					 </div>
+					  
+					 <div class="checkbox" data-content="<div style='float: left; background: yellow; text-align: center; font-size: 12px; width: 20px; height: 20px; border: 1px solid #000000; border-radius: 20px;'>2</div> &nbsp; Include specifications from callout components " rel="popover" data-placement="top" data-original-title="Callouts" id="mfIncludeCalloutsChk"  style="position: absolute; top: 400px; left: 180px; width: 150px;">
+									    <input  type="checkbox" id="mfIncludeCallouts" class="tgl tgl-ios" value="">
+									    <label class='tgl-btn' for='mfIncludeCallouts'></label><span>Callouts</span>
+					 </div>
+					 
+					 <div style='position: absolute; top: 385px; left: 310px; width: 150px;'>
+					  <div class="checkbox" data-content="Scale page size to image or restrict to A4 size " rel="popover" data-placement="top" data-original-title="PageSize" id="mfIncludeA4Chk"  style=" width: 150px;">
+									    <input  type="checkbox" id="mfIncludeA4" class="tgl tgl-ios" value="">
+									    <label class='tgl-btn' for='mfIncludeA4'></label><span>A4 page size</span>
+					 </div>
+					</div>
+					<a style="position: absolute; right: 10px; top: 390px;" class="btn btn-primary" id="mfExportImageBtn" >Create PNG</a>		
+		 
+				</div>
+		    	
+		    	<div  id="mfExportHTMLScreen" class="mfExportImageScreenCls"  style="display: none; width: 100%; overflow: hidden;">
+		    			  		  
+		    		<a style="position: absolute;  left: 220px; top: 150px;" class="btn btn-primary" id="mfStartExportHTMLBtn" >Export Project as HTML</a>
+		    		
+		    		<div  style="position: absolute; text-align:center; width: 300px; left: 150px; top: 220px; color: #ccc;">
+		    		  Note: Assets such as Images, Fonts and Icons used in the project are HotLinked
+		    		</div>		
+		    			  		  
+		    	
+		    	</div>
+		    	
+		    	<div  id="mfExportWIREScreen" class="mfExportImageScreenCls"  style="display: none; width: 100%; overflow: hidden;">
+		    			  		  
+		    		<a style="position: absolute;  left: 220px; top: 150px;" class="btn btn-primary" id="mfStartExportWIREBtn" >Export project as .wire file</a>
+		    		
+		    		<div  style="position: absolute; text-align:center; width: 300px; left: 150px; top: 220px; color: #ccc;">
+		    		  Note: Download fully editable offline file that can be opened with mockflow.com/desktop apps 
+		    		</div>		
+		    			  		  
+		    	
+		    	</div>
+		    	
+		    	<div  id="mfExportImageLoadScreen" class="mfExportImageScreenCls"  style="display: none; width: 100%; overflow: hidden;">
+		    			  		  
+		    		<img alt="Loading" src="images/general/mf_loader.gif"  style="top: 170px; left:280px; position:absolute;" />
+		    		<div  id="mfExportDownloadWait" style="display: none; position: absolute; text-align:center; width: 300px; left: 150px; top: 240px; color: #ccc;">
+		    		  Note: You need not wait. An email will be sent once export is complete, So you can close this dialog
+		    		</div>
+		    	
+		    	</div>
+		    	 
+		    	<div  id="mfExportImageDownloadScreen" class="mfExportImageScreenCls"  style="display: none; width: 100%; overflow: hidden;">
+		    			  		  
+		    		<a target="_blank" style="position: absolute; left: 270px; top: 170px;" class="btn btn-primary" id="mfDownloadImageBtn" >Download</a>		
+		    	
+		    	</div>
+      </div>
+      
+    </div>
+
+  </div>
+</div>	
+</body>
+
+
+
+
+ 
+
+</html>
