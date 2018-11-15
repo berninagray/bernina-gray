@@ -10,9 +10,17 @@
 
 .navbar-toggler{  background:#fff !important;}
 
-.navbar-collapse{
+.navbar-collapse {
 	justify-content: flex-end;
 }
+.bg-dark {
+	background-color: #666666 !important;
+}
+
+
+
+
+
 
 overlay{
 	position: absolute;
