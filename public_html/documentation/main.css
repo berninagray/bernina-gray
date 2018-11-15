@@ -1,10 +1,10 @@
-.navbar{ background:#F97300;}
+.navbar{ background:#480503;}
 
-.nav-link , .navbar-brand{ color: #480503; cursor: pointer;}
+.nav-link , .navbar-brand{ color: #ffffff; cursor: pointer;}
 
 .nav-link{ margin-right: 1em !important;}
 
-.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+.nav-link:hover{ background: #480503; color: #000000; }
 
 .navbar-collapse{ justify-content: flex-end;}
 
@@ -12,51 +12,4 @@
 
 .navbar-collapse {
 	justify-content: flex-end;
-}
-.bg-dark {
-	background-color: #666666 !important;
-}
-
-
-
-
-
-
-overlay{
-	position: absolute;
-	min-height: 100%;
-	min-width: 100%;
-	left: 0;
-	top: 0;
-	background: rgba(244, 244, 244, 0.79);
-}
-
-/*header style*/
-.header{
-	background-image: url(http://www.clker.com/cliparts/9/2/2/0/1197124068102937529doctormo_BTC6100C_UK_Compact_Keyboard_2.svg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-}
-
-.description{
-	position: absolute;
-	top: 30%;
-	margin: auto;
-	padding: 2em;
-
-}
-.description h1{
-	color:#F97300 ;
-}
-.description p{
-	color:#666;
-	font-size: 20px;
-	width: 50%;
-	line-height: 1.5;
-}
-.description button{
-	border:1px  solid #F97300;
-	background:#F97300;
-	color:#fff;
 }
