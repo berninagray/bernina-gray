@@ -23,6 +23,14 @@ overlay{
 	background: rgba(244, 244, 244, 0.79);
 }
 
+/*header style*/
+.header{
+	background-image: url(http://www.clker.com/cliparts/9/2/2/0/1197124068102937529doctormo_BTC6100C_UK_Compact_Keyboard_2.svg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
 .description{
 	position: absolute;
 	top: 30%;
