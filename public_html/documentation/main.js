@@ -35,6 +35,24 @@ $(document).ready(function(){
 				maxlength: "2000 characters max."
 			}
 		},
+
+		// AJAX submit the form data to back end if rules don't pass
+		submitHandler: function(form) {
+			$("#contactBGray").ajaxSubmit({
+				type: "POST",
+				url: $("#contactBGray").attr("action"),
+
+				success: function(ajaxOutput) {
+					// clear the output area's formatting
+					$("#output-area").css("display", "");
+
+					// write the server's reply to the output area
+					$(output-area).html(ajaxOutput);
+
+
+				}
+			})
+		}
 	})
 
 })
