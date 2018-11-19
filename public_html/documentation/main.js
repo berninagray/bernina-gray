@@ -21,6 +21,20 @@ $(document).ready(function(){
 				maxlength: 2000
 			}
 		},
+		// error messages to display to the end user when rules above don't pass
+		messages: {
+			name: {
+				required: "Please enter your name."
+			},
+			email: {
+				email: "Please enter a valid email address.",
+				required: "Please enter a valid email address"
+			},
+			message: {
+				required: "Please enter a message.",
+				maxlength: "2000 characters max."
+			}
+		},
 	})
 
 })
