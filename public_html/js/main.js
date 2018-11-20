@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$("form").validate({
+
 		// setup handling of form errors
 		debug: true,
 		errorClass: "alert alert-danger",
