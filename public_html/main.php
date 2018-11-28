@@ -162,6 +162,6 @@
 				<div id="output-area"></div>
 			</div>
 		</div>
-			<script type="text/javascript" src='js/main.js'></script>
+			<script type="text/javascript" src='js/form-validate.js'></script>
 	</body>
 </html>
