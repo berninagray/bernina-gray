@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("form").validate({
+	$("#contact-bernina-form").validate({
 
 		// setup handling of form errors
 		debug: true,
@@ -48,7 +48,7 @@ $(document).ready(function(){
 					$("#output-area").css("display", "");
 
 					// write the server's reply to the output area
-					$(output-area).html(ajaxOutput);
+					$("#output-area").html(ajaxOutput);
 
 					// reset the form if it was successful
 					if($(".alert-success").length >= 1) {
