@@ -1,7 +1,19 @@
 /* navbar styling */
-.navbar{
-	background: #eeeeee;}
-
+.navbar-dark{
+	color: #ffffff
+}
+.fixed-bottom, .fixed-top {
+	position: fixed;
+	z-index:1030;
+	right: 0;
+	left: 0;
+}
+.fixed-top {
+	top: 0;
+}
+.navbar, .navbar >
+.container
+/*
 .nav-link{ margin-right: 1em;}
 
 .nav-link:hover{ background: #f4f4f4; color: #f97300; }
@@ -13,8 +25,6 @@
 .navbar-collapse{
 	justify-content: flex-end;
 }
-
-/*
 body {
 	font-family: 'Arvo', serif;
 }

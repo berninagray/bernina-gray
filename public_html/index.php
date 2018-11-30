@@ -64,6 +64,7 @@
 								<a class="nav-link " data-value="linkedIn"href="#">
 									<i class="fab fa-linkedin-in">
 									</i>
+									<span class="d-xl-none ml-2">LinkedIn</span>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link " data-value="contact" href="#">Contact</a>       </li>
