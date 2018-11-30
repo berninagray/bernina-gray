@@ -34,7 +34,6 @@
 		<header class="header">
 			<div class="navbar-container">
 				<nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
-					:before
 					<a class="navbar-brand" href="#">Home</a>
 					<button class="navbar-toggler navbar-collapse" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -62,10 +61,10 @@
 			</div>
 		</div>
 		</div>
-		<div class="container">
+		<section class="container-fluid px-0">
 			<div class="row mb-2">
 				<div class="col">
-					<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+					<div class="card flex-md-row mb-4 h-md-250">
 						<div class="card-body d-flex flex-column align-items-start">
 							<h3 class="mb-0">
 								<a class="text-dark" href="#">Featured post</a>
