@@ -30,11 +30,16 @@
 			<title>Bernina Gray Portfolio</title>
 		</head>
 	<body>
-			<!-- header -->
-		<header class="header">
-			<div class="navbar-container">
-				<nav class="navbar navbar-expand-lg fixed-top">
-					<a class="navbar-brand" href="#">Home</a>
+			<!-- Navbar -->
+				<nav class="navbar navbar-expand-xl navabar-togglable fixed-top navbar-dark">
+					<a class="container">
+			<!-- brand -->
+					<a class="navbar-brand" href="index.php">Home</a>
+			<!-- include if I can vectorize my images
+					<svg class="navbar-brand-svg"
+					</div>svg>
+			 -->
+					</a>
 					<button class="navbar-toggler navbar-collapse" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -48,9 +53,9 @@
 								<a class="nav-link " data-value="contact" href="#">Contact</a>       </li>
 						</ul>
 					</div>
-			</div>
+					</div>
 			</nav>
-		</header>
+
 
 		<!--jumbotron -->
 		<div class="container p-3">
