@@ -33,7 +33,7 @@
 			<!-- header -->
 		<header class="header">
 			<div class="navbar-container">
-				<nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
+				<nav class="navbar navbar-expand-lg fixed-top">
 					<a class="navbar-brand" href="#">Home</a>
 					<button class="navbar-toggler navbar-collapse" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
