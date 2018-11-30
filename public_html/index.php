@@ -47,10 +47,19 @@
 			<!--collapse-->
 					<div id="navbarCollapse" class="navbar-collapse collapse" style="">
 			<!--social icons-->
-
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item-divider">
-								<a class="nav-link" data-value="about" href="#">About</a></li>
+								<span class="nav-link">
+									<span></span>
+								</span>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-value="about" href="#">
+									<i class="fab fa-github-square">
+									</i>
+									<span class="d-xl-none ml-2">Github</span>
+								</a>
+							</li>
 							<li class="nav-item">
 								<a class="nav-link " data-value="portfolio"href="#">Portfolio</a></li>
 							<li class="nav-item">
