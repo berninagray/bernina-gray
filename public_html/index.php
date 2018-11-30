@@ -40,10 +40,14 @@
 					</div>svg>
 			 -->
 					</a>
+			<!--toggler-->
 					<button class="navbar-toggler navbar-collapse" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse " id="navbarCollapse">
+			<!--collapse-->
+					<div id="navbarCollapse" class="navbar-collapse collapse" style="">
+			<!--social icons-->
+
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item-divider">
 								<a class="nav-link" data-value="about" href="#">About</a></li>
@@ -55,7 +59,6 @@
 					</div>
 					</div>
 			</nav>
-
 
 		<!--jumbotron -->
 		<div class="container p-3">
