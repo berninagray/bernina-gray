@@ -27,7 +27,7 @@
 			<!-- Your JavaScript Form Validator -->
 			<script src="js/form-validate.js"></script>
 
-			<title>Bernina Gray Portfolio</title>
+			<title>Bernina Gray | Welcome</title>
 		</head>
 	<body>
 			<!-- Navbar -->
@@ -54,10 +54,11 @@
 								</span>
 							</li>
 							<li class="nav-item">
+								<span class="fa-stack fa-2x">
+								<i class="fas fa-stack-2x"></i>
 								<a class="nav-link" data-value="github" href="#">
 									<i class="fab fa-github-square">
 									</i>
-									<span class="d-xl-none ml-2">Github</span>
 								</a>
 							</li>
 							<li class="nav-item">
@@ -72,9 +73,9 @@
 					</div
 					</div>
 			</nav>
-
+		<!-- Hero -->
 		<!--jumbotron -->
-		<div class="container p-3">
+		<!-- changing jumbotron to hero <div class="container p-3">
 		<div class="container jumbotron mt-5">
 			<div class="container">
 				<h1 class="display-4">Welcome</h1>
@@ -82,6 +83,7 @@
 			</div>
 		</div>
 		</div>
+		-->
 		<section class="container-fluid px-0">
 			<div class="row mb-2">
 				<div class="col">
