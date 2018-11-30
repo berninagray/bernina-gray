@@ -11,8 +11,18 @@
 .fixed-top {
 	top: 0;
 }
-.navbar, .navbar >
-.container
+.navbar, .navbar > .container, .navbar > .container-fluid {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar {
+	padding: 1.25rem 1rem;
+}
+*, ::after, ::before {
+	box-sizing: border-box;
+}
 /*
 .nav-link{ margin-right: 1em;}
 
