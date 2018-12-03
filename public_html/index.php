@@ -47,6 +47,7 @@
 			</div>
 		</nav>
 		<!-- contact form -->
+		<section>
 		<div class="container">
 			<form id="contact-bernina-form" action="php/mailer.php" method="post">
 				<div class="form-group">
@@ -101,5 +102,6 @@
 				</div>
 			</div>
 			<script type="text/javascript" src='js/form-validate.js'></script>
+		</section>
 	</body>
 </html>
