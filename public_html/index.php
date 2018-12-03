@@ -24,7 +24,7 @@
 		<title>Bernina Gray | Welcome</title>
 	</head>
 	<body>
-		<nav id="mainNavbar" class="navbar navbar-dark bg-dark navbar-expand-md py-0 fixed-top ">
+		<nav id="mainNavbar" class="navbar navbar-dark bg-dark navbar-expand-md fixed-top py-0">
 			<a class="navbar-brand" href="#">Navbar</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
