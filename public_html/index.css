@@ -1,22 +1,61 @@
-body {
-	background: ghostwhite;
-	font-family: "Nunito", sans-serif;
-}
-
-#mainNavbar {
+#navbar {
 	font-size: 1.5rem;
 	font-weight: 100
 }
 
-#mainNavbar .navbar-brand {
+#navbar .navbar-brand {
 	color: #880000;
 	font-size: 1.5rem;
 }
 
-#mainNavbar .navbar-link {
+#navbar .navBar-link {
 	color: white;
 }
 
-#mainNavbar .navbar-link:hover {
+#navbar .navBar-link:hover {
 	color: #808080;
+}
+
+.section {
+	position: relative;
+	padding: 5rem 0;
+}
+
+section {
+	display: block;
+}
+
+.bg-cover {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.bg-cover {
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+}
+
+.bg-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+div {
+	display: block;
+}
+
+body {
+	background: ghostwhite;
+	font-family: "Nunito", sans-serif;
 }

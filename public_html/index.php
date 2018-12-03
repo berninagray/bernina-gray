@@ -24,13 +24,15 @@
 		<title>Bernina Gray | Welcome</title>
 	</head>
 	<body>
-		<nav id="mainNavbar" class="navbar navbar-dark bg-dark navbar-expand-md fixed-top py-0">
-			<a class="navbar-brand" href="#">Navbar</a>
+		<nav id="mainNavbar" class="navbar navbar-expand-xl navbar-togglable fixed-top navbar-dark">
+			<div class="container">
+			<a class="navBar-brand" href="#">NavBar</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarLinks">
-				<ul class="navbar-nav">
+			<!--Collapse-->
+			<div class="collapse navbar-collapse" id="navBarLinks">
+				<ul class="navBar-nav">
 					<li class="nav-item active">
 						<a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
 					</li>
@@ -45,19 +47,19 @@
 					</li>
 				</ul>
 			</div>
+			</div>
 		</nav>
-		<!--projects-->
-		<section class="container-fluid px-0">
-			<div class="row">
-				<div class="col-6">
-					<img class="img-fluid" src="img/home.jpg" alt="Lukachukai, Arizona">
-				</div>
+		<!--hero-->
+		<section class="section section-top section-full">
+			<!--cover-->
+			<div class="bg-cover" style="background-image: url(img/home.jpg);"></div>
+		<!--overlay-->
+			<div class="bg-overlay">
 			</div>
 
 		</section>
-
-		<section>
 			<!-- contact form -->
+		<section class="contactForm">
 		<div class="container">
 			<form id="contact-bernina-form" action="php/mailer.php" method="post">
 				<div class="form-group">
@@ -111,7 +113,6 @@
 					<div id="output-area"></div>
 				</div>
 			</div>
-			<script type="text/javascript" src='js/form-validate.js'></script>
 		</section>
 	</body>
 </html>
