@@ -9,12 +9,13 @@
 }
 
 #navbar .navBar-link {
-	color: white;
+	color: #ff0e0c;
 }
 
 #navbar .navBar-link:hover {
 	color: #808080;
 }
+
 
 .section {
 	position: relative;
@@ -56,6 +57,6 @@ div {
 }
 
 body {
-	background: ghostwhite;
+	background: black;
 	font-family: "Nunito", sans-serif;
 }

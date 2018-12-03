@@ -8,7 +8,7 @@
 		<!-- CSS Files -->
 		<link rel="stylesheet" type="text/css" href="index.css" media="screen">
 		<!-- Google font -->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Nunito" rel="stylesheet"> " rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Nunito" rel="stylesheet">
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -24,15 +24,17 @@
 		<title>Bernina Gray | Welcome</title>
 	</head>
 	<body>
-		<nav id="mainNavbar" class="navbar navbar-expand-xl navbar-togglable fixed-top navbar-dark">
+		<!--navbar-->
+		<nav class="navbar navbar-expand-xl navbar-togglable fixed-top navbar-dark">
 			<div class="container">
-			<a class="navBar-brand" href="#">NavBar</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+			<!--brand-->
+			<a class="navBar- mr-0 mr-md-2" href="#">NavBar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<!--Collapse-->
-			<div class="collapse navbar-collapse" id="navBarLinks">
-				<ul class="navBar-nav">
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
 						<a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
 					</li>
@@ -56,9 +58,11 @@
 		<!--overlay-->
 			<div class="bg-overlay">
 			</div>
-
 		</section>
-			<!-- contact form -->
+		<!--Projects-->
+		<section class="container-fluid px-0"
+
+		<!-- contact form -->
 		<section class="contactForm">
 		<div class="container">
 			<form id="contact-bernina-form" action="php/mailer.php" method="post">
