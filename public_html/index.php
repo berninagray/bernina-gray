@@ -8,7 +8,7 @@
 		<!-- CSS Files -->
 		<link rel="stylesheet" type="text/css" href="index.css" media="screen">
 		<!-- Google font -->
-		<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Nunito" rel="stylesheet"> " rel="stylesheet">
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -24,24 +24,24 @@
 		<title>Bernina Gray | Welcome</title>
 	</head>
 	<body>
-		<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav id="mainNavbar" class="navbar navbar-dark bg-dark navbar-expand-md py-0 fixed-top ">
 			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
+			<div class="collapse navbar-collapse" id="navbarLinks">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Projects</a>
+						<a class="nav-link" href="#">PROJECTS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
+						<a class="nav-link" href="#">ABOUT</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Artwork</a>
+						<a class="nav-link" href="#">ARTWORK</a>
 					</li>
 				</ul>
 			</div>
