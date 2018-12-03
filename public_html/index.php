@@ -54,21 +54,20 @@
 								</span>
 							</li>
 							<li class="nav-item">
-								<span class="fa-stack fa-2x">
-								<i class="fas fa-stack-2x"></i>
 								<a class="nav-link" data-value="github" href="#">
-									<i class="fab fa-github-square">
-									</i>
+									<i class="fab fa-github-square"></i>
+									<span class="d-xl-none ml-2">GitHub</span>
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link " data-value="linkedIn"href="#">
-									<i class="fab fa-linkedin-in">
-									</i>
+								<a class="nav-link " data-value="linkedIn" href="#">
+									<i class="fab fa-linkedin-in"></i>
 									<span class="d-xl-none ml-2">LinkedIn</span>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link " data-value="contact" href="#">Contact</a>       </li>
+								<a class="nav-link " data-value="twitter" href="#">
+									<i class="fab fa-twitter"></i>
+									<span class="d-xl-none ml-2">Twitter</span>
 						</ul>
 					</div
 					</div>

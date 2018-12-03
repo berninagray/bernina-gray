@@ -1,6 +1,6 @@
 /* navbar styling */
 .navbar-dark{
-	color: #ffffff
+	color: #880000;
 }
 .fixed-bottom, .fixed-top {
 	position: fixed;
@@ -19,10 +19,6 @@
 }
 .navbar {
 	padding: 1.25rem 1rem;
-}
-*, ::after, ::before {
-	box-sizing: border-box;
-}
 /*
 .nav-link{ margin-right: 1em;}
 
