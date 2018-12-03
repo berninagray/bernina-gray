@@ -69,6 +69,13 @@
 									<i class="fab fa-twitter"></i>
 									<span class="d-xl-none ml-2">Twitter</span>
 						</ul>
+						<!--links-->
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item dropdown">
+								<a id="navbarWelcome" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Welcome</a>
+								<div class="dropdown-menu" aria-labelledby="navbarWelcome"></div>
+							</li>
+						</ul>
 					</div
 					</div>
 			</nav>
