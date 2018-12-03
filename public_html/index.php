@@ -46,8 +46,18 @@
 				</ul>
 			</div>
 		</nav>
-		<!-- contact form -->
+		<!--projects-->
+		<section class="container-fluid px-0">
+			<div class="row">
+				<div class="col-6">
+					<img class="img-fluid" src="img/home.jpg" alt="Lukachukai, Arizona">
+				</div>
+			</div>
+
+		</section>
+
 		<section>
+			<!-- contact form -->
 		<div class="container">
 			<form id="contact-bernina-form" action="php/mailer.php" method="post">
 				<div class="form-group">
