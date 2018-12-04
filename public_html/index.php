@@ -61,7 +61,17 @@
 		</section>
 		<!--Projects-->
 		<section class="container-fluid px-0"
-
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="text-white text-center d-none d-lg-block">
+						<h2 class="PROJECTS"</h2>
+						<p>A brief description of my work.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<img class="img-fluid" src="img/russellMeans.jpg" alt"Late Russell Means - Coming Back AS Lightning Portrait">
+				</div>
+			</div>
 		<!-- contact form -->
 		<section class="contactForm">
 		<div class="container">
