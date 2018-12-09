@@ -29,16 +29,18 @@
 			<div class="container-fluid">
 				<!--brand-->
 				<a class="navBar- mr-0 mr-md-2" href="index.php">NavBar</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<!--Collapse-->
-				<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="navbar-collapse collapse" id="navbarCollapse">
 					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
+						<li class="nav-item-divider">
+							<span class="nav-link"
 							<a class="nav-link" href="#">PROJECTS<span class="sr-only">(current)</span></a>
 						</li>
 						<!--<li class="nav-item">
+
 							<a class="nav-link" href="#"></a>
 						</li> -->
 						<li class="nav-item">
