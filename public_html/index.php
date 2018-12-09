@@ -23,56 +23,53 @@
 		<script src="js/form-validate.js"></script>
 		<title>Bernina Gray | Welcome</title>
 	</head>
-	<body>
+	<main>
 		<!--navbar-->
-		<nav class="navbar navbar-expand-xl navbar-togglable fixed-top navbar-dark">
-			<div class="container">
-			<!--brand-->
-			<a class="navBar- mr-0 mr-md-2" href="#">NavBar</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<!--Collapse-->
-			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">PROJECTS</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">ABOUT</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">ARTWORK</a>
-					</li>
-				</ul>
-			</div>
+		<nav class="navbar navbar-expand-lg navbar-togglable fixed-top navbar-dark p-2">
+			<div class="container-fluid">
+				<!--brand-->
+				<a class="navBar- mr-0 mr-md-2" href="index.php">NavBar</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!--Collapse-->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">PROJECTS<span class="sr-only">(current)</span></a>
+						</li>
+						<!--<li class="nav-item">
+							<a class="nav-link" href="#"></a>
+						</li> -->
+						<li class="nav-item">
+							<a class="nav-link" href="#">ARTWORK</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">ABOUT</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
+	</main>
 		<!--hero-->
-		<section class="section section-top section-full">
-			<!--cover-->
-			<div class="bg-cover" style="background-image: url(img/home.jpg);"></div>
-		<!--overlay-->
-			<div class="bg-overlay">
-			</div>
-		</section>
+		<div class="container fluid">
+
 		<!--Projects-->
-		<section class="container-fluid px-0"
-			<div class="row align-items-center">
-				<div class="col-lg-6">
+			<div class="container mt-5">
+				<div class="row no-gutters">
+				<div class="col-12 col-sm-6 col-md-8">
 					<div class="text-white text-center d-none d-lg-block">
-						<h2 class="PROJECTS"</h2>
-						<p>A brief description of my work.</p>
+						<p>PROJECTS</p>
 					</div>
-				</div>
 				<div class="col-lg-6">
-					<img class="img-fluid" src="img/russellMeans.jpg" alt"Late Russell Means - Coming Back AS Lightning Portrait">
+					<img class="img-thumbnail" src="img/russellMeans.jpg" alt="Russell Means - Coming Back AS Lightning Portrait">
+				</div>
 				</div>
 			</div>
+
 		<!-- contact form -->
+		<h4>Contact Me</h4>
 		<section class="contactForm">
 		<div class="container">
 			<form id="contact-bernina-form" action="php/mailer.php" method="post">

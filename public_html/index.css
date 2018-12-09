@@ -1,8 +1,26 @@
-#navbar {
-	font-size: 1.5rem;
-	font-weight: 100
+/* Global Styling*/
+
+.home {
+	background-image: url("../img/home.jpg");
 }
 
+
+
+#navbar dark{
+	color: #313131;
+}
+
+.fixed-top {
+	top: 0;
+}
+
+.navbar>.container,
+.navbar>.container-fluid home{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
 #navbar .navbar-brand {
 	color: #880000;
 	font-size: 1.5rem;
@@ -13,50 +31,7 @@
 }
 
 #navbar .navBar-link:hover {
-	color: #808080;
+	color: white;
 }
 
-
-.section {
-	position: relative;
-	padding: 5rem 0;
-}
-
-section {
-	display: block;
-}
-
-.bg-cover {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-
-.bg-cover {
-	background-repeat: no-repeat;
-	background-position: 50%;
-	background-size: cover;
-}
-
-.bg-overlay {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-
-* {
-	box-sizing: border-box;
-}
-
-div {
-	display: block;
-}
-
-body {
-	background: black;
-	font-family: "Nunito", sans-serif;
-}
+background-image: url(img/home.jpg
