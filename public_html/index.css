@@ -1,7 +1,7 @@
 .jumbotron {
 	background-image: url("/img/home.jpg");
 	background-size: cover;
-	height: 500px;
+	height: 600px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-bottom: 1px solid;
@@ -10,4 +10,8 @@
 .jumbotron .container {
 	position: relative;
 	top: 50px;
+}
+
+p {
+	float: start;
 }

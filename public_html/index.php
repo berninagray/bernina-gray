@@ -64,23 +64,31 @@
 	<div class="jumbotron" style="background-image: url(img/home.jpg);">
 		<div class="container">
 			<h1 class="display-4">Yá'át'ééh,</h1>
-			<p class="lead">Welcome to my personal website!</p>
+			<h3 class="lead">Welcome to my personal website!</h3>
 		</div>
 	</div>
 	<!--End Jumbotron-->
 	<!--Projects-->
-	<div class="container mt-5">
-		<div class="row no-gutters">
-			<div class="col-12 col-sm-6 col-md-8">
-				<div class="text-white text-center d-none d-lg-block">
-					<p>PROJECTS</p>
-				</div>
-				<div class="col-lg-6">
-					<img class="img-thumbnail" src="img/russellMeans.jpg"
-						  alt="Russell Means - Coming Back AS Lightning Portrait">
+	<div class="container-row">
+		<div class="col-sm-6">
+			<div class="thumbnail">
+				<img src="img/russellMeans.jpg" alt="Russell Means Portrait" height="300">
+				<div class="caption">
+					<h4>Russell Means Portrait</h4>
+					<p>"I'm Coming Back As Lightning"<br>2013<br>Graphite<br>8"x10"</p>
 				</div>
 			</div>
 		</div>
+	<div class="col-sm-6">
+			<div class="thumbnail">
+				<img src="img/lakotaWinyan.jpg" alt="Lakota Winyan Portrait" height="300">
+				<div class="caption">
+					<h4>Russell Means Portrait</h4>
+					<p>"Lakota Winyan"<br>2013<br>Graphite<br>8"x10"</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 
 	<!-- contact form -->
