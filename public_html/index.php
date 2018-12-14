@@ -124,8 +124,8 @@
 
 	<!--Contact Form-->
 
-	<h4>Contact Me</h4>
-	<div class="container-fluid">
+	<div class="container">
+		<h3>Contact Me</h3>
 		<form id="contact-bernina-form" action="php/mailer.php" method="post">
 			<div class="form-group">
 				<label for="contactName">Name <span class="text-danger">*</span></label>
