@@ -51,10 +51,15 @@
 			</ul>
 		</div>
 	</nav>
-	<--Hero Section-->
-	<div class="gradient-overlay-half-dark-v3 bg-img-hero" style="background-image: url("/img/lukachukai.jpg");">
-	<--Main Content-->
-	div class="container
+	<!--Hero Section-->
+	<div class="gradient-overlay-half-dark-v3 bg-img-hero" style="background-image: url(img/lukachukai.jpg);">
+	<!--Main Content-->
+	<div class="d-lg-flex align-items-lg-center height-85vh--lg">
+	<div class="container space-2 space-0--lg mt-lg-8">
+		<div class="row justify-content-lg-between align-items-lg-center">
+		</div>
+	</div>
+	</div>
 	</div>
 	<!--Projects-->
 			<div class="container mt-5">
