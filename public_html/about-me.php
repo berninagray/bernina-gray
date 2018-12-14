@@ -23,3 +23,14 @@
 		<script src="js/form-validate.js"></script>
 		<title>Bernina Gray | Welcome</title>
 	</head>
+	<body>
+	<!--Jumbotron-->
+	<div class="jumbotron" style="background-image: url(img/selfPortrait.jpg);">
+		<h1 class="display-4">About Me</h1>
+			<h2 class="lead">Arizona native, living in Albuquerque, New Mexico. Self-proclaimed artist, writer and<br>
+			transitioning Web Developer.</h2>
+		</div>
+	</div>
+	<!--End Jumbotron-->
+	</body>
+</html>
