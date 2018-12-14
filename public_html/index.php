@@ -57,6 +57,8 @@
 		<!--hero-->
 		<div class="container fluid">
 
+		</div>
+
 		<!--Projects-->
 			<div class="container mt-5">
 				<div class="row no-gutters">
@@ -72,8 +74,9 @@
 			</div>
 
 		<!-- contact form -->
-		<h4>Contact Me</h4>
+
 		<section class="contactForm">
+			<h4>Contact Me</h4>
 		<div class="container">
 			<form id="contact-bernina-form" action="php/mailer.php" method="post">
 				<div class="form-group">
@@ -121,6 +124,21 @@
 				<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
 				<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
 			</form>
+
+			<!--Footer-->
+			<div class="modal-footer justify-content-center">
+				<span class="mr-4"></span>
+				<!--Github +-->
+
+				<!--Twitter-->
+				<a type="button" class="btn-floating btn-sm btn-tw"><i class="fa fa-twitter"></i></a>
+				<!--Linkedin-->
+				<a type="button" class="btn-floating btn-sm btn-ins"><i class="fa fa-linkedin"></i></a>
+
+				<button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+			</div>
+
 			<!--empty area for form error/success output-->
 			<div class="row">
 				<div class="col-xs-12">
