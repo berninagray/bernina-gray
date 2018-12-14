@@ -67,31 +67,79 @@
 			<h3 class="lead">Welcome to my personal website!</h3>
 		</div>
 	</div>
+
+	<div class="container">
+		<h3>ARTWORK</h3>
+		<div class="row">
+			<div class="col-sm-4 py-2">
+				<div class="card card-body h-100">
+					Card. I'm just a simple card-block.
+				</div>
+			</div>
+			<div class="col-sm-4 py-2">
+				<div class="card h-100 text-white bg-danger">
+					<div class="card-body">
+						<h3 class="card-title">Danger</h3>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-outline-light">Outline</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 py-2">
+				<div class="card h-100 card-body">
+					Card. I'm just a simple card-block, but I have a little more text!
+				</div>
+			</div>
+			<div class="col-sm-4 py-2">
+				<div class="card h-100 border-primary">
+					<div class="card-body">
+						<h3 class="card-title">Primary</h3>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-outline-secondary">Outline</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 py-2">
+				<div class="card h-100 card-body">
+					Card. I'm just a simple card-block.
+				</div>
+			</div>
+			<div class="col-sm-4 py-2">
+				<div class="card text-white bg-primary">
+					<div class="card-body">
+						<h3 class="card-title">Hello</h3>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-outline-light">Outline</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--End Jumbotron-->
-	<!--Projects-->
-	<div class="container-row">
-		<div class="col-sm-6">
-			<div class="thumbnail">
+	<!--Cards
+	<div class="container">
+		<div class="row">
+			<div class="card col-sm-1 col-md-6 col-lg-2">
 				<img src="img/russellMeans.jpg" alt="Russell Means Portrait" height="300">
 				<div class="caption">
 					<h4>Russell Means Portrait</h4>
 					<p>"I'm Coming Back As Lightning"<br>2013<br>Graphite<br>8"x10"</p>
 				</div>
 			</div>
+			<div class="row">
+				<div class="card col-sm-1 col-md-6 col-lg-2">
+					<img src="img/lakotaWinyan.jpg" alt="Lakota Winyan Portrait" height="300">
+					<div class="caption">
+						<h4>Lakota Winyan Portrait</h4>
+						<p>"Lakota Winyan"<br>2013<br>Graphite<br>8"x10"</p>
+					</div>
 		</div>
-	<div class="col-sm-6">
-			<div class="thumbnail">
-				<img src="img/lakotaWinyan.jpg" alt="Lakota Winyan Portrait" height="300">
-				<div class="caption">
-					<h4>Russell Means Portrait</h4>
-					<p>"Lakota Winyan"<br>2013<br>Graphite<br>8"x10"</p>
-				</div>
-			</div>
+	</div>
 		</div>
 	</div>
 	</div>
-
-	<!-- contact form -->
+	<!--End Cards-->
+	 -->
 
 
 	<h4>Contact Me</h4>

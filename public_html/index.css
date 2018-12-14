@@ -15,3 +15,11 @@
 p {
 	float: start;
 }
+
+h3 {
+	text-align: center;
+}
+
+.card {
+	border: none;
+}
