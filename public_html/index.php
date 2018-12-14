@@ -31,16 +31,19 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
+			<ul class="navbar-nav nav">
 				<li class="nav-item-divider">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">PROJECTS<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">PROJECTS</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">ARTWORK</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">ABOUT</a>
+					<a class="nav-link" href="about-me.php">ABOUT</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">CONTACT</a>
@@ -48,9 +51,11 @@
 			</ul>
 		</div>
 	</nav>
-		<!--hero-->
-
-
+	<--Hero Section-->
+	<div class="gradient-overlay-half-dark-v3 bg-img-hero" style="background-image: url("/img/lukachukai.jpg");">
+	<--Main Content-->
+	div class="container
+	</div>
 	<!--Projects-->
 			<div class="container mt-5">
 				<div class="row no-gutters">
@@ -67,9 +72,9 @@
 
 		<!-- contact form -->
 
-		<section class="contactForm">
+
 			<h4>Contact Me</h4>
-		<div class="container">
+		<div class="container-fluid">
 			<form id="contact-bernina-form" action="php/mailer.php" method="post">
 				<div class="form-group">
 					<label for="contactName">Name <span class="text-danger">*</span></label>
@@ -137,6 +142,6 @@
 					<div id="output-area"></div>
 				</div>
 			</div>
-		</section>
+		</div>
 	</body>
 </html>
