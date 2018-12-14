@@ -107,16 +107,16 @@
 				</div>
 				<div class="col-sm-4 py-2">
 					<div class="card card-body h-100">
-						<img src="img/.jpg" height="300">
+						<img src="img/lakotaWinyanGrafitti.jpg" height="300">
 						<h3 class="card-title">"Lakota Woman Portrait"</h3>
-						<p class="card-text">2013<br>Graphite<br>8"x10"</p>
+						<p class="card-text">2015<br>Aerosol<br>25'x30'</p>
 					</div>
 				</div>
 				<div class="col-sm-4 py-2">
 					<div class="card card-body h-100">
-						<img src="img/davidLivingston.jpg" height="300">
-						<h3 class="card-title">"David Livingston Portrait"</h3>
-						<p class="card-text">2013<br>Graphite<br>8"x10"</p>
+						<img src="img/iceCube.jpg" height="300">
+						<h3 class="card-title">"Today Was A Good Day"</h3>
+						<p class="card-text">2013<br>Charcoal<br>8"x13"</p>
 					</div>
 				</div>
 			</div>
@@ -197,5 +197,5 @@
 			</div>
 		</div>
 	</div>
-	</body>
+	</div>
 </html>
