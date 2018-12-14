@@ -23,43 +23,35 @@
 		<script src="js/form-validate.js"></script>
 		<title>Bernina Gray | Welcome</title>
 	</head>
-	<main>
+
 		<!--navbar-->
-		<nav class="navbar navbar-expand-lg navbar-togglable fixed-top navbar-dark p-2">
-			<div class="container-fluid">
-				<!--brand-->
-				<a class="navBar- mr-0 mr-md-2" href="index.php">NavBar</a>
-				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<!--Collapse-->
-				<div class="navbar-collapse collapse" id="navbarCollapse">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item-divider">
-							<span class="nav-link"
-							<a class="nav-link" href="#">PROJECTS<span class="sr-only">(current)</span></a>
-						</li>
-						<!--<li class="nav-item">
-
-							<a class="nav-link" href="#"></a>
-						</li> -->
-						<li class="nav-item">
-							<a class="nav-link" href="#">ARTWORK</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">ABOUT</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</main>
-		<!--hero-->
-		<div class="container fluid">
-
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item-divider">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">PROJECTS<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">ARTWORK</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">ABOUT</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">CONTACT</a>
+				</li>
+			</ul>
 		</div>
+	</nav>
+		<!--hero-->
 
-		<!--Projects-->
+
+	<!--Projects-->
 			<div class="container mt-5">
 				<div class="row no-gutters">
 				<div class="col-12 col-sm-6 col-md-8">
