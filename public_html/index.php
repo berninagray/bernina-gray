@@ -67,6 +67,9 @@
 			<h3 class="lead">Welcome to my personal website!</h3>
 		</div>
 	</div>
+	<!--End Jumbotron-->
+
+	<!--Cards-->
 
 	<div class="container">
 		<h3>ARTWORK</h3>
@@ -74,71 +77,52 @@
 			<div class="col-sm-4 py-2">
 				<div class="card card-body h-100">
 					<img src="img/russellMeans.jpg" height="300">
+					<h3 class="card-title">"I'm Coming Back As Lightning"</h3>
+					<p class="card-text center">2013<br>Graphite<br>8"x10"</p>
 				</div>
 			</div>
 			<div class="col-sm-4 py-2">
-				<div class="card h-100">
-					<div class="card-body">
-						<h3 class="card-title">Danger</h3>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-					</div>
+				<div class="card card-body h-100">
+					<img src="img/lakotaWinyan.jpg" height="300">
+					<h3 class="card-title">"Lakota Woman Portrait"</h3>
+					<p class="card-text">2013<br>Graphite<br>8"x10"</p>
 				</div>
 			</div>
 			<div class="col-sm-4 py-2">
-				<div class="card h-100 card-body">
-					Card. I'm just a simple card-block, but I have a little more text!
-				</div>
-			</div>
-			<div class="col-sm-4 py-2">
-				<div class="card h-100 border-primary">
-					<div class="card-body">
-						<h3 class="card-title">Russell Means Portrait</h3>
-						<p class="card-text center">"I'm Coming Back As Lightning"<br>2013<br>Graphite<br>8"x10"</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 py-2">
-				<div class="card h-100 card-body">
-					Card. I'm just a simple card-block.
-				</div>
-			</div>
-			<div class="col-sm-4 py-2">
-				<div class="card text-white bg-primary">
-					<div class="card-body">
-						<h3 class="card-title">Hello</h3>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-outline-light">Outline</a>
-					</div>
+				<div class="card card-body h-100">
+					<img src="img/davidLivingston.jpg" height="300">
+					<h3 class="card-title">"David Livingston Portrait"</h3>
+					<p class="card-text">2013<br>Graphite<br>8"x10"</p>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!--End Jumbotron-->
-	<!--Cards
-	<div class="container">
-		<div class="row">
-			<div class="card col-sm-1 col-md-6 col-lg-2">
-				<img src="img/russellMeans.jpg" alt="Russell Means Portrait" height="300">
-				<div class="caption">
-					<h4>Russell Means Portrait</h4>
-					<p>"I'm Coming Back As Lightning"<br>2013<br>Graphite<br>8"x10"</p>
-				</div>
-			</div>
+		<div class="container">
 			<div class="row">
-				<div class="card col-sm-1 col-md-6 col-lg-2">
-					<img src="img/lakotaWinyan.jpg" alt="Lakota Winyan Portrait" height="300">
-					<div class="caption">
-						<h4>Lakota Winyan Portrait</h4>
-						<p>"Lakota Winyan"<br>2013<br>Graphite<br>8"x10"</p>
+				<div class="col-sm-4 py-2">
+					<div class="card card-body h-100">
+						<img src="img/josephRunningfox.jpg" height="300">
+						<h3 class="card-title">"Goyaałe"</h3>
+						<p class="card-text center">2013<br>Charcoal<br>8"x10"</p>
 					</div>
-		</div>
+				</div>
+				<div class="col-sm-4 py-2">
+					<div class="card card-body h-100">
+						<img src="img/.jpg" height="300">
+						<h3 class="card-title">"Lakota Woman Portrait"</h3>
+						<p class="card-text">2013<br>Graphite<br>8"x10"</p>
+					</div>
+				</div>
+				<div class="col-sm-4 py-2">
+					<div class="card card-body h-100">
+						<img src="img/davidLivingston.jpg" height="300">
+						<h3 class="card-title">"David Livingston Portrait"</h3>
+						<p class="card-text">2013<br>Graphite<br>8"x10"</p>
+					</div>
+				</div>
+			</div>
 	</div>
-		</div>
-	</div>
-	</div>
-	<!--End Cards-->
-	 -->
 
+	<!--Contact Form-->
 
 	<h4>Contact Me</h4>
 	<div class="container-fluid">
@@ -184,6 +168,7 @@
 								 placeholder="(2000 characters max)"></textarea>
 				</div>
 			</div>
+
 			<!-- reCAPTCHA -->
 			<div class="g-recaptcha" data-sitekey="6Ld3zHsUAAAAAMCnTe5bTf0nIl9ho-hmKE6meKi1"></div>
 			<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
