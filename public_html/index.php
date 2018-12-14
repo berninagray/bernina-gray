@@ -69,6 +69,7 @@
 				</div>
 				</div>
 			</div>
+			</div>
 
 		<!-- contact form -->
 		<h4>Contact Me</h4>

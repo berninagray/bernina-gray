@@ -1,4 +1,4 @@
-.navbar-dark {
+/* .navbar-dark {
 	color: #000;
 }
 
@@ -12,3 +12,49 @@ fixed-bottom, fixed-top {
 .fixed-top {
 	top: 0;
 }
+
+.navbar, .navbar>.container, .navbar>.container-fluid {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar {
+	padding: 1.25rem 1rem;
+}
+
+*, :after, :before {
+	box-sizing: border-box;
+}
+*/
+
+/*
+.navbar:before {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+	transition: opacity .15s linear;
+	opacity: 0;
+	border-bottom: 1px solid rgba(00000);
+	background-color: white;
+}
+
+*, :after, :before {
+	box-sizing: border-box;
+}
+
+::selection {
+	color: #000;
+	background-color: darkgray;
+}
+
+.navbar-dark .navbar-brand, .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover, .navbar-light .navbar-text a, .navbar-light .navbar-text a:focus, .navbar-light .navbar-text a:hover {
+	color: darkgray;
+}
+
+*/
