@@ -73,15 +73,14 @@
 		<div class="row">
 			<div class="col-sm-4 py-2">
 				<div class="card card-body h-100">
-					Card. I'm just a simple card-block.
+					<img src="img/russellMeans.jpg" height="300">
 				</div>
 			</div>
 			<div class="col-sm-4 py-2">
-				<div class="card h-100 text-white bg-danger">
+				<div class="card h-100">
 					<div class="card-body">
 						<h3 class="card-title">Danger</h3>
 						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-outline-light">Outline</a>
 					</div>
 				</div>
 			</div>
@@ -93,9 +92,8 @@
 			<div class="col-sm-4 py-2">
 				<div class="card h-100 border-primary">
 					<div class="card-body">
-						<h3 class="card-title">Primary</h3>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-outline-secondary">Outline</a>
+						<h3 class="card-title">Russell Means Portrait</h3>
+						<p class="card-text center">"I'm Coming Back As Lightning"<br>2013<br>Graphite<br>8"x10"</p>
 					</div>
 				</div>
 			</div>
